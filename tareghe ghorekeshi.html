@@ -47,7 +47,7 @@
 
     </div>
     <main role="main" class="container-fluid">
-        <div class="card">
+        <div class="card     mt-5">
             <div class="  d-flex   mt-2">
                 <div class="col-12   text-center">
                     <span class="titr">تاریخ قرعه کشی بعدی هنوز تعیین نشده</span>
@@ -59,13 +59,13 @@
             
 
 
-            <div class="d-flex  mb-1  py-1 mt-0  mx-3  d-flex ">
+            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
 
                 <div class="col-12   text-right">
                     <div class="row">
 
 
-                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-end pr-2  ">
+                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center pr-2  ">
                             <button type="button" class="btn btn-outline-primary">
                                 <span class="text-secondary">تاریخ قرعه کشی بعدی را تعیین نمایید</span></button>
                         </div>
@@ -76,63 +76,80 @@
                 </div>
             </div>
 
-            
 
-            
 
-            
 
-            
 
-            
+
+
+
+
+
 
 
         </div>
 
 
-        <div class="card  mt-2">
-            <div class="d-flex bg-white  pl-3   mb-1  py-1  mt-3  mx-3  d-flex   my-2  mx-2  shadow-sm   rounded  border">
-                <div class="col-10  text-nowrap  text-right">
-                    <span class="titr">دوره 4-1398/08/30   انجام نشده</span>
+        <div id="accordion"  class="mb-3  mt-4" >
+            <div class="card">
+                <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
+                    <h5 class="mb-0   d-flex  justify-content-between  titr">
+
+
+
+                        <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i> دوره 4-1398/08/30   انجام نشده </div>
+
+
+                        <div>
+
+                            <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                <i class="fa fa-question"></i>
+                            </button>
+                            <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+
+
+
+
+                        </div>
+                    </h5>
                 </div>
-                
 
-<div class="col-1 d-flex align-items-center  justify-content-center">
-                    <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
-                                     <i class="fa fa-question icon-fa   icon-fa" aria-hidden="true"></i>
-                                    </span>
-                </div>
-                <div class="col-1   d-flex align-items-center  justify-content-center">
-                    <span class="bg-light  icon" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                         <i class="fa fa-minus  icon-fa" aria-hidden="true"></i>
-                                     </span>
+                <div id="collapseOne" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
 
-                </div>
-            </div>
-            <div class="collapse bg-white  mt-0   mx-3" id="collapseExample">
-                <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,
-                    craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-            </div>
-
-            
-
-<div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
+                        <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                            <div class="col-12   text-right">
+                                <div class="row">
+                                    <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
 
 
 
 
 
+                                </div>
+                            </div>
+                        </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
+
+                        <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                            <div class="col-12   text-right">
+                                <div class="row">
+                                    <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
+                                    <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
+                                    <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
 
 
 
@@ -140,99 +157,107 @@
 
 
 
-                    </div>
-                </div>
-            </div>
+                                </div>
+                            </div>
+                        </div>
 
-<div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
-<label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
-<label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
+                        <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                            <div class="col-12   text-right">
+                                <div class="row">
 
 
-
-
-
-
-
-                    </div>
-                </div>
-            </div>
-
-<div class="d-flex  mb-1  py-1 mt-0  mx-3  d-flex ">
-
-                <div class="col-12   text-right">
-                    <div class="row">
-
-
-                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
-                            <button type="button" class="btn btn-outline-primary">
+                                    <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                        <button type="button" class="btn btn-outline-primary">
                                                     <span style="
     font-size: 12px;
 " class="text-secondary  fontsize text-nowrap ">اطلاعات پرداخت وام</span></button>
 
-                            <div class="col-1 offset-1"></div>
-                            <button type="button" class="btn btn-outline-primary">
-                                                    <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
+                                        <div class="col-1 offset-1"></div>
+                                        <button type="button" class="btn btn-outline-primary">
+                                            <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
                         </div>
 
 
 
+
+
+
                     </div>
-                </div>
+
+
+
             </div>
-
-
-
-
 
 
         </div>
-<div class="card  mt-2">
-            <div class="d-flex bg-white  pl-3   mb-1  py-1  mt-3  mx-3  d-flex   my-2  mx-2  shadow-sm   rounded  border">
-                <div class="col-10  text-nowrap  text-right">
-                    <span class="titr">دوره 3-1398/08/30   انجام نشده</span>
+
+        <div id="accordion"  class="mb-3" >
+            <div class="card">
+                <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
+                    <h5 class="mb-0   d-flex  justify-content-between  titr">
+
+
+
+                        <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i> دوره 3-1398/08/30   انجام نشده </div>
+
+
+                        <div>
+
+                            <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                <i class="fa fa-question"></i>
+                            </button>
+                            <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+
+
+
+
+                        </div>
+                    </h5>
                 </div>
-                
 
-<div class="col-1 d-flex align-items-center  justify-content-center">
-                    <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
-                                     <i class="fa fa-question icon-fa   icon-fa" aria-hidden="true"></i>
-                                    </span>
-                </div>
-                <div class="col-1   d-flex align-items-center  justify-content-center">
-                    <span class="bg-light  icon" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                         <i class="fa fa-minus  icon-fa" aria-hidden="true"></i>
-                                     </span>
+                <div id="collapsetwo" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
 
-                </div>
-            </div>
-            <div class="collapse bg-white  mt-0   mx-3" id="collapseExample">
-                <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,
-                    craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-            </div>
-
-            
-
-<div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
+                    <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
 
 
 
 
 
+                            </div>
+                        </div>
+                    </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                    <div class="col-12   text-right">
+                        <div class="row">
+                            <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
+
+
+
+
+
+
+
+                        </div>
                     </div>
                 </div>
-            </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
+
+                    <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
 
 
 
@@ -240,99 +265,107 @@
 
 
 
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-<div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
-<label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
-<label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
 
 
-
-
-
-
-
-                    </div>
-                </div>
-            </div>
-
-<div class="d-flex  mb-1  py-1 mt-0  mx-3  d-flex ">
-
-                <div class="col-12   text-right">
-                    <div class="row">
-
-
-                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
-                            <button type="button" class="btn btn-outline-primary">
+                                <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                    <button type="button" class="btn btn-outline-primary">
                                                     <span style="
     font-size: 12px;
 " class="text-secondary  fontsize text-nowrap ">اطلاعات پرداخت وام</span></button>
 
-                            <div class="col-1 offset-1"></div>
-                            <button type="button" class="btn btn-outline-primary">
-                                                    <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
+                                    <div class="col-1 offset-1"></div>
+                                    <button type="button" class="btn btn-outline-primary">
+                                        <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
+                                </div>
+
+
+
+                            </div>
                         </div>
-
-
-
                     </div>
+
+
+
+
+
+
                 </div>
+
+
+
             </div>
-
-
-
-
 
 
         </div>
-<div class="card  mt-2">
-            <div class="d-flex bg-white  pl-3   mb-1  py-1  mt-3  mx-3  d-flex   my-2  mx-2  shadow-sm   rounded  border">
-                <div class="col-10  text-nowrap  text-right">
-                    <span class="titr">دوره 2-1398/08/30   انجام نشده</span>
+
+        <div id="accordion"  class="mb-3" >
+            <div class="card">
+                <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
+                    <h5 class="mb-0   d-flex  justify-content-between  titr">
+
+
+
+                        <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i> دوره 2-1398/08/30   انجام نشده </div>
+
+
+                        <div>
+
+                            <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                <i class="fa fa-question"></i>
+                            </button>
+                            <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapsetree" aria-expanded="true" aria-controls="collapsetree">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+
+
+
+
+                        </div>
+                    </h5>
                 </div>
-                
 
-<div class="col-1 d-flex align-items-center  justify-content-center">
-                    <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
-                                     <i class="fa fa-question icon-fa   icon-fa" aria-hidden="true"></i>
-                                    </span>
-                </div>
-                <div class="col-1   d-flex align-items-center  justify-content-center">
-                    <span class="bg-light  icon" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                         <i class="fa fa-minus  icon-fa" aria-hidden="true"></i>
-                                     </span>
+                <div id="collapsetree" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
 
-                </div>
-            </div>
-            <div class="collapse bg-white  mt-0   mx-3" id="collapseExample">
-                <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,
-                    craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-            </div>
-
-            
-
-<div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
+                    <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
 
 
 
 
 
+                            </div>
+                        </div>
+                    </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                    <div class="col-12   text-right">
+                        <div class="row">
+                            <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
+
+
+
+
+
+
+
+                        </div>
                     </div>
                 </div>
-            </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
+
+                    <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
 
 
 
@@ -340,99 +373,108 @@
 
 
 
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-<div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
-<label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
-<label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
 
 
-
-
-
-
-
-                    </div>
-                </div>
-            </div>
-
-<div class="d-flex  mb-1  py-1 mt-0  mx-3  d-flex ">
-
-                <div class="col-12   text-right">
-                    <div class="row">
-
-
-                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
-                            <button type="button" class="btn btn-outline-primary">
+                                <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                    <button type="button" class="btn btn-outline-primary">
                                                     <span style="
     font-size: 12px;
 " class="text-secondary  fontsize text-nowrap ">اطلاعات پرداخت وام</span></button>
 
-                            <div class="col-1 offset-1"></div>
-                            <button type="button" class="btn btn-outline-primary">
-                                                    <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
+                                    <div class="col-1 offset-1"></div>
+                                    <button type="button" class="btn btn-outline-primary">
+                                        <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
+                                </div>
+
+
+
+                            </div>
                         </div>
-
-
-
                     </div>
+
+
+
+
+
+
                 </div>
+
+
+
             </div>
-
-
-
-
 
 
         </div>
-<div class="card  mt-2">
-            <div class="d-flex bg-white  pl-3   mb-1  py-1  mt-3  mx-3  d-flex   my-2  mx-2  shadow-sm   rounded  border">
-                <div class="col-10  text-nowrap  text-right">
-                    <span class="titr">دوره 1-1398/08/30   انجام نشده</span>
+
+        <div id="accordion"  class="mb-3" >
+            <div class="card">
+                <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
+                    <h5 class="mb-0   d-flex  justify-content-between  titr">
+
+
+
+                        <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i> دوره 1-1398/08/30   انجام نشده </div>
+
+
+
+                        <div>
+
+                            <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                <i class="fa fa-question"></i>
+                            </button>
+                            <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+
+
+
+
+                        </div>
+                    </h5>
                 </div>
-                
 
-<div class="col-1 d-flex align-items-center  justify-content-center">
-                    <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
-                                     <i class="fa fa-question icon-fa   icon-fa" aria-hidden="true"></i>
-                                    </span>
-                </div>
-                <div class="col-1   d-flex align-items-center  justify-content-center">
-                    <span class="bg-light  icon" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                         <i class="fa fa-minus  icon-fa" aria-hidden="true"></i>
-                                     </span>
+                <div id="collapsefour" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
 
-                </div>
-            </div>
-            <div class="collapse bg-white  mt-0   mx-3" id="collapseExample">
-                <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,
-                    craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-            </div>
-
-            
-
-<div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
+                    <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
 
 
 
 
 
+                            </div>
+                        </div>
+                    </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                    <div class="col-12   text-right">
+                        <div class="row">
+                            <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
+
+
+
+
+
+
+
+                        </div>
                     </div>
                 </div>
-            </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
+
+                    <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
 
 
 
@@ -440,85 +482,71 @@
 
 
 
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-<div class="d-flex bg-white  mb-1  py-1 mt-0  mx-3  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
-                    <div class="row">
-                        <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
-<label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
-<label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
 
 
-
-
-
-
-
-                    </div>
-                </div>
-            </div>
-
-<div class="d-flex  mb-1  py-1 mt-0  mx-3  d-flex ">
-
-                <div class="col-12   text-right">
-                    <div class="row">
-
-
-                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
-                            <button type="button" class="btn btn-outline-primary">
+                                <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                    <button type="button" class="btn btn-outline-primary">
                                                     <span style="
     font-size: 12px;
 " class="text-secondary  fontsize text-nowrap ">اطلاعات پرداخت وام</span></button>
 
-                            <div class="col-1 offset-1"></div>
-                            <button type="button" class="btn btn-outline-primary">
-                                                    <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
+                                    <div class="col-1 offset-1"></div>
+                                    <button type="button" class="btn btn-outline-primary">
+                                        <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
+                                </div>
+
+
+
+                            </div>
                         </div>
-
-
-
                     </div>
+
+
+
+
+
+
                 </div>
+
+
+
             </div>
-
-
-
-
 
 
         </div>
 
-
-        
-        
-        
-        
 
     </main>
     <div class="navbarbotton">
         <a href="creat sandogh.html">
-    <span class="icon-menue"><i class="fa fa-home"></i></span>
-    
-    <span class="fontsize">خانه</span>
-</a>
-        <a href="azayesandogh.html">
-    <span class="icon-menue"><i class="fa fa-users"></i></span>
-     <span class="fontsize">اعضا</span>
-</a>
-        <a href="tareghe ghorekeshi.html">
+            <span class="icon-menue"><i class="fa fa-home"></i></span>
 
-    <span class="icon-menue"><i class="fa fa-gift"></i></span>
-     <span class="fontsize">قرعه کشی</span>
-</a>
+            <span class="fontsize">خانه</span>
+        </a>
+        <a href="azayesandogh.html">
+            <span class="icon-menue"><i class="fa fa-users"></i></span>
+            <span class="fontsize">اعضا</span>
+        </a>
+        <a href="tareghe ghorekeshi.html"  class="active"   >
+
+            <span class="icon-menue"><i class="fa fa-gift"></i></span>
+            <span class="fontsize">قرعه کشی</span>
+        </a>
         <a href="sahm har doreh.html">
-    
-    <span class="icon-menue"><i class="fa fa-calculator"></i></span>
-     <span class="fontsize">حسابداری</span>
-    </a>
+
+            <span class="icon-menue"><i class="fa fa-calculator"></i></span>
+            <span class="fontsize">حسابداری</span>
+        </a>
     </div>
+
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -552,7 +580,11 @@
             -->
 
 
-
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 
 

@@ -42,7 +42,7 @@ body{
     line-height: 2.3;
 }
 .fontsize{
-    font-size: 12px; 
+    font-size: 14px;
 }
 
 .icon{
@@ -92,4 +92,11 @@ padding: 20px;
 
 .icon-menue{
     font-size: 24px;
+}
+
+.active{
+    background: #0954a5;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
 }
