@@ -271,7 +271,7 @@
 
 
 
-    $("#list-ticket-datatable").DataTable({
+        var table =  $("#list-ticket-datatable").DataTable({
         language: {
             paginate: {
                 previous: "قبلی",
@@ -286,7 +286,14 @@
         },
         order: [[ 0, "desc" ]]
     });
+
+
+    for ( var i=1 ; i<4 ; i++ ) {
+        table.column( i ).visible( false, false );
+    }
+    table.columns.adjust().draw( false );
     });
+
 </script>
 </body>
 

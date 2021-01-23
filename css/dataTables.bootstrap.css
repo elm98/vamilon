@@ -11,9 +11,6 @@ div.dataTables_length select {
 div.dataTables_filter label {
     font-weight: normal;
     float: right;
-    margin-right: 20px;
-    text-align: right;
-}
 }
 
 div.dataTables_filter input {
@@ -108,7 +105,7 @@ div.dataTables_scrollFoot table {
    to use separate
  */
 table.table-bordered.dataTable {
-   /* border-collapse: separate !important;*/
+    border-collapse: separate !important;
 }
 table.table-bordered thead th,
 table.table-bordered thead td {
