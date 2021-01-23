@@ -13,7 +13,17 @@
           crossorigin="anonymous">
     <link href="http:////cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
     <link href="http://cdn.datatables.net/responsive/1.0.1/css/dataTables.responsive.css" rel="stylesheet">
-    <title>اعضای صندوق</title>
+    <title>لیست تیکت ها </title>
+
+<style>
+    lable{
+        display: flex  !important;
+        margin-bottom: .5rem;
+        flex-direction: row  !important;
+        align-items: center  !important;
+        margin-right: 20px  !important;
+    }
+</style>
 </head>
 
 
@@ -78,7 +88,7 @@
             <div id="collapseOne" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
 
                <div  class="col-12"  >
-                   <table id="example" class="table table-striped table-hover dt-responsive     text-center" cellspacing="0" width="100%">
+                   <table   id="list-ticket-datatable" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
                        <thead>
                        <tr>
                            <th>تاریخ ثبت</th>
@@ -86,7 +96,6 @@
                            <th>وضعیت</th>
                            <th>آخرین بروز رسانی</th>
                            <th>عملیات</th>
-
 
                        </tr>
                        </thead>
@@ -223,9 +232,24 @@
 <script src="http://cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 <script>
     $(document).ready(function() {
-        $('#example').dataTable({
-            responsive: true
-        });
+
+
+
+    $("#list-ticket-datatable").DataTable({
+        language: {
+            paginate: {
+                previous: "قبلی",
+                next: "بعدی"
+            },
+            lengthMenu: "نمایش _MENU_ مقادیر",
+            zeroRecords: "داده ای یافت نشد.",
+            info: "",
+            infoEmpty: "",
+            infoFiltered: "",
+            search: "جستجو"
+        },
+        order: [[ 0, "desc" ]]
+    });
     });
 </script>
 </body>

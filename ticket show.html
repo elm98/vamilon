@@ -13,7 +13,7 @@
           crossorigin="anonymous">
     <link href="http:////cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
     <link href="http://cdn.datatables.net/responsive/1.0.1/css/dataTables.responsive.css" rel="stylesheet">
-    <title>اعضای صندوق</title>
+    <title>نمایش جزییات </title>
 </head>
 
 
@@ -134,7 +134,7 @@
                             <button class="btn btn-outline-primary px-5  " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">پاسخ</button>
                         </div>
 
-                        <div class="row px-3 flex-column mt-5  text-right collapse hide" id="collapseExample" style="">
+                        <div class="row  mx-0 card p-3 flex-column mt-5  text-right collapse hide" id="collapseExample" style="">
                             <div class="col-12 col-sm-10 mx-auto">
                                 <form id="form_ticket_message" method="post"  class="mt-2">
                                     	<div class="row">
@@ -230,7 +230,7 @@
 <script src="http://cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 <script>
     $(document).ready(function() {
-        $('#example').dataTable({
+        $('#datatable').dataTable({
             responsive: true
         });
     });
