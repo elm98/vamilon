@@ -8,22 +8,58 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="css/dataTables.responsive.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
           crossorigin="anonymous">
-    <link href="http:////cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
-    <link href="http://cdn.datatables.net/responsive/1.0.1/css/dataTables.responsive.css" rel="stylesheet">
-    <title>لیست تیکت ها </title>
 
-<style>
-    lable{
-        display: flex  !important;
-        margin-bottom: .5rem;
-        flex-direction: row  !important;
-        align-items: center  !important;
-        margin-right: 20px  !important;
-    }
-</style>
+    <title> تیکت ها</title>
+
+    <style>
+
+        #list-ticket-datatable_wrapper > .row:first-child {
+            flex-direction: row-reverse;
+        }
+
+        #list-ticket-datatable_wrapper > .row:first-child > .col-sm-12:first-child {
+            text-align: left;
+        }
+
+        #list-ticket-datatable_wrapper > .row:first-child > .col-sm-12:last-child > #list-ticket-datatable_filter > label {
+            text-align: center;
+            width: 100%;
+        }
+
+        #list-ticket-datatable_wrapper > .row:first-child > .col-sm-12:last-child > #list-ticket-datatable_filter > label > input {
+            text-align: right;
+            width: 50%;
+            margin-right: 0.5rem;
+        }
+
+        @media (min-width: 357px) {
+            .ticket-btn-answer {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            #list-ticket-datatable_wrapper > .row:first-child > .col-sm-12:last-child > #list-ticket-datatable_filter > label {
+                text-align: right;
+            }
+        }
+
+        table.table-bordered.dataTable th, table.table-bordered.dataTable td{
+            border-left-width: 1px;
+            border-right-width: 0;
+        }
+
+        table.dataTable>tbody>tr.child ul.dtr-details{
+            width: 100%;
+        }
+
+    </style>
 </head>
 
 
@@ -241,7 +277,7 @@
                 previous: "قبلی",
                 next: "بعدی"
             },
-            lengthMenu: "نمایش _MENU_ مقادیر",
+            lengthMenu: "نمایش _MENU_ ",
             zeroRecords: "داده ای یافت نشد.",
             info: "",
             infoEmpty: "",
