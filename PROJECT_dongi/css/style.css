@@ -1,0 +1,254 @@
+@font-face{
+    font-family:"IRANSans";
+    src:url("../fonts/IRANSansWeb(FaNum).woff") format("woff");
+    src:url("../fonts/IRANSansWeb(FaNum).woff2");
+
+    font-weight: bold;
+}
+.bg-head{
+    background-image: url('../images/ImageTop.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 137px;
+}
+.bg-card{
+    background: #e4e5ea52;
+}
+.brand{
+    color: white;
+}
+.bars{
+    color: #f9bf71;
+    padding: 5px;
+}
+body{
+    font-family: IRANSans  !important;
+}
+
+.icon{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F8F8F8;
+}
+.icon-fa{
+    font-size: 23px;
+    color: #FC6262;
+
+}
+.titr{
+    font-size: 15px;
+    line-height: 2.3;
+}
+.fontsize{
+    font-size: 14px;
+}
+.font{
+    font-size: 12px;
+}
+.icon{
+    font-size: 12px;
+}
+.icon-fa{color: #FC6262;
+    font-size: 15px;
+    padding: 20px;
+}
+.navbarbotton {
+    overflow: hidden;
+    background-color: #f9bf71;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 200;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+}
+
+.navbarbotton a {
+    float: right;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.navbarbotton a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+}
+
+
+.icon-menue{
+    font-size: 24px;
+}
+
+.active{
+    background: #f9bf71;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+
+#ui_notifIt{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+#ui_notifIt p{
+    text-align: center;
+
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 20px;
+    left: -7px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #f9bf71;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* The container */
+.containercheck {
+    display: block;
+    position: relative;
+    padding-left: 25px !important;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-right: 15px !important;
+    width: auto !important;
+}
+
+/* Hide the browser's default radio button */
+.containercheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 21px;
+    background-color: #d2d2d2;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containercheck:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containercheck input:checked ~ .checkmark {
+    background-color: #388e3c;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containercheck input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containercheck .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: white;
+}

@@ -10,7 +10,23 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<style>
+    .form-group>label {
+        bottom: 30px;
+        position: relative;
+        padding: 0px 25px 0px 25px;
+        font-size: 12px;
+        transition: 0.2s;
+        pointer-events: none;
+    }
 
+    .form-control:focus~label {
+        bottom: 45px;
+        background: white;
+    }
+
+
+</style>
 
 </head>
 <!-- Optional JavaScript; choose one of the two! -->
@@ -109,11 +125,14 @@
                 <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
 
                     <div class="col-12   text-right">
-                        <div class="row">
+                        <div class="row  mt-5">
                             <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">نام
                                 صندوق:</label>
                             <div class="col-8">
-                                <input type="password" class="form-control" id="inputPassword">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="password" required>
+                                    <label for="usr">نام صندوق</label>
+                                </div>
                             </div>
 
                         </div>
@@ -130,7 +149,7 @@
                                 <input type="password" class="form-control" id="inputPassword">
                             </div>
                             <div class="col-4 text-right  ml-1   d-flex align-items-center  justify-content-center  pr-2  ">
-                                <span for="" class=" text-nowrap  fontsize">سهام/15 سهم اختصاصی</span>
+                                <span for="" class=" text-nowrap  fontsmall">سهام/15 سهم اختصاصی</span>
                             </div>
 
                             <div class="col-1 d-flex align-items-center  justify-content-center  pr-4">
@@ -330,7 +349,7 @@
 
                     <div class="col-12   text-right">
                         <div class="row">
-                            <label for="inputPassword" class="col-9  col-form-label text-nowrap   mx-1 fontsize">نام
+                            <label for="inputPassword" class="col-9  col-form-label text-nowrap   mx-1 fontsmall">نام
                                 صندوق: صندوق ترابی ده میلیونی </label>
 
 
