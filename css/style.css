@@ -24,6 +24,8 @@ body{
 .fontsmall{
     font-size: 11px;
 }
+
+.h{    height: 0;}
 .icon{
     border-radius: 100%;
     width: 25px;
@@ -121,4 +123,44 @@ padding: 20px;
     font-size: 14px;
     padding: 0;
     margin: 0;
+}
+
+#list-ticket-datatable_wrapper > .row:first-child {
+    flex-direction: row-reverse;
+}
+
+#list-ticket-datatable_wrapper > .row:first-child > .col-sm-12:first-child {
+    text-align: left;
+}
+
+#list-ticket-datatable_wrapper > .row:first-child > .col-sm-12:last-child > #list-ticket-datatable_filter > label {
+    text-align: center;
+    width: 100%;
+}
+
+#list-ticket-datatable_wrapper > .row:first-child > .col-sm-12:last-child > #list-ticket-datatable_filter > label > input {
+    text-align: right;
+    width: 50%;
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 357px) {
+    .ticket-btn-answer {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #list-ticket-datatable_wrapper > .row:first-child > .col-sm-12:last-child > #list-ticket-datatable_filter > label {
+        text-align: right;
+    }
+}
+
+table.table-bordered.dataTable th, table.table-bordered.dataTable td{
+    border-left-width: 1px;
+    border-right-width: 0;
+}
+
+table.dataTable>tbody>tr.child ul.dtr-details{
+    width: 100%;
 }

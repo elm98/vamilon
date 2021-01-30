@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="844f6a0a-e3c7-4149-bd6a-48ec749ffa9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/Creat_Event.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/Creat_Event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/Creat_Member.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/Creat_Member.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/azayesandogh.html" beforeDir="false" afterPath="$PROJECT_DIR$/azayesandogh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creat sandogh.html" beforeDir="false" afterPath="$PROJECT_DIR$/creat sandogh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket.html" beforeDir="false" afterPath="$PROJECT_DIR$/ticket.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,8 @@
       <workItem from="1611566522077" duration="1705000" />
       <workItem from="1611641448807" duration="633000" />
       <workItem from="1611820835125" duration="1102000" />
-      <workItem from="1611991954564" duration="2541000" />
+      <workItem from="1611991954564" duration="5441000" />
+      <workItem from="1612010027829" duration="729000" />
     </task>
     <servers />
   </component>
