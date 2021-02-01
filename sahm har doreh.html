@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
+
     <title>سهم هر دوره</title>
 </head>
 
@@ -287,8 +288,8 @@
 
 
                                 <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-end pr-2  ">
-                                    <button type="button" class="btn btn-outline-primary">
-                                        <span class="text-secondary">ثبت پرداخت</span></button>
+                                    <button type="button" class="btn btn-outline-primary" >
+                                        <span class="text-secondary"  onclick="not1()" >ثبت پرداخت</span></button>
                                 </div>
 
 
@@ -387,7 +388,7 @@
 
                                 <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-end pr-2  ">
                                     <button type="button" class="btn btn-outline-primary">
-                                        <span class="text-secondary">ثبت اطلاعات پرداخت</span></button>
+                                        <span class="text-secondary"  onclick="not1()" >ثبت اطلاعات پرداخت</span></button>
                                 </div>
 
 
@@ -649,7 +650,8 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/notifIt.js"></script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -662,7 +664,61 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
+    <script>
+        function not1() {
+            notif({
+                msg: "ارسال موفق",
+                type: "primary"
+            });
+        }
 
+        function not2() {
+            notif({
+                msg: "<b>Oops!</b> A wild error appeared!",
+                type: "error",
+                position: "center"
+            });
+        }
+
+        function not3() {
+            notif({
+                type: "warning",
+                msg: "<b>Warning:</b> Be patient my friend.",
+                position: "left"
+            });
+        }
+
+        function not4() {
+            notif({
+                type: "info",
+                msg: "<b>Info: </b>Some info here.",
+                width: "all",
+                height: 100,
+                position: "center"
+            });
+        }
+
+        function not5() {
+            notif({
+                type: "error",
+                msg: "<b>Error: </b>This error will stay here until you click it.",
+                position: "center",
+                width: 500,
+                height: 60,
+                autohide: false
+            });
+        }
+
+        function not6() {
+            notif({
+                type: "warning",
+                msg: "Opacity is cool!",
+                position: "center",
+                opacity: 0.8
+            });
+        }
+
+    </script>
 
 
 </body>

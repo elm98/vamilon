@@ -252,3 +252,20 @@ input:checked + .slider:before {
     border-radius: 50%;
     background: white;
 }
+
+aks-file-upload {
+
+    margin: 0 auto;
+    display: contents;
+    height: 100px;
+}
+#uploadfile{
+    width: 80%;
+    margin: 0 auto;
+    color: #002c7b;
+    line-height:1.5;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+h1, .lead { text-align: center; }
+h1 { margin: 150px auto 30px auto; }

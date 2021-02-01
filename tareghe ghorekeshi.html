@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link type="text/css" href="css/persian-datepicker.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/aksFileUpload.min.css">
+
+
     <title>قرعه کشی</title>
 </head>
 
@@ -35,7 +39,7 @@
             <form class="form-inline my-2 my-lg-0">
                 <select class="form-control" id="exampleFormControlSelect1">
                       <option>صندوق ده میلیونی ترابی</option>
-                      
+
                     </select>
             </form>
             <a class="navbar-brand  brand  ml-3" href="#">وامیلون</a>
@@ -47,16 +51,31 @@
 
     </div>
     <main role="main" class="container-fluid">
-        <div class="card     mt-5">
+        <div class="card     mt-5  test">
             <div class="  d-flex   mt-2">
                 <div class="col-12   text-center">
                     <span class="titr">تاریخ قرعه کشی بعدی هنوز تعیین نشده</span>
                 </div>
-                
-                
+
+
             </div>
-            
-            
+
+
+
+
+            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                <div class="col-12   text-right">
+                    <div class="row">
+
+                        <div class="col-12">
+
+                            <input type="text"    class="form-control    mr-2  text-dark   text-center"  id="datepicker0" >
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
 
             <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
@@ -65,11 +84,15 @@
                     <div class="row">
 
 
-                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center pr-2  ">
+                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
                             <button type="button" class="btn btn-outline-primary">
-                                <span class="text-secondary">تاریخ قرعه کشی بعدی را تعیین نمایید</span></button>
+                                <span class="text-secondary" id="blockButton" onclick="not1()">ثبت </span></button>
+                            <!--                                    <span class="text-secondary"  onclick="not2()" >ثبت اطلاعات</span></button>-->
+                            <!--                                    <span class="text-secondary"  onclick="not3()" >ثبت اطلاعات</span></button>-->
+                            <!--                                    <span class="text-secondary"  onclick="not4()" >ثبت اطلاعات</span></button>-->
+                            <!--                                    <span class="text-secondary"  onclick="not5()" >ثبت اطلاعات</span></button>-->
+                            <!--                                    <span class="text-secondary"  onclick="not6()" >ثبت اطلاعات</span></button>-->
                         </div>
-
 
 
                     </div>
@@ -84,11 +107,106 @@
 
 
 
-
-
-
         </div>
 
+        <div class="card     mt-5">
+            <div class="col-xl-12 col-lg-12">
+                <div class="min-width colour-icon  text-right  fontsize">
+
+                    <ul class="header-list    bg-primary  text-white py-3  my-3">
+                        <li>
+                            نوع قرعه کشی را انتخاب کنید :
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <fieldset>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" data-lotid="1275" name="form_runLot_lotType" id="form_runLot_lotType_test" checked="">
+
+                                    <label class="custom-control-label" for="form_runLot_lotType_test">
+                                        <b>قرعه کشی آزمایشی</b>
+                                        <div class="text-secondary">
+                                            نتیجه این قرعه کشی جایی ثبت نمی شود و فقط یک آزمایش است.
+                                        </div>
+                                    </label>
+
+                                </div>
+                            </fieldset>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <fieldset>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" data-lotid="1275" name="form_runLot_lotType" id="form_runLot_lotType_real">
+
+                                    <label class="custom-control-label" for="form_runLot_lotType_real">
+                                        <b>
+
+                                            قرعه کشی واقعی</b>
+                                        <div class="text-secondary">
+                                            این قرعه کشی فقط توسط مدیر انجام می شود و نتیجه آن غیر قابل تغییر است.
+                                        </div>
+                                    </label>
+
+                                </div>
+                            </fieldset>
+                        </li>
+                    </ul>
+                    <ul class="header-list    bg-primary  text-white py-3  my-3">
+                        <li>
+                            قرعه کشی بین چه کسانی انجام شود ؟
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <fieldset>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" data-lotid="1275" name="form_runLot_stocksQualified" id="form_runLot_stocksQualified_all" checked="">
+                                    <label class="custom-control-label" for="form_runLot_stocksQualified_all">تمام سهامی که تاکنون وام نگرفته اند</label>
+                                </div>
+                            </fieldset>
+                        </li>
+                        <li>1 سهم</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <fieldset>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" data-lotid="1275" name="form_runLot_stocksQualified" id="form_runLot_stocksQualified_payed" disabled="">
+                                    <label class="custom-control-label" for="form_runLot_stocksQualified_payed">فقط سهامی که تاکنون وام نگرفته اند و واریز آنها تایید شده است</label>
+                                </div>
+                            </fieldset>
+                        </li>
+                        <li>هیچ سهمی نیست !</li>
+                    </ul>
+
+
+
+                </div>
+
+                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                    <div class="col-12   text-right">
+                        <div class="row">
+
+                            <div class="col-12">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">پیام قبل از قرعه کشی ( در اطلاعات قرعه کشی ثبت خواهد شد.
+
+
+                                </textarea>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <div id="accordion"  class="mb-3  mt-4" >
             <div class="card">
@@ -121,9 +239,7 @@
                         <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                             <div class="col-12   text-right">
                                 <div class="row">
-                                    <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
-
-
+                                    <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
 
 
 
@@ -132,13 +248,7 @@
                         </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-right">
                             <div class="row">
-                                <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
-
-
-
-
-
-
+                                <label class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
 
                             </div>
                         </div>
@@ -147,13 +257,9 @@
                         <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                             <div class="col-12   text-right">
                                 <div class="row">
-                                    <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
-                                    <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
-                                    <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
-
-
-
-
+                                    <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
+                                    <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
+                                    <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
 
 
 
@@ -174,8 +280,8 @@
 " class="text-secondary  fontsize text-nowrap ">اطلاعات پرداخت وام</span></button>
 
                                         <div class="col-1 offset-1"></div>
-                                        <button type="button" class="btn btn-outline-primary">
-                                            <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
+                                        <a type="button" class="btn btn-outline-primary"  data-toggle="modal" data-target="#exampleModaltree">
+                                            <span class="text-secondary text-nowrap fontsize"> واریز اقساط</span></a>
                                     </div>
 
 
@@ -229,7 +335,7 @@
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-right">
                             <div class="row">
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
 
 
 
@@ -240,12 +346,7 @@
                     </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                     <div class="col-12   text-right">
                         <div class="row">
-                            <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
-
-
-
-
-
+                            <label class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
 
 
                         </div>
@@ -255,9 +356,9 @@
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-right">
                             <div class="row">
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
 
 
 
@@ -285,7 +386,6 @@
                                     <button type="button" class="btn btn-outline-primary">
                                         <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
                                 </div>
-
 
 
                             </div>
@@ -325,9 +425,6 @@
                                 <i class="fa fa-chevron-down"></i>
                             </button>
 
-
-
-
                         </div>
                     </h5>
                 </div>
@@ -337,7 +434,7 @@
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-right">
                             <div class="row">
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
 
 
 
@@ -348,11 +445,7 @@
                     </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                     <div class="col-12   text-right">
                         <div class="row">
-                            <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
-
-
-
-
+                            <label class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
 
 
 
@@ -363,9 +456,9 @@
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-right">
                             <div class="row">
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
 
 
 
@@ -446,7 +539,7 @@
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-right">
                             <div class="row">
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
 
 
 
@@ -457,7 +550,7 @@
                     </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                     <div class="col-12   text-right">
                         <div class="row">
-                            <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
+                            <label class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
 
 
 
@@ -472,9 +565,9 @@
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-right">
                             <div class="row">
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
+                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
 
 
 
@@ -499,8 +592,8 @@
 " class="text-secondary  fontsize text-nowrap ">اطلاعات پرداخت وام</span></button>
 
                                     <div class="col-1 offset-1"></div>
-                                    <button type="button" class="btn btn-outline-primary">
-                                        <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></button>
+                                    <a type="button" class="btn btn-outline-primary"  >
+                                        <span class="text-secondary text-nowrap fontsize">اطلاعات واریز اقساط</span></a>
                                 </div>
 
 
@@ -547,18 +640,346 @@
         </a>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/persian-datepicker.js"></script>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+            -->
+    <script type="text/javascript" src="js/notifIt.js"></script>
+    <script src="js/aksFileUpload.js"></script>
+    <script type="application/javascript"  src="js/block.js"  ></script>
+
+    <script type="application/javascript"  src="js/block.js"  ></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('#blockButton').click(function() {
+                $('.test').block({ message: null });
+            });
+
+            $('#blockButton2').click(function() {
+                $('.test2').block({ message: null });
+            });
+
+            $('#unblockButton').click(function() {
+                $('.test').unblock();
+            });
+
+
+        });
+    </script>
+    <script>
+        $(function () {
+            $("aks-file-upload").aksFileUpload({
+                fileUpload: "#uploadfile",
+                dragDrop: true,
+                maxSize: "90 GB",
+                multiple: true,
+                maxFile: 50
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            // حالت پیشفرض
+            $('#datepicker0').datepicker({
+                dateFormat: 'yy/mm/dd',
+
+            });
+            $('#datepicker1').datepicker({
+                dateFormat: 'yy/mm/dd',
+
+            });
+            $('#datepicker2').datepicker({
+                dateFormat: 'yy/mm/dd',
+
+            });
+
+        });
+    </script>
+
+    <script>
+        function not1() {
+            notif({
+                msg: "ارسال موفق",
+                type: "primary"
+            });
+        }
+
+        function not2() {
+            notif({
+                msg: "<b>Oops!</b> A wild error appeared!",
+                type: "error",
+                position: "center"
+            });
+        }
+
+        function not3() {
+            notif({
+                type: "warning",
+                msg: "<b>Warning:</b> Be patient my friend.",
+                position: "left"
+            });
+        }
+
+        function not4() {
+            notif({
+                type: "info",
+                msg: "<b>Info: </b>Some info here.",
+                width: "all",
+                height: 100,
+                position: "center"
+            });
+        }
+
+        function not5() {
+            notif({
+                type: "error",
+                msg: "<b>Error: </b>This error will stay here until you click it.",
+                position: "center",
+                width: 500,
+                height: 60,
+                autohide: false
+            });
+        }
+
+        function not6() {
+            notif({
+                type: "warning",
+                msg: "Opacity is cool!",
+                position: "center",
+                opacity: 0.8
+            });
+        }
+
+    </script>
+
+    <div class="modal fade" id="exampleModaltree" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left: 0px; position: absolute;">        
-                            <span aria-hidden="true">×</span>
-                          </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left: 0px; position: absolute;">
+                        <span aria-hidden="true">×</span>
+                    </button>
                 </div>
-                <div class="modal-body  text-right">
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                    risus, porta ac consectetur ac, vestibulum at eros.
+                <div class="modal-body  text-right  test2">
+
+                    <table class="table table-striped table-sm">
+                        <thead>
+                        <tr>
+                            <th class="bg-dark text-white text-center" scope="col" colspan="2">جزئیـات تراکنـش</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                سقف مبلغ
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    2,500,000 تومان                                        </strong>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                بابت
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    قسط                                             دوره 14                                        </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                متعلق به
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    عباس گودرزی                                        </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                تاریخ سررسید
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    1399/11/13                                        </strong>
+                            </td>
+                        </tr>
+
+
+
+                        </tbody>
+                    </table>
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-2 col-form-label text-nowrap   mr-1  ml-3 fontsize">پرداخت کننده:</label>
+                                <div class="col-8">
+                                    <select class="form-control   fontsize" aria-label="">
+
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 fontsize">مبلغ </label>
+                                <div class="col-8">
+                                    <input type="password" class="form-control  mr-2 text-dark  text-center" placeholder="1.0000000" id="inputPassword">
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-2 col-form-label text-nowrap   mr-1  ml-3 fontsize">حساب:</label>
+                                <div class="col-8">
+                                    <select class="form-control   fontsize" aria-label="">
+
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 fontsize">تازیخ هزینه</label>
+                                <div class="col-8">
+                                    <input type="text" class="form-control  mr-2  text-dark  text-center" placeholder="1399/2/2" id="datepicker1"  >
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 fontsize">شماره  پیگیری</label>
+                                <div class="col-8">
+                                    <input type="password" class="form-control  mr-2 text-dark  text-center" placeholder="5454545454" id="inputPassword">
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <small for="inputPassword" class="col-4 col-form-label text-nowrap   font">  توضیحات</small>
+                                <div class="col-8">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <div class="col-12 col-form-label text-nowrap   mx-1 fontsize">آپلود عکس</div>
+                                <div class="col-12">
+
+                                    <aks-file-upload></aks-file-upload>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex  mb-1  py-1 mt-0  d-flex ">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+
+
+                                <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center   ">
+                                    <button type="button" class="btn px-4 btn-success"   id="blockButton2" >ثبت هزینه</button>
+                                    <div class="col-1 offset-1"></div>
+
+
+                                    <button type="button" class="btn btn-primary  px-4">بازم هست</button>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
@@ -570,22 +991,6 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-            -->
-
-
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-
 
 
 </body></html>

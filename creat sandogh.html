@@ -111,7 +111,7 @@
                 </h5>
             </div>
 
-            <div id="collapseOne" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOne" class="collapse show    my-3  collapseOne test" aria-labelledby="headingOne" data-parent="#accordion">
 
 
                 <div class="d-flex bg-white  mt-2  mb-1  mx-2">
@@ -230,7 +230,7 @@
 
                             <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
                                 <button type="button" class="btn btn-outline-primary">
-                                    <span class="text-secondary" onclick="not1()">ثبت اطلاعات</span></button>
+                                    <span class="text-secondary"  id="blockButton" onclick="not1()">ثبت اطلاعات</span></button>
                                 <!--                                    <span class="text-secondary"  onclick="not2()" >ثبت اطلاعات</span></button>-->
                                 <!--                                    <span class="text-secondary"  onclick="not3()" >ثبت اطلاعات</span></button>-->
                                 <!--                                    <span class="text-secondary"  onclick="not4()" >ثبت اطلاعات</span></button>-->
@@ -443,8 +443,8 @@
 
 
                             <div class="col-9  d-flex align-items-center  justify-content-end  mr-3">
-                                <button type="button" class="btn btn-outline-primary">
-                                    <p class="text-secondary  my-0 small text-nowrap">ویرایش سهام شما </p></button>
+                                <a type="button" class="btn btn-outline-primary"   data-toggle="modal" data-target="#exampleModal">
+                                    <p class="text-secondary  my-0 small text-nowrap">ویرایش سهام شما </p></a>
                             </div>
 
                         </div>
@@ -515,9 +515,52 @@
                 </button>
             </div>
             <div class="modal-body  text-right">
-                Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-                quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
+
+                <div class="d-flex bg-white  mt-2  mb-1  mx-2">
+
+                    <button type="button" class="btn btn-success   btn-block">
+                                                    <span class="text-dark  fontsize">
+                                                        <strong>فریم نمایش اخطار</strong>
+                                                    </span>
+                    </button>
+                </div>
+
+
+                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
+
+                    <div class="col-12  my-2  text-right">
+                        <div class="row">
+                            <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">تعداد سهام
+                                :</label>
+                            <div class="col-8">
+                                <div class="form-group  h ">
+                                    <input type="text" class="form-control" id="password" required="">
+                                    <!--                                    <label for="usr">نام صندوق</label>-->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                    <div class="col-12   text-right">
+                        <div class="row">
+
+
+                            <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                <button type="button" class="btn btn-outline-primary">
+                                    <span class="text-secondary" >ثبت </span></button>
+                                     </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
@@ -529,11 +572,13 @@
 
 
 </body>
+<script type="application/javascript"  src="js/block.js"  ></script>
+
 <script>
     function not1() {
         notif({
             msg: "ارسال موفق",
-            type: "success"
+            type: "primary"
         });
     }
 
@@ -584,4 +629,30 @@
     }
 
 </script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $('#blockButton').click(function() {
+            $('.test').block({ message: null });
+        });
+
+        $('#blockButton2').click(function() {
+            $('div.test').block({
+                message: '<h1>Processing</h1>',
+                css: { border: '3px solid #a00' }
+            });
+        });
+
+        $('#unblockButton').click(function() {
+            $('div.test').unblock();
+        });
+
+        $('a.test').click(function() {
+            alert('link clicked');
+            return false;
+        });
+    });
+</script>
+
 </html>

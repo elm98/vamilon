@@ -164,3 +164,38 @@ table.table-bordered.dataTable th, table.table-bordered.dataTable td{
 table.dataTable>tbody>tr.child ul.dtr-details{
     width: 100%;
 }
+
+.min-width {
+    margin: 0 0 20px 0;
+}
+.info-collapse {
+    background: #fff;
+}
+.card-header {
+    background: #f3f5f9;
+    margin: 0;
+    box-shadow: 0 0 2px #00000078;
+    padding: 10px!important;
+}
+.min-width .header-list {
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
+    border: dashed 1px #b3b3b3;
+    font-size: 15px;
+}
+
+.min-width ul {
+    background: #f5f7fa;
+    padding: 7px 0;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    list-style: none;
+
+}
+.min-width ul li {
+    min-width: 162px!important;
+    border-right: dashed 1px #bdbdbd;
+    padding: 0 10px;
+}
