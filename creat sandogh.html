@@ -11,21 +11,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <style>
-    /*.form-group>label {*/
-    /*    bottom: 30px;*/
-    /*    position: relative;*/
-    /*    padding: 0px 25px 0px 25px;*/
-    /*    font-size: 12px;*/
-    /*    transition: 0.2s;*/
-    /*    pointer-events: none;*/
-    /*}*/
+    .form-group>label {
+        bottom: 30px;
+        position: relative;
+        padding: 0px 25px 0px 25px;
+        font-size: 12px;
+        transition: 0.2s;
+        pointer-events: none;
+    }
 
-    /*.form-control:focus~label {*/
+    .form-control:focus~label {
 
-    /*    bottom: 45px;*/
-    /*    background: white;*/
+        bottom: 45px;
+        background: white;
 
-    /*}*/
+    }
 
 
 </style>
@@ -114,6 +114,7 @@
             <div id="collapseOne" class="collapse show    my-3  collapseOne test" aria-labelledby="headingOne" data-parent="#accordion">
 
 
+
                 <div class="d-flex bg-white  mt-2  mb-1  mx-2">
 
                     <button type="button" class="btn btn-success   btn-block">
@@ -123,17 +124,15 @@
                     </button>
                 </div>
 
-
                 <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
 
-                    <div class="col-12  my-2  text-right">
-                        <div class="row">
-                            <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">نام
-                                صندوق:</label>
-                            <div class="col-8">
-                                <div class="form-group  h ">
-                                    <input type="text" class="form-control" id="password" required>
-<!--                                    <label for="usr">نام صندوق</label>-->
+                    <div class="col-12   text-right">
+                        <div class="">
+
+                            <div class="">
+                                <div class="form-group  h   py-4">
+                                    <input type="text" class="form-control" id="password" required="">
+                                    <label >نام صندوق</label>
                                 </div>
                             </div>
 
@@ -145,22 +144,14 @@
 
                     <div class="col-12   text-right">
                         <div class="row">
-                            <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">تعداد
-                                سهام :</label>
-                            <div class="col-3">
-                                <input type="text" class="form-control" id="inputPassword">
-                            </div>
-                            <div class="col-4 text-right  ml-1   d-flex align-items-center  justify-content-center  pr-2  ">
-                                <span for="" class=" text-nowrap  fontsmall">سهام/15 سهم اختصاصی</span>
-                            </div>
 
-                            <div class="col-1 d-flex align-items-center  justify-content-center  pr-4">
-                            <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
-                                    <i class="fa fa-question icon-fa   icon-fa" aria-hidden="true"></i>
-                                </span>
-
+                            <div class="col-12 my-3 ">
+                                <div class="form-group   py-2 h ">
+                                    <input type="text" class="form-control" id="password" required="">
+                                    <label >تعداد سهم </label>
+                                </div>
                             </div>
-
+                            
                         </div>
                     </div>
                 </div>
@@ -168,15 +159,12 @@
                 <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                     <div class="col-12   text-right">
                         <div class="row">
-                            <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">هر سهم
-                                :</label>
-                            <div class="col-6">
-                                <input type="text" class="form-control" id="inputPassword"
-                                       placeholder="250.000 تومان">
+
+                            <div class="form-group  col-12   p-3   mt-0 h ">
+                                <input type="text" class="form-control" id="password" required="">
+                                <label >هر سهم </label>
                             </div>
-                            <div class="col-2 text-righ  d-flex align-items-center  justify-content-center  pr-0  ">
-                                <span for="" class=" text-nowrap  fontsize">تومان</span>
-                            </div>
+
 
 
                         </div>
@@ -212,8 +200,7 @@
 
                         <div class="col-2 d-flex align-items-center  justify-content-center">
                         <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
-                                                       <i class="fa fa-question icon-fa   icon-fa"
-                                                          aria-hidden="true"></i>
+                                                       <i class="fa fa-question icon-fa   icon-fa" aria-hidden="true"></i>
                                                     </span>
 
                         </div>
@@ -229,8 +216,8 @@
 
 
                             <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
-                                <button type="button" class="btn btn-outline-primary">
-                                    <span class="text-secondary"  id="blockButton" onclick="not1()">ثبت اطلاعات</span></button>
+                                <button type="button" class="btn btn-success">
+                                    <span class="text-white" id="blockButton" onclick="not1()">ثبت اطلاعات</span></button>
                                 <!--                                    <span class="text-secondary"  onclick="not2()" >ثبت اطلاعات</span></button>-->
                                 <!--                                    <span class="text-secondary"  onclick="not3()" >ثبت اطلاعات</span></button>-->
                                 <!--                                    <span class="text-secondary"  onclick="not4()" >ثبت اطلاعات</span></button>-->
@@ -243,7 +230,8 @@
                     </div>
                 </div>
 
-
+                
+                
             </div>
         </div>
 
@@ -443,8 +431,8 @@
 
 
                             <div class="col-9  d-flex align-items-center  justify-content-end  mr-3">
-                                <a type="button" class="btn btn-outline-primary"   data-toggle="modal" data-target="#exampleModal">
-                                    <p class="text-secondary  my-0 small text-nowrap">ویرایش سهام شما </p></a>
+                                <a type="button" class="btn btn-primary"   data-toggle="modal" data-target="#exampleModal">
+                                    <p class="text-white  my-0 small text-nowrap">ویرایش سهام شما </p></a>
                             </div>
 
                         </div>
@@ -459,8 +447,8 @@
 
 
                             <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
-                                <button type="button" class="btn btn-outline-primary">
-                                    <span class="text-secondary" onclick="not1()">ویرایش اطلاعات</span></button>
+                                <button type="button" class="btn btn-primary">
+                                    <span class="text-white" onclick="not1()">ویرایش اطلاعات</span></button>
                                 <!--                                    <span class="text-secondary"  onclick="not2()" >ثبت اطلاعات</span></button>-->
                                 <!--                                    <span class="text-secondary"  onclick="not3()" >ثبت اطلاعات</span></button>-->
                                 <!--                                    <span class="text-secondary"  onclick="not4()" >ثبت اطلاعات</span></button>-->
@@ -535,7 +523,7 @@
                             <div class="col-8">
                                 <div class="form-group  h ">
                                     <input type="text" class="form-control" id="password" required="">
-                                    <!--                                    <label for="usr">نام صندوق</label>-->
+                                    <!--                                    <label >نام صندوق</label>-->
                                 </div>
                             </div>
 
@@ -651,6 +639,11 @@
         $('a.test').click(function() {
             alert('link clicked');
             return false;
+        });
+
+        $('.form-control').blur(function() {
+            $(this).siblings().css('bottom','45px');
+            $(this).siblings().css('background','#fff');
         });
     });
 </script>
