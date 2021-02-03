@@ -11,3 +11,21 @@ getButton.onclick = () => {
 }
 
 document.querySelector('input').focus();
+
+$(function () {
+  $("aks-file-upload").aksFileUpload({
+    fileUpload: "#uploadfile",
+    dragDrop: true,
+    maxSize: "90 GB",
+    multiple: true,
+    maxFile: 50
+  });
+});
+
+
+
+$('#datepicker0').pDatepicker();
+$('#datepicker1').pDatepicker();
+$('#datepicker2').pDatepicker();
+
+

@@ -269,3 +269,65 @@ aks-file-upload {
 }
 h1, .lead { text-align: center; }
 h1 { margin: 150px auto 30px auto; }
+
+.switch-toggle {
+    float: left;
+    background: #c1c1c1;
+    border-radius: 50px;
+}
+.switch-toggle input {
+    position: absolute;
+    opacity: 0;
+}
+.switch-toggle input + label {
+    padding: 7px 11px;
+    float: left;
+    color: #131313;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.switch-toggle input:checked + label {
+    background: #2c982c;
+    border-radius: 50px;
+    color: #fff;
+}
+.switch-toggletwo {
+    float: left;
+    background: #c1c1c1;
+    border-radius: 50px;
+}
+.switch-toggletwo input {
+    position: absolute;
+    opacity: 0;
+}
+.switch-toggletwo input + label {
+    padding: 7px 30px;
+    float: left;
+    color: #131313;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.switch-toggletwo input:checked + label {
+    background: #2c982c;
+    border-radius: 50px;
+    color: #fff;
+}
+
+aks-file-upload {
+
+    margin: 0 auto;
+    display: contents;
+    height: 100px;
+}
+#uploadfile{
+    width: 80%;
+    margin: 0 auto;
+    color: #002c7b;
+    line-height:1.5;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+h1, .lead { text-align: center; }
+h1 { margin: 150px auto 30px auto; }

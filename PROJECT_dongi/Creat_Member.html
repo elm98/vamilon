@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/aksFileUpload.min.css">
     <link type="text/css" href="css/persian-datepicker.css" rel="stylesheet" />
-
+    <link type="text/css" href="css/persian-datepicker.css" rel="stylesheet" />
 
 </head>
 
@@ -110,14 +110,18 @@
 
 
                     <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center pr-2  ">
-                        <label class="containercheck  text-nowrap">تمام اعضا <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="containercheck  text-nowrap">اعضای تایید شده<input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                        </label><label class="containercheck  text-nowrap">اعضای رد شده<input type="radio" name="radio">
-                        <span class="checkmark"></span>
-                    </label>
+                        <div class="switch-toggle switch-3 switch-candy">
+
+                            <input id="on" name="state-d" type="radio" checked="" />
+                            <label for="on" class=" col-form-label text-nowra fontsize" onclick="">تمام اعضا  </label>
+                            <input id="off" name="state-d" type="radio" />
+                            <label for="off" class=" col-form-label text-nowra fontsize" onclick="">اعضا تایید شده</label>
+
+                            <input id="na" name="state-d" type="radio" checked="checked" />
+                            <label for="na"  class=" col-form-label text-nowra fontsize"  onclick="">اعضا رد شده</label>
+
+
+                        </div>
                     </div>
 
 
@@ -544,6 +548,8 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class="d-flex  mb-1  py-1 mt-0  d-flex ">
 
                         <div class="col-12   text-right">
@@ -556,14 +562,18 @@
 
 
                                         <div class="col-12   d-flex align-items-center  font" >
-                                            <label class="containercheck">نا مشخص<input type="radio" name="radio">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="containercheck">تایید<input type="radio" name="radio">
-                                                <span class="checkmark"></span>
-                                            </label><label class="containercheck">رد<input type="radio" name="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
+                                            <div class="switch-toggletwo switch-3 switch-candy">
+
+                                                <input id="on2" name="state-w" type="radio" checked="" />
+                                                <label for="on2" class=" col-form-label text-nowra fontsize" onclick="">نا مشخص </label>
+                                                <input id="off2" name="state-w" type="radio" />
+                                                <label for="off2" class=" col-form-label text-nowra fontsize" onclick="">رد</label>
+
+                                                <input id="na2" name="state-w" type="radio" checked="checked" />
+                                                <label for="na2"  class=" col-form-label text-nowra fontsize"  onclick="">تایید</label>
+
+
+                                            </div>
                                         </div>
 
 
@@ -574,8 +584,6 @@
                             </div>
                         </div>
                     </div>
-
-
 
                 </div>
 
@@ -625,8 +633,10 @@
 <script type="text/javascript" src="js/mdb.min.js">
 </script>
 
-<script type="text/javascript" src="js/persian-datepicker.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/aksFileUpload.js"></script>
+<script src="js/persian-date.js"></script>
+<script src="js/persian-datepicker.js"></script>
 <script>
     $(function () {
         $("aks-file-upload").aksFileUpload({
@@ -647,23 +657,12 @@
 -->
 <script type="text/javascript" src="js/persian-datepicker.js"></script>
 <script type="text/javascript">
-    $(function() {
-        // حالت پیشفرض
-        $('#datepicker0').datepicker({
-            dateFormat: 'yy/mm/dd',
 
-        });
-        $('#datepicker1').datepicker({
-            dateFormat: 'yy/mm/dd',
 
-        });
-        $('#datepicker2').datepicker({
-            dateFormat: 'yy/mm/dd',
+    $('#datepicker0').pDatepicker();
+    $('#datepicker1').pDatepicker();
+    $('#datepicker2').pDatepicker();
 
-        });
-
-    });
-</script>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
 
     <link type="text/css" rel="stylesheet" href="css/aksFileUpload.min.css">
     <link type="text/css" href="css/persian-datepicker.css" rel="stylesheet" />
-
+    <link type="text/css" href="css/persian-datepicker.css" rel="stylesheet" />
 
 </head>
 
@@ -200,6 +200,8 @@
 <script type="text/javascript" src="js/mdb.min.js">
 </script>
 <script src="js/aksFileUpload.js"></script>
+<script src="js/persian-date.js"></script>
+<script src="js/persian-datepicker.js"></script>
 <script>
     $(function () {
         $("aks-file-upload").aksFileUpload({
@@ -213,23 +215,13 @@
 </script>
 
 <script type="text/javascript" src="js/persian-datepicker.js"></script>
+<script type="text/javascript" src="js/persian-datepicker.js"></script>
 <script type="text/javascript">
-    $(function() {
-        // حالت پیشفرض
-        $('#datepicker0').datepicker({
-            dateFormat: 'yy/mm/dd',
 
-        });
-        $('#datepicker1').datepicker({
-            dateFormat: 'yy/mm/dd',
 
-        });
-        $('#datepicker2').datepicker({
-            dateFormat: 'yy/mm/dd  h:m:s',
-
-        });
-
-    });
+    $('#datepicker0').pDatepicker();
+    $('#datepicker1').pDatepicker();
+    $('#datepicker2').pDatepicker();
 </script>
 
 

@@ -20,15 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="844f6a0a-e3c7-4149-bd6a-48ec749ffa9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vamilon_theme.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vamilon_theme.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azayesandogh.html" beforeDir="false" afterPath="$PROJECT_DIR$/azayesandogh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/creat sandogh.html" beforeDir="false" afterPath="$PROJECT_DIR$/creat sandogh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sahm har doreh.html" beforeDir="false" afterPath="$PROJECT_DIR$/sahm har doreh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tareghe ghorekeshi.html" beforeDir="false" afterPath="$PROJECT_DIR$/tareghe ghorekeshi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket.html" beforeDir="false" afterPath="$PROJECT_DIR$/ticket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/Creat_Event.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/Creat_Event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/Creat_Member.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/Creat_Member.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/Making_Event.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/Making_Event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/css/persian-datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/js/persian-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +50,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/laragon/www/vamilon_project" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\vamilon_theme\PROJECT_dongi\js" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,7 +85,8 @@
       <workItem from="1612010027829" duration="1328000" />
       <workItem from="1612076034369" duration="6492000" />
       <workItem from="1612155733014" duration="18716000" />
-      <workItem from="1612242664210" duration="14465000" />
+      <workItem from="1612242664210" duration="14611000" />
+      <workItem from="1612332521984" duration="13279000" />
     </task>
     <servers />
   </component>
@@ -101,6 +106,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="397" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612339633485">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="397" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612339633485" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610797858766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
