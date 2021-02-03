@@ -24,9 +24,7 @@
       <change beforePath="$PROJECT_DIR$/PROJECT_dongi/Creat_Event.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/Creat_Event.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PROJECT_dongi/Creat_Member.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/Creat_Member.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PROJECT_dongi/Making_Event.html" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/Making_Event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/css/persian-datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/js/persian-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROJECT_dongi/js/cusom.js" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/js/cusom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PROJECT_dongi/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/PROJECT_dongi/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +84,7 @@
       <workItem from="1612076034369" duration="6492000" />
       <workItem from="1612155733014" duration="18716000" />
       <workItem from="1612242664210" duration="14611000" />
-      <workItem from="1612332521984" duration="13279000" />
+      <workItem from="1612332521984" duration="16996000" />
     </task>
     <servers />
   </component>
