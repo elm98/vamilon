@@ -72,7 +72,7 @@ body{
 .navbarbotton a {
     float: right;
     display: flex;
-    color: #f2f2f2;
+    color: #824201;
     text-align: center;
     padding: 12px 20px;
     text-decoration: none;
@@ -87,7 +87,21 @@ body{
     background: #ddd;
     color: black;
 }
+.form-group>label {
+    bottom: 30px;
+    position: relative;
+    padding: 0px 25px 0px 25px;
+    font-size: 12px;
+    transition: 0.2s;
+    pointer-events: none;
+}
 
+.form-control:focus~label {
+
+    bottom: 45px;
+    background: white;
+
+}
 .main {
     padding: 16px;
     margin-top: 30px;

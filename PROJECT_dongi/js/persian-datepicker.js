@@ -2508,10 +2508,10 @@
                                     that.selected.year = pd.year();
                                     that.selected.month = pd.month();
                                     that.selected.date = pd.date();
-                                    that.selected.hour = pd.hour();
-                                    that.selected.hour12 = pd.format('hh');
-                                    that.selected.minute = pd.minute();
-                                    that.selected.second = pd.second();
+                                    // that.selected.hour = pd.hour();
+                                    // that.selected.hour12 = pd.format('hh');
+                                    // that.selected.minute = pd.minute();
+                                    // that.selected.second = pd.second();
                                     break;
                                 case 'year':
                                     this.selected.year = value;
@@ -2522,15 +2522,15 @@
                                 case 'date':
                                     this.selected.date = value;
                                     break;
-                                case 'hour':
-                                    this.selected.hour = value;
-                                    break;
-                                case 'minute':
-                                    this.selected.minute = value;
-                                    break;
-                                case 'second':
-                                    this.selected.second = value;
-                                    break;
+                                // case 'hour':
+                                //     this.selected.hour = value;
+                                //     break;
+                                // case 'minute':
+                                //     this.selected.minute = value;
+                                //     break;
+                                // case 'second':
+                                //     this.selected.second = value;
+                                //     break;
                             }
                             that._updateSelectedUnix();
                             return this;
@@ -2567,11 +2567,11 @@
                             this.view.year = this.view.dateObject.year();
                             this.view.month = this.view.dateObject.month();
                             this.view.date = this.view.dateObject.date();
-                            this.view.hour = this.view.dateObject.hour();
-                            this.view.hour12 = this.view.dateObject.format('hh');
-                            this.view.minute = this.view.dateObject.minute();
-                            this.view.second = this.view.dateObject.second();
-                            this.view.unixDate = this.view.dateObject.valueOf();
+                            // this.view.hour = this.view.dateObject.hour();
+                            // this.view.hour12 = this.view.dateObject.format('hh');
+                            // this.view.minute = this.view.dateObject.minute();
+                            // this.view.second = this.view.dateObject.second();
+                            // this.view.unixDate = this.view.dateObject.valueOf();
                             return this;
                         }
 
@@ -2592,9 +2592,9 @@
                                     self.view.year = pd.year();
                                     self.view.month = pd.month();
                                     self.view.date = pd.date();
-                                    self.view.hour = pd.hour();
-                                    self.view.minute = pd.minute();
-                                    self.view.second = pd.second();
+                                    // self.view.hour = pd.hour();
+                                    // self.view.minute = pd.minute();
+                                    // self.view.second = pd.second();
                                     break;
                                 case 'year':
                                     this.view.year = value;
@@ -2605,15 +2605,15 @@
                                 case 'date':
                                     this.view.date = value;
                                     break;
-                                case 'hour':
-                                    this.view.hour = value;
-                                    break;
-                                case 'minute':
-                                    this.view.minute = value;
-                                    break;
-                                case 'second':
-                                    this.view.second = value;
-                                    break;
+                                // case 'hour':
+                                //     this.view.hour = value;
+                                //     break;
+                                // case 'minute':
+                                //     this.view.minute = value;
+                                //     break;
+                                // case 'second':
+                                //     this.view.second = value;
+                                //     break;
                             }
                             this._setViewDateTimeUnix();
                             return this;

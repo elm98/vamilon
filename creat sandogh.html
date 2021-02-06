@@ -6,44 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- global CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-<style>
-    .form-group>label {
-        bottom: 30px;
-        position: relative;
-        padding: 0px 25px 0px 25px;
-        font-size: 12px;
-        transition: 0.2s;
-        pointer-events: none;
-    }
 
-    .form-control:focus~label {
-
-        bottom: 45px;
-        background: white;
-
-    }
-
-
-</style>
 
 </head>
-<!-- Optional JavaScript; choose one of the two! -->
 
-<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/notifIt.js"></script>
-
-<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
--->
 
 
 <title>ایجاد صندوق</title>
@@ -113,7 +83,7 @@
 
             <div id="collapseOne" class="collapse show    my-3  collapseOne test" aria-labelledby="headingOne" data-parent="#accordion">
 
-
+<form action=""  >
 
                 <div class="d-flex bg-white  mt-2  mb-1  mx-2">
 
@@ -130,8 +100,8 @@
                         <div class="">
 
                             <div class="">
-                                <div class="form-group  h   py-4">
-                                    <input type="text" class="form-control" id="password" required="">
+                                <div class="form-group form-group2   h   py-4">
+                                    <input type="text" class="form-control form-control2" id="password" required="">
                                     <label >نام صندوق</label>
                                 </div>
                             </div>
@@ -146,8 +116,8 @@
                         <div class="row">
 
                             <div class="col-12 my-3 ">
-                                <div class="form-group   py-2 h ">
-                                    <input type="text" class="form-control" id="password" required="">
+                                <div class="form-group    form-group2 py-2 h ">
+                                    <input type="text" class="form-control  form-control2" id="password" required="">
                                     <label >تعداد سهم </label>
                                 </div>
                             </div>
@@ -160,8 +130,8 @@
                     <div class="col-12   text-right">
                         <div class="row">
 
-                            <div class="form-group  col-12   p-3   mt-0 h ">
-                                <input type="text" class="form-control" id="password" required="">
+                            <div class="form-group form-group2  col-12   p-3   mt-0 h ">
+                                <input type="text" class="form-control  form-control2" id="password" required="">
                                 <label >هر سهم </label>
                             </div>
 
@@ -233,7 +203,8 @@
                 
                 
             </div>
-        </div>
+
+            </form>  </div>
 
 
     </div>
@@ -267,7 +238,7 @@
 
             <div id="collapsetwo" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
 
-
+<form  action=""  >
                 <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
 
                     <div class="col-12   text-right">
@@ -289,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-
+</form>
             </div>
         </div>
 
@@ -440,6 +411,7 @@
 
 
                 </div>
+
                 <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
 
                     <div class="col-12   text-right">
@@ -461,7 +433,7 @@
                     </div>
                 </div>
 
-
+                </form>
             </div>
         </div>
 
@@ -493,6 +465,7 @@
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
      aria-hidden="true">
+    <form action=""  >
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -557,95 +530,19 @@
         </div>
     </div>
 </div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<!-- js privat -->
+<script type="text/javascript" src="js/notifIt.js"></script>
 
 
-</body>
 <script type="application/javascript"  src="js/block.js"  ></script>
+<script type="application/javascript"  src="js/pages/sandofg.js"  ></script>
+</body>
 
-<script>
-    function not1() {
-        notif({
-            msg: "ارسال موفق",
-            type: "primary"
-        });
-    }
-
-    function not2() {
-        notif({
-            msg: "<b>Oops!</b> A wild error appeared!",
-            type: "error",
-            position: "center"
-        });
-    }
-
-    function not3() {
-        notif({
-            type: "warning",
-            msg: "<b>Warning:</b> Be patient my friend.",
-            position: "left"
-        });
-    }
-
-    function not4() {
-        notif({
-            type: "info",
-            msg: "<b>Info: </b>Some info here.",
-            width: "all",
-            height: 100,
-            position: "center"
-        });
-    }
-
-    function not5() {
-        notif({
-            type: "error",
-            msg: "<b>Error: </b>This error will stay here until you click it.",
-            position: "center",
-            width: 500,
-            height: 60,
-            autohide: false
-        });
-    }
-
-    function not6() {
-        notif({
-            type: "warning",
-            msg: "Opacity is cool!",
-            position: "center",
-            opacity: 0.8
-        });
-    }
-
-</script>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-
-        $('#blockButton').click(function() {
-            $('.test').block({ message: null });
-        });
-
-        $('#blockButton2').click(function() {
-            $('div.test').block({
-                message: '<h1>Processing</h1>',
-                css: { border: '3px solid #a00' }
-            });
-        });
-
-        $('#unblockButton').click(function() {
-            $('div.test').unblock();
-        });
-
-        $('a.test').click(function() {
-            alert('link clicked');
-            return false;
-        });
-
-        $('.form-control').blur(function() {
-            $(this).siblings().css('bottom','45px');
-            $(this).siblings().css('background','#fff');
-        });
-    });
-</script>
 
 </html>

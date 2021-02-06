@@ -203,3 +203,19 @@ table.dataTable>tbody>tr.child ul.dtr-details{
     padding: 0px 10px;
     margin: 0px 5px;
 }
+
+.form-group2>label {
+    bottom: 30px;
+    position: relative;
+    padding: 0px 25px 0px 25px;
+    font-size: 12px;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.form-control2:focus~label {
+
+    bottom: 45px;
+    background: white;
+
+}
