@@ -344,8 +344,8 @@
                             <label  class="col-7  col-form-label text-nowrap fontsize" >بدهی 500.000 تومان -دوره 4</label>
 
                             <div class="col-5 d-flex align-items-center  justify-content-center">
-                                <button type="button" class="btn btn-success">
-                                    <p class="text-white my-0 small text-nowrap" onclick="not1()">ثبت اطلاعات</p></button>
+                                <button type="button" class="btn btn-success"   data-toggle="modal" data-target="#exampleModal2">
+                                    <p class="text-white my-0 small text-nowrap" >ویرایش سهم </p></button>
                             </div>
 
 
@@ -652,6 +652,8 @@
 
     </div>
 </main>
+
+
 <div class="navbarbotton">
     <a href="creat sandogh.html">
         <span class="icon-menue"><i class="fa fa-home"></i></span>
@@ -699,16 +701,118 @@
 </div>
 <!-- Optional JavaScript; choose one of the two! -->
 
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <form action=""  >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                            style="left: 0px; position: absolute;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body  text-right">
+
+                    <div class="d-flex bg-white  mt-2  mb-1  mx-2">
+
+                        <button type="button" class="btn btn-success   btn-block">
+                                                    <span class="text-dark  fontsize">
+                                                        <strong>فریم نمایش اخطار</strong>
+                                                    </span>
+                        </button>
+                    </div>
+
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12  my-2  text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">تعداد سهام
+                                    :</label>
+                                <div class="col-8">
+                                    <div class="form-group  h ">
+                                        <input type="text" class="form-control" id="password" required="">
+                                        <!--                                    <label >نام صندوق</label>-->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12  my-2  text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">سهم یک
+                                    :</label>
+                                <div class="col-8">
+                                    <div class="form-group  h ">
+                                        <input type="text" class="form-control" id="password" required="">
+                                        <!--                                    <label >نام صندوق</label>-->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12  my-2  text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">سهم دو
+                                    :</label>
+                                <div class="col-8">
+                                    <div class="form-group  h ">
+                                        <input type="text" class="form-control" id="password" required="">
+                                        <!--                                    <label >نام صندوق</label>-->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+
+
+                                <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                    <button type="button" class="btn btn-outline-primary"  onclick="not1()">
+                                        <span class="text-secondary" >ویرایش </span></button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+
+                </div>
+            </div>
+        </div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 
 
-<script src="js/jquery.min.js"></script>
-
 <!-- js privat -->
 <script type="text/javascript" src="js/notifIt.js"></script>
-
 <script type="text/javascript" src="js/pages/azayesandogh.js"></script>
 
 
