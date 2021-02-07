@@ -506,7 +506,7 @@
 
 
                             <div class="col-2 d-flex align-items-center  justify-content-center">
-                                <button type="button" class="btn btn-outline-primary    ml-3">
+                                <button type="button" class="btn btn-outline-primary    ml-3"    data-toggle="modal" data-target="#exampleModal2">
                                     <p class="text-secondary  my-0 small text-nowrap"> ویرایش سهام</p></button>
                             </div>
 
@@ -570,9 +570,9 @@
 
                             <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
                                 <div class="btn-group my-2" role="group">
-                                    <a class="btn btn-sm btn-info">تایید</a>
-                                    <a class="btn btn-sm btn-danger">رد</a>
-                                    <a class="btn btn-sm btn-success">نامشخص </a>
+                                    <a class="btn btn-sm  rounded-0 btn-info">تایید</a>
+                                    <a class="btn btn-sm  rounded-0  btn-danger">رد</a>
+                                    <a class="btn btn-sm  rounded-0 btn-success">نامشخص </a>
 
 
                                 </div>
@@ -794,6 +794,108 @@
             </div>
         </div>
     </div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <form action=""  >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                            style="left: 0px; position: absolute;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body  text-right">
+
+                    <div class="d-flex bg-white  mt-2  mb-1  mx-2">
+
+                        <button type="button" class="btn btn-success   btn-block">
+                                                    <span class="text-dark  fontsize">
+                                                        <strong>فریم نمایش اخطار</strong>
+                                                    </span>
+                        </button>
+                    </div>
+
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12  my-2  text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">تعداد سهام
+                                    :</label>
+                                <div class="col-8">
+                                    <div class="form-group  h ">
+                                        <input type="text" class="form-control" id="password" required="">
+                                        <!--                                    <label >نام صندوق</label>-->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12  my-2  text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">سهم یک
+                                    :</label>
+                                <div class="col-8">
+                                    <div class="form-group  h ">
+                                        <input type="text" class="form-control" id="password" required="">
+                                        <!--                                    <label >نام صندوق</label>-->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12  my-2  text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">سهم دو
+                                    :</label>
+                                <div class="col-8">
+                                    <div class="form-group  h ">
+                                        <input type="text" class="form-control" id="password" required="">
+                                        <!--                                    <label >نام صندوق</label>-->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+
+
+                                <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                    <button type="button" class="btn btn-outline-primary"  onclick="not1()">
+                                        <span class="text-secondary" >ویرایش </span></button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+
+                </div>
+            </div>
+        </div>
 </div>
 <!-- Optional JavaScript; choose one of the two! -->
 
