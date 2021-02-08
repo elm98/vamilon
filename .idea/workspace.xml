@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="844f6a0a-e3c7-4149-bd6a-48ec749ffa9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tareghe ghorekeshi.html" beforeDir="false" afterPath="$PROJECT_DIR$/tareghe ghorekeshi.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -89,7 +88,8 @@
       <workItem from="1612416728961" duration="18484000" />
       <workItem from="1612589515933" duration="6947000" />
       <workItem from="1612611706139" duration="585000" />
-      <workItem from="1612676613844" duration="7386000" />
+      <workItem from="1612676613844" duration="8154000" />
+      <workItem from="1612768136854" duration="533000" />
     </task>
     <servers />
   </component>
