@@ -87,7 +87,7 @@
 
 
                         <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success"  >
                                 <span class="text-white" id="blockButton" onclick="not1()">ثبت </span></button>
                             <!--                                    <span class="text-secondary"  onclick="not2()" >ثبت اطلاعات</span></button>-->
                             <!--                                    <span class="text-secondary"  onclick="not3()" >ثبت اطلاعات</span></button>-->
@@ -201,7 +201,7 @@
 
                 <div class="col-12   py-2 d-flex align-items-center  justify-content-center">
                     <button type="button" class="btn btn-success">
-                        <p class="text-white my-0 small text-nowrap" onclick="not1()">ثبت اطلاعات</p></button>
+                        <p class="text-white my-0 small text-nowrap" data-toggle="modal" data-target="#exampleModalt" >ثبت اطلاعات</p></button>
                 </div>
             </div>
 
@@ -867,6 +867,50 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="exampleModalt" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left: 0px; position: absolute;">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body  text-right  test2">
+
+                    <table class="table table-striped table-sm">
+                        <thead>
+                        <tr>
+                            <th class="bg-dark text-white text-center" scope="col" colspan="2">برنده </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                               نام برنده
+                                            </span>
+                            </td>
+
+                        </tr>
+
+
+
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
