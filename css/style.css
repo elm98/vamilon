@@ -220,3 +220,4 @@ table.dataTable>tbody>tr.child ul.dtr-details{
 
 }
 .ltr{direction: ltr;}
+.container-fluid{min-height: 500px  !important;}
