@@ -32,7 +32,7 @@
         </div>
         <nav class="navbar">
 
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button   class="navbar-toggler collapsed"  data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
                 <span class="navbar-toggler-icon"> <i class="fas fa-bars  bars"></i></span>
             </button>
 
@@ -48,62 +48,396 @@
 
 
         </nav>
+        <section class="drawer drawer--left" id="drawer-name-left" data-drawer-target>
+            <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+            <div class="drawer__wrapper">
+                <div class="drawer__header">
+                    <div class="drawer__title">
+                        Header Title
+                    </div>
+                    <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+                </div>
+                <div class="drawer__content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in aliquid nulla, sed veritatis, officiis ea aut
+                        natus quas voluptates perferendis ratione modi ab qui omnis cum labore alias eos.
+                    </p>
+                    <div style="padding: 100px 0;"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut exercitationem laborum vero tenetur
+                        officiis facilis eveniet sunt quo voluptatibus sit reiciendis, iusto quia et quidem? Dolores dolor et
+                        necessitatibus.
+                    </p>
+                    <div style="padding: 100px 0;"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut exercitationem laborum vero tenetur
+                        officiis facilis eveniet sunt quo voluptatibus sit reiciendis, iusto quia et quidem? Dolores dolor et
+                        necessitatibus.
+                    </p>
+                    <div style="padding: 100px 0;"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut exercitationem laborum vero tenetur
+                        officiis facilis eveniet sunt quo voluptatibus sit reiciendis, iusto quia et quidem? Dolores dolor et
+                        necessitatibus.
+                    </p>
+                    <div style="padding: 100px 0;"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut exercitationem laborum vero tenetur
+                        officiis facilis eveniet sunt quo voluptatibus sit reiciendis, iusto quia et quidem? Dolores dolor et
+                        necessitatibus.
+                    </p>
+                </div>
+            </div>
+        </section>
 
 
     </div>
     <main role="main" class="container-fluid">
-        <div class="card     mt-5  test">
-            <form action=""  >
-            <div class="  d-flex   mt-2">
-                <div class="col-12   text-center">
-                    <span class="titr">تاریخ قرعه کشی بعدی هنوز تعیین نشده</span>
+<!--        <div class="card     mt-5  test">-->
+<!--            <form action=""  >-->
+<!--            <div class="  d-flex   mt-2">-->
+<!--                <div class="col-12   text-center">-->
+<!--                    <span class="titr">تاریخ قرعه کشی بعدی هنوز تعیین نشده</span>-->
+<!--                </div>-->
+
+
+<!--            </div>-->
+
+
+
+
+<!--            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">-->
+
+<!--                <div class="col-12   text-right">-->
+<!--                    <div class="row">-->
+
+<!--                        <div class="col-12">-->
+
+<!--                            <input type="text"    class="form-control    mr-2  text-dark   text-center"  id="datepicker0" >-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+<!--            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">-->
+
+<!--                <div class="col-12   text-right">-->
+<!--                    <div class="row">-->
+
+
+<!--                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">-->
+<!--                            <button type="button" class="btn btn-success"  >-->
+<!--                                <span class="text-white" id="blockButton" onclick="not1()">ثبت </span></button>-->
+<!--                            &lt;!&ndash;                                    <span class="text-secondary"  onclick="not2()" >ثبت اطلاعات</span></button>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                    <span class="text-secondary"  onclick="not3()" >ثبت اطلاعات</span></button>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                    <span class="text-secondary"  onclick="not4()" >ثبت اطلاعات</span></button>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                    <span class="text-secondary"  onclick="not5()" >ثبت اطلاعات</span></button>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                    <span class="text-secondary"  onclick="not6()" >ثبت اطلاعات</span></button>&ndash;&gt;-->
+<!--                        </div>-->
+
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+<!--        </div>-->
+<!--        </form>-->
+
+        <div id="accordion"  class="mb-2  mt-5" >
+            <div class="card">
+                <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
+                    <h5 class="mb-0   d-flex  justify-content-between  titr">
+
+
+
+                        <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i>قرعه کشی بعدی</div>
+
+
+                        <div>
+
+                            <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                <i class="fa fa-question"></i>
+                            </button>
+                            <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapseOner" aria-expanded="true" aria-controls="collapseOner">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+
+
+
+
+                        </div>
+                    </h5>
                 </div>
 
+                <div id="collapseOner" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
 
-            </div>
+                    <form action="">
+                        <div class="  d-flex   mt-2">
+                            <div class="col-12   text-center">
+                                <span class="titr">تاریخ قرعه کشی بعدی هنوز تعیین نشده</span>
+                            </div>
 
 
-
-
-            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
-
-                <div class="col-12   text-right">
-                    <div class="row">
-
-                        <div class="col-12">
-
-                            <input type="text"    class="form-control    mr-2  text-dark   text-center"  id="datepicker0" >
                         </div>
 
-                    </div>
-                </div>
-            </div>
 
 
-            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
 
-                <div class="col-12   text-right">
-                    <div class="row">
+                        <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
 
 
-                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
-                            <button type="button" class="btn btn-success"  >
-                                <span class="text-white" id="blockButton" onclick="not1()">ثبت </span></button>
-                            <!--                                    <span class="text-secondary"  onclick="not2()" >ثبت اطلاعات</span></button>-->
-                            <!--                                    <span class="text-secondary"  onclick="not3()" >ثبت اطلاعات</span></button>-->
-                            <!--                                    <span class="text-secondary"  onclick="not4()" >ثبت اطلاعات</span></button>-->
-                            <!--                                    <span class="text-secondary"  onclick="not5()" >ثبت اطلاعات</span></button>-->
-                            <!--                                    <span class="text-secondary"  onclick="not6()" >ثبت اطلاعات</span></button>-->
                         </div>
 
 
-                    </div>
+                        <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                            <div class="col-12   text-right">
+                                <div class="row">
+
+
+                                    <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                        <button type="button" class="btn btn-success">
+                                            <span class="text-white"     data-toggle="modal" data-target="#exampleModaltro" >ثبت تاریخ </span></button>
+                                        <!--                                    <span class="text-secondary"  onclick="not2()" >ثبت اطلاعات</span></button>-->
+                                        <!--                                    <span class="text-secondary"  onclick="not3()" >ثبت اطلاعات</span></button>-->
+                                        <!--                                    <span class="text-secondary"  onclick="not4()" >ثبت اطلاعات</span></button>-->
+                                        <!--                                    <span class="text-secondary"  onclick="not5()" >ثبت اطلاعات</span></button>-->
+                                        <!--                                    <span class="text-secondary"  onclick="not6()" >ثبت اطلاعات</span></button>-->
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+
                 </div>
+
+
+
+
+
+
+                </div>
+
+
+
             </div>
 
 
         </div>
-        </form>
+
+
+        <div id="accordion"  class="mb-2  mt-5" >
+            <div class="card">
+                <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
+                    <h5 class="mb-0   d-flex  justify-content-between  titr">
+
+
+
+                        <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i>قرعه کشی بعدی</div>
+
+
+                        <div>
+
+                            <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                <i class="fa fa-question"></i>
+                            </button>
+                            <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapseOner" aria-expanded="true" aria-controls="collapseOner">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+
+
+
+
+                        </div>
+                    </h5>
+                </div>
+
+                <div id="collapseOner" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+
+                    <form action="">
+                        <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                            <div class="col-12   text-right">
+                                <div class="row">
+                                    <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">تاریخ :99/11/20</label>
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label class="col-10 col-form-label text-nowrap   mx-1  fontsize">10 روز دیگر</label>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                            <div class="col-12   text-right">
+                                <div class="row">
+                                    <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
+                                    <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
+                                    <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+
+                        </div>
+
+
+                        <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                            <div class="col-12   text-right">
+                                <div class="row">
+
+
+                                    <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                        <button type="button" class="btn btn-success">
+                                            <span class="text-white"     data-toggle="modal" data-target="#exampleModaltro" > ویرایش تاریخ قرعه کشی </span></button>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div id="accordion"  class="mb-2  mt-5" >
+            <div class="card">
+                <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
+                    <h5 class="mb-0   d-flex  justify-content-between  titr">
+
+
+
+                        <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i>قرعه کشی قبلی</div>
+
+
+                        <div>
+
+                            <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                <i class="fa fa-question"></i>
+                            </button>
+                            <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapseOneew" aria-expanded="true" aria-controls="collapseOneew">
+                                <i class="fa fa-chevron-down"></i>
+                            </button>
+
+
+
+
+                        </div>
+                    </h5>
+                </div>
+
+                <div id="collapseOneew" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+
+                    <form action="">
+                        <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                            <div class="col-12   text-right">
+                                <div class="row">
+                                    <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">تاریخ :99/11/20</label>
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                            <div class="col-12   text-right">
+                                <div class="row">
+                                    <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                            <div class="col-12   text-right">
+                                <div class="row">
+
+
+                                    <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                        <button type="button" class="btn btn-success">
+                                            <span class="text-white"      data-toggle="modal" data-target="#exampleModaltree" >ثبت و اقدام به پرداخت </span></button>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
         <div class="card     mt-5">
             <div class="col-xl-12 col-lg-12">
                 <div class="min-width colour-icon  text-right  fontsize">
@@ -206,6 +540,8 @@
             </div>
 
         </div>
+
+
 
         <div id="accordion"  class="mb-3  mt-4" >
             <div class="card">
@@ -867,6 +1203,43 @@
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="exampleModaltro" tabindex="-1" role="dialog" aria-labelledby="exampleModaltro" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left: 0px; position: absolute;">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body  text-right  test2">
+
+                                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                                    <div class="col-12   text-right">
+                                        <div class="row">
+
+                                            <div class="col-12">
+
+                                                <input type="text"    class="form-control    mr-2  text-dark   text-center"  id="datepicker0" >
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ارسال</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="modal fade" id="exampleModalt" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">

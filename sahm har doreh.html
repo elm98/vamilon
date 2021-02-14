@@ -31,8 +31,7 @@
         </div>
         <nav class="navbar">
 
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button   class="navbar-toggler collapsed"  data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
                 <span class="navbar-toggler-icon"> <i class="fas fa-bars  bars"></i></span>
             </button>
 
@@ -49,6 +48,47 @@
 
         </nav>
 
+        <section class="drawer drawer--left" id="drawer-name-left" data-drawer-target>
+            <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+            <div class="drawer__wrapper">
+                <div class="drawer__header">
+                    <div class="drawer__title">
+                        Header Title
+                    </div>
+                    <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+                </div>
+                <div class="drawer__content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in aliquid nulla, sed veritatis, officiis ea aut
+                        natus quas voluptates perferendis ratione modi ab qui omnis cum labore alias eos.
+                    </p>
+                    <div style="padding: 100px 0;"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut exercitationem laborum vero tenetur
+                        officiis facilis eveniet sunt quo voluptatibus sit reiciendis, iusto quia et quidem? Dolores dolor et
+                        necessitatibus.
+                    </p>
+                    <div style="padding: 100px 0;"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut exercitationem laborum vero tenetur
+                        officiis facilis eveniet sunt quo voluptatibus sit reiciendis, iusto quia et quidem? Dolores dolor et
+                        necessitatibus.
+                    </p>
+                    <div style="padding: 100px 0;"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut exercitationem laborum vero tenetur
+                        officiis facilis eveniet sunt quo voluptatibus sit reiciendis, iusto quia et quidem? Dolores dolor et
+                        necessitatibus.
+                    </p>
+                    <div style="padding: 100px 0;"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut exercitationem laborum vero tenetur
+                        officiis facilis eveniet sunt quo voluptatibus sit reiciendis, iusto quia et quidem? Dolores dolor et
+                        necessitatibus.
+                    </p>
+                </div>
+            </div>
+        </section>
 
     </div>
     <main role="main" class="container-fluid">
@@ -188,7 +228,7 @@
 
 
                                 <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-end pr-2  ">
-                                    <button type="button" class="btn btn-primary">
+                                    <button type="button" class="btn btn-primary"   data-toggle="modal" data-target="#exampleModaltree">
                                         <span class="text-white">مشاهده اطلاعات پرداخت</span></button>
                                 </div>
 
@@ -646,6 +686,395 @@
         </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
+    <div class="modal fade" id="exampleModaltree" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left: 0px; position: absolute;">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body  text-right  test2">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                        <tr>
+                            <th class="bg-dark text-white text-center" scope="col" colspan="2">جزئیـات تراکنـش</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                سقف مبلغ
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    2,500,000 تومان                                        </strong>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                بابت
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    قسط                                             دوره 14                                        </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                متعلق به
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    عباس گودرزی                                        </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                تاریخ سررسید
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    1399/11/13                                        </strong>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="float-right">پرداخت کننده</span>
+                            </td>
+                            <td>
+                                <strong>نام پرداخت کننده</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <span class="float-right">مبلغ</span>
+                            </td>
+                            <td>
+                                <strong>200000</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="float-right">حساب</span>
+                            </td>
+                            <td>
+                                <strong>نام حساب</strong>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <span class="float-right">تاریخ هزینه</span>
+                            </td>
+                            <td>
+                                <strong>
+                                    1399/11/13                                        </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="float-right">شماره پیگیری</span>
+                            </td>
+                            <td>
+                                <strong>54875487</strong>
+                            </td>
+                        </tr>
+
+
+
+                        </tbody>
+                    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="d-flex  mb-1  py-1 mt-0  d-flex ">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+
+
+                                <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center   ">
+                                    <button type="button" class="btn px-4 btn-success" data-toggle="modal" data-target="#exampleModaltreeedit" >ویرایش </button>
+                                    <div class="col-1 offset-1"></div>
+
+
+                                    <div class="btn-group my-2  ltr" role="group">
+                                        <a class="btn btn-sm btn-outline-danger">رد</a>
+                                        <a class="btn btn-sm btn-outline-secondary">نامشخص </a>
+                                        <a class="btn btn-sm btn-success">تایید</a>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModaltreeedit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left: 0px; position: absolute;">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body  text-right  test2">
+
+                    <table class="table table-striped table-sm">
+                        <thead>
+                        <tr>
+                            <th class="bg-dark text-white text-center" scope="col" colspan="2">جزئیـات تراکنـش</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                سقف مبلغ
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    2,500,000 تومان                                        </strong>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                بابت
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    قسط                                             دوره 14                                        </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                متعلق به
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    عباس گودرزی                                        </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                            <span class="float-right">
+                                                تاریخ سررسید
+                                            </span>
+                            </td>
+                            <td>
+                                <strong>
+                                    1399/11/13                                        </strong>
+                            </td>
+                        </tr>
+
+
+
+                        </tbody>
+                    </table>
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mr-1  ml-3 fontsize">پرداخت کننده:</label>
+                                <div class="col-8">
+                                    <select class="form-control   fontsize  mx-2" aria-label="">
+
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap    mr-1  ml-3 fontsize">مبلغ </label>
+                                <div class="col-8">
+                                    <input type="password" class="form-control  mr-2 text-dark  text-center" placeholder="1.0000000" id="inputPassword">
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap   mr-1  ml-3 fontsize">حساب:</label>
+                                <div class="col-8">
+                                    <select class="form-control   fontsize  mx-2" aria-label="">
+
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap    mr-1  ml-3 fontsize">تازیخ هزینه</label>
+                                <div class="col-8">
+                                    <input type="text" class="form-control  mr-2  text-dark  text-center" placeholder="1399/2/2" id="datepicker1"  >
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <label for="inputPassword" class="col-3 col-form-label text-nowrap    mr-1  ml-3 fontsize">شماره  پیگیری</label>
+                                <div class="col-8">
+                                    <input type="password" class="form-control  mr-2 text-dark  text-center" placeholder="5454545454" id="inputPassword">
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <small for="inputPassword" class="col-4 col-form-label text-nowrap   font">  توضیحات</small>
+                                <div class="col-8">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+                                <div class="col-12 col-form-label text-nowrap   mx-1 fontsize">آپلود عکس</div>
+                                <div class="col-12">
+
+                                    <aks-file-upload></aks-file-upload>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex  mb-1  py-1 mt-0  d-flex ">
+
+                        <div class="col-12   text-right">
+                            <div class="row">
+
+
+                                <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center   ">
+                                    <button type="button" class="btn px-4 btn-success"   id="blockButton2" >ثبت هزینه</button>
+                                    <div class="col-1 offset-1"></div>
+
+
+                                    <button type="button" class="btn btn-primary  px-4">بازم هست</button>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="js/jquery.min.js"></script>
@@ -661,7 +1090,7 @@
 
     <script type="text/javascript" src="js/notifIt.js"></script>
 <script src="js/pages/sahm.js"  ></script>
-
+    <script src="js/cusom.js"></script>
 
 
 </body>
