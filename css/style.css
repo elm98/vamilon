@@ -5,11 +5,17 @@
 
     font-weight: bold;
  }
+.imgbody{
+    width: 60%;
+    display: flex;
+    margin: 15px auto;
+}
+
  .bg-head{
     background-image: url('../images/ImageTop.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 137px;
+     height: 207px;
 }
 .brand{
     color: white;
@@ -20,6 +26,7 @@
 }
 body{
     font-family: IRANSans  !important;
+    background-color: #f7f7f7!important;
 }
 .fontsmall{
     font-size: 11px;
