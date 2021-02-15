@@ -339,24 +339,11 @@ table.dataTable>tbody>tr.child ul.dtr-details{
     .imgbody {
         width: 100%;
         display: flex;
-        margin: -50px auto 20px;
+        margin: -50px auto -20px;
     }
 
 }
 
-.bg-primary {
-    background-color: #e2e2e2!important;
-}
-.card>.text-white {
-    color: #696868!important;
-}
-.btn>.fa{
-    color: #696868!important;
-}
 
-.icon-fa{ color:#696868!important;}
-.card{
-    border: 1px solid #d2d2d2 !important;
-}
 
 
