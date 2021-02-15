@@ -1,27 +1,33 @@
 
 
+$(document).ready(function() {
 
-$(document).ready(function () {
-    $('#datepicker0').pDatepicker({
-        "format": "L",
-        "timePicker": {
-            "enabled": false,
-        }
+    $('#blockButton').click(function() {
+        $('.test').block({ message: null });
     });
-    $('#datepicker1').pDatepicker({
-        "format": "L",
-        "timePicker": {
-            "enabled": false,
-        }
 
+    $('#blockButton2').click(function() {
+        $('div.test').block({
+            message: '<h1>Processing</h1>',
+            css: { border: '3px solid #a00' }
+        });
     });
-    $('#datepicker2').pDatepicker({
-        "format": "L",
-        "timePicker": {
-            "enabled": false,
-        }
+
+    $('#unblockButton').click(function() {
+        $('div.test').unblock();
+    });
+
+    $('a.test').click(function() {
+        alert('link clicked');
+        return false;
+    });
+
+    $('.form-control').blur(function() {
+        $(this).siblings().css('bottom','45px');
+        $(this).siblings().css('background','#fff');
     });
 });
+
 
 /*!
 * Based on articles on

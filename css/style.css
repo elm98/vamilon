@@ -214,10 +214,11 @@ table.dataTable>tbody>tr.child ul.dtr-details{
 .form-group2>label {
     bottom: 30px;
     position: relative;
-    padding: 0px 25px 0px 25px;
+    margin: 0px 25px 0px 25px;
     font-size: 12px;
     transition: 0.2s;
     pointer-events: none;
+    padding: 0px 10px;
 }
 
 .form-control2:focus~label {
@@ -282,7 +283,7 @@ table.dataTable>tbody>tr.child ul.dtr-details{
     right: 0;
     bottom: 0;
     height: 100%;
-    width: 100%;
+    width: 70%;
     max-width: 500px;
     z-index: 9999;
     overflow: auto;
@@ -332,4 +333,16 @@ table.dataTable>tbody>tr.child ul.dtr-details{
 .drawer.is-visible .drawer__overlay {
     opacity: 0.5;
 }
+
+
+
+@media (max-width: 576px) {
+    .imgbody {
+        width: 60%;
+        display: flex;
+        margin: -80px auto 20px;
+    }
+
+}
+
 
