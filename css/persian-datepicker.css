@@ -4,7 +4,16 @@
 ** http://babakhani.github.io/PersianWebToolkit/docs/datepicker
 ** Under MIT license
 */
-
+.pwt-btn-submit{
+	position: absolute;
+	bottom: 150px;
+	margin: 0px auto;
+	background: #1e7e34;
+	padding: 10px;
+	color: #fff;
+	border-radius: 5%;
+	left: 150;
+}
 .datepicker-plot-area {
 	-moz-user-select: none;
 	-khtml-user-select: none;
