@@ -338,9 +338,9 @@ table.dataTable>tbody>tr.child ul.dtr-details{
 
 @media (max-width: 576px) {
     .imgbody {
-        width: 60%;
+        width: 100%;
         display: flex;
-        margin: -80px auto 20px;
+        margin: -50px auto 20px;
     }
 
 }
