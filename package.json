@@ -1,0 +1,23 @@
+{
+  "name": "vamilon_theme",
+  "version": "1.0.0",
+  "description": "Vamilon Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://89.165.117.58:10080/abbas/vamilon_theme"
+  },
+  "keywords": [
+    "Vamilon",
+    "Theme"
+  ],
+  "author": "ParsiTeb Company",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-v4-rtl": "^4.6.0-1",
+    "jquery": "^3.5.1"
+  }
+}
