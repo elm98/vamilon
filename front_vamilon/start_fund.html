@@ -6,71 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- global CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-          crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<style>
-
-    /* Latest compiled and minified CSS included as External Resource*/
-
-    /* Optional theme */
-
-    /*@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');*/
-    body {
-        margin-top:30px;
-    }
-    .stepwizard-step p {
-        margin-top: 0px;
-        color:#666;
-    }
-    .stepwizard-row {
-        display: table-row;
-    }
-    .stepwizard {
-        display: table;
-        width: 100%;
-        position: relative;
-    }
-    .stepwizard-step button[disabled] {
-        /*opacity: 1 !important;
-        filter: alpha(opacity=100) !important;*/
-    }
-    .stepwizard .btn.disabled, .stepwizard .btn[disabled], .stepwizard fieldset[disabled] .btn {
-        opacity:1 !important;
-        color:#bbb;
-    }
-    .stepwizard-row:before {
-        top: 14px;
-        bottom: 0;
-        position: absolute;
-        content:" ";
-        width: 100%;
-        height: 1px;
-        background-color: #ccc;
-        z-index: 0;
-    }
-    .stepwizard-step {
-        display: table-cell;
-        text-align: center;
-        position: relative;
-    }
-    .btn-circle {
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        padding: 6px 0;
-        font-size: 12px;
-        line-height: 1.428571429;
-        border-radius: 15px;
-    }
-
-</style>
-    <title>اعضای صندوق</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/vamilon.css">
+    <link rel="stylesheet" href="../node_modules/persian-datepicker/dist/css/persian-datepicker.css">
+    <link rel="stylesheet" href="../node_modules/smartwizard/dist/css/smart_wizard_arrows.css">
+    <title>شروع  صندوق</title>
 </head>
 
 
@@ -143,106 +84,361 @@
 </div>
 <main role="main" class="container-fluid">
     <div class="row"  >
-        <div class="col-lg-6  col-12"  >
-            <img src="images/fund-member.svg"  class="imgbody"  >
-        </div>
-        <div class="col-lg-6  col-12">
+        <div class="col-12"  >
+            <div id="smartwizard">
+                <ul class="nav">
+                    <li>
+                        <a class="nav-link" href="#step-1">
+                            مشخصات صندوق
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#step-2">
+                            اعضای صندوق
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#step-3">
+                           قرعه کشی قبلی
+                        </a>
+                    </li>
 
-            <div class="container">
-                <div class="stepwizard">
-                    <div class="stepwizard-row setup-panel">
-                        <div class="stepwizard-step col-xs-3">
-                            <a href="#step-1" type="button" class="btn btn-success btn-circle">1</a>
-                            <p><small>Shipper</small></p>
-                        </div>
-                        <div class="stepwizard-step col-xs-3">
-                            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                            <p><small>Destination</small></p>
-                        </div>
-                        <div class="stepwizard-step col-xs-3">
-                            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                            <p><small>Schedule</small></p>
-                        </div>
-                        <div class="stepwizard-step col-xs-3">
-                            <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
-                            <p><small>Cargo</small></p>
-                        </div>
+                </ul>
+
+                <div class="tab-content"    >
+                    <div id="step-1" class="tab-pane" role="tabpanel">
+
+                        <!-- Step 1 -->
+
+                        <fieldset id="steps-uid-0-p-0" role="tabpanel" aria-labelledby="steps-uid-0-h-0" class="body current" aria-hidden="false">
+                            <div class="row">
+
+
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title text-center">
+                                                مشخصات صندوق
+                                            </h5>
+                                        </div>
+
+                                        <div class="card-content collapse show">
+                                            <div class="card-body card-dashboard">
+                                                <div class="min-width text-center">
+                                                    <ul>
+                                                        <li class="row  col-12">
+                                                            <div class="col-6 text-right">
+                                                                نام صندوق:&zwnj;
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    تست نیمه کاره                                        </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="row    col-12">
+                                                            <div class="col-6 text-right">
+                                                                تعداد سهم:&zwnj;
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    8                                        </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="row    col-12">
+                                                            <div class="col-6 text-right">
+                                                                ارزش هر سهم:&zwnj;
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    100,000 تومان                                        </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="row   col-12">
+                                                            <div class="col-6 text-right">
+                                                                مبلغ وام:&zwnj;
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    800,000 تومان                                        </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="row   col-12">
+                                                            <div class="col-6 text-right">
+                                                                مدیر صندوق:&zwnj;
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    عباس گودرزی                                        </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="row   col-12">
+                                                            <div class="col-6 text-right">
+                                                                نوع صندوق:&zwnj;
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    نیـمه کاره                                        </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="row   col-12">
+                                                            <div class="col-6 text-right">
+                                                                قرعه کشی های قبلی:&zwnj;
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    3 قرعه کشی
+                                                                </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </fieldset>
+                        <!-- Step 2 -->
+
+                        <fieldset id="steps-uid-0-p-1" role="tabpanel" aria-labelledby="steps-uid-0-h-1" class="body" aria-hidden="true" style="display: none;">
+                            <div class="row">
+
+
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title text-center">
+                                                لیست سهام داران تایید شده
+                                            </h5>
+                                        </div>
+
+                                        <div class="card-content collapse show">
+                                            <div class="card-body card-dashboard">
+                                                <div class="min-width text-center">
+
+                                                    <ul>
+                                                        <li class="row  col-12">
+                                                            <div class="col-6 text-right">
+                                                                <strong>
+                                                                    عباس گودرزی                                        </strong>
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    2 سهم
+                                                                </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="row  col-12">
+                                                            <div class="col-6 text-right">
+                                                                <strong>
+                                                                    سیروس جعفری                                        </strong>
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    4 سهم
+                                                                </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="row  col-12">
+                                                            <div class="col-6 text-right">
+                                                                <strong>
+                                                                    فهیمه احمدی                                        </strong>
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    2 سهم
+                                                                </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="header-list">
+                                                        <li class="row  col-12">
+                                                            <div class="col-6 text-right">
+                                                                <strong>
+                                                                    تعداد کل
+                                                                </strong>
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    8 سهم
+                                                                </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                        <!-- Step 3 -->
+
+
                     </div>
+
+                    <div id="step-2" class="tab-pane" role="tabpanel" >
+
+                        <fieldset id="steps-uid-0-p-1" role="tabpanel" aria-labelledby="steps-uid-0-h-1" class="body current" aria-hidden="false" style="">
+                            <div class="row">
+
+
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title text-center">
+                                                لیست سهام داران تایید شده
+                                            </h5>
+                                        </div>
+
+                                        <div class="card-content collapse show">
+                                            <div class="card-body card-dashboard">
+                                                <div class="min-width text-center">
+
+                                                    <ul>
+                                                        <li class="row  col-12">
+                                                            <div class="col-6 text-right">
+                                                                <strong>
+                                                                    عباس گودرزی                                        </strong>
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    2 سهم
+                                                                </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="row  col-12">
+                                                            <div class="col-6 text-right">
+                                                                <strong>
+                                                                    سیروس جعفری                                        </strong>
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    4 سهم
+                                                                </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li class="row  col-12">
+                                                            <div class="col-6 text-right">
+                                                                <strong>
+                                                                    فهیمه احمدی                                        </strong>
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    2 سهم
+                                                                </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="header-list">
+                                                        <li class="row  col-12">
+                                                            <div class="col-6 text-right">
+                                                                <strong>
+                                                                    تعداد کل
+                                                                </strong>
+                                                            </div>
+                                                            <div class="col-6 text-left">
+                                                                <strong>
+                                                                    8 سهم
+                                                                </strong>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                        <!-- Step 3 -->
+
+                    </div>
+
+                    <div id="step-3" class="tab-pane"   role="tabpanel" >
+
+                        <div class="card-dashboard">
+                            <div class="min-width text-center">
+
+                                <ul class="header-list">
+                                    <li>
+                                        <strong>  <i class="fa fa-plus  addrow"     ></i>
+                                            نام دوره                                       </strong>
+                                    </li>
+                                </ul>
+                                <div  class="d-flex   justify-content-center"  >
+
+
+                                    <div class="col-xs-6 col-sm-6 col-lg-5 m-auto">
+                                        <div class="row with-title col col-12 p-0 mr-0 ml-0 mb-1 mt-1"  data-unique-id="select_date_of_lot_fund_2633_loan_1" onchange="dateSelector(this)">
+
+                                            <label for="select_winner_of_lot_fund_2633_loan_1"> تاریخ قرعه کشی </label>
+                                            <input type="text" class="form-control    mr-2  text-dark   text-center datepicker0"  >
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-lg-3 m-auto">
+
+                                        <label for="select_winner_of_lot_fund_2633_loan_1">برنده وام</label>
+                                        <select class="select2-rtl form-control select2-hidden-accessible"  tabindex="-1" aria-hidden="true">
+                                            <optgroup label="برنده وام">
+                                                <option value="0" selected="">
+                                                    برنده وام را انتخاب کنید
+                                                </option>
+                                                <option value="258">
+                                                    عباس گودرزی                                                            </option>
+                                                <option value="6359">
+                                                    سیروس جعفری                                                            </option>
+                                                <option value="6929">
+                                                    فهیمه احمدی                                                            </option>
+                                            </optgroup>
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    </div>
+
                 </div>
-
-                <form role="form">
-                    <div class="panel panel-primary setup-content" id="step-1">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Shipper</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label class="control-label">First Name</label>
-                                <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name" />
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Last Name</label>
-                                <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
-                            </div>
-                            <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-primary setup-content" id="step-2">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Destination</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label class="control-label">Company Name</label>
-                                <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Company Address</label>
-                                <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address" />
-                            </div>
-                            <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-primary setup-content" id="step-3">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Schedule</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label class="control-label">Company Name</label>
-                                <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Company Address</label>
-                                <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address" />
-                            </div>
-                            <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-primary setup-content" id="step-4">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Cargo</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label class="control-label">Company Name</label>
-                                <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Company Address</label>
-                                <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address" />
-                            </div>
-                            <button class="btn btn-success pull-right" type="submit">Finish!</button>
-                        </div>
-                    </div>
-                </form>
             </div>
-
-        </div>
-
 
 
     </div>
@@ -605,57 +801,100 @@
 
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap-v4-rtl/dist/js/bootstrap.min.js"></script>
 
+
+<script src="../node_modules/smartwizard/dist/js/jquery.smartWizard.js"></script>
 
 <!-- js privat -->
 <script type="text/javascript" src="js/notifIt.js"></script>
 <script type="text/javascript" src="js/pages/azayesandogh.js"></script>
 
 <script src="js/bootstrap-input-spinner.js"></script>
-<script src="js/cusom.js"></script>
+
+
+<script src="../node_modules/persian-date/dist/persian-date.js"></script>
+<script src="../node_modules/persian-datepicker/dist/js/persian-datepicker.js"></script>
+
+
 <script>
     // $("input[type='number']").inputSpinner();
 
-    $(document).ready(function(){
-        $(".btn-plus").click(function(){
 
-            $(".counter").after(" <div class=\"d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border\">\n" +
-                "\n" +
-                "                        <div class=\"col-12  my-2  text-right\">\n" +
-                "                            <div class=\"row\">\n" +
-                "                                <label class=\"col-3 col-form-label text-nowrap   mx-1 fontsize\">نام سهم \n" +
-                "                                    :</label>\n" +
-                "                                <div class=\"col-8\">\n" +
-                "                                    <div class=\"form-group  h \">\n" +
-                "                                        <input type=\"text\" class=\"form-control\" id=\"password\" required=\"\">\n" +
-                "                                        <!--                                    <label >نام صندوق</label>-->\n" +
-                "                                    </div>\n" +
-                "                                </div>\n" +
-                "\n" +
-                "                            </div>\n" +
-                "                        </div>\n" +
-                "                    </div>");
-            $valueinput= ($(".num").val());
-            $valueinput++;
-            $(".num").val($valueinput);
-
-        });
-
-        $(".btn-minus").click(function() {
-
-
-            $valueinput = ($(".num").val());
-            $valueinput--;
-            if ($valueinput > 0)
-            { $(".num").val($valueinput);
-                $(".counter").next().remove();
+    $(document).ready(function () {
+        $('.datepicker0').pDatepicker({
+            "format": "L",
+            "timePicker": {
+                "enabled": false,
             }
         });
 
     });
 
+
+
+    $(document).ready(function () {
+        $(".addrow").click(function(){
+            $(".tab-content").css('height','auto');
+
+            $(this).closest('.card-dashboard').after('<div class="card-dashboard">\n' +
+                '                                                <div class="min-width text-center">\n' +
+                '\n' +
+                '                                                    <ul class="header-list">\n' +
+                '                                                        <li>\n' +
+                '                                                            <strong>  <i class="fa fa-plus  addrow"></i>\n' +
+                '                                                                نام دوره                                         </strong>\n' +
+                '                                                        </li>\n' +
+                '                                                    </ul>\n' +
+                '                                        <div class="d-flex   justify-content-center">\n' +
+                '\n' +
+                '\n' +
+                '                                                            <div class="col-xs-6 col-sm-6 col-lg-5 m-auto">\n' +
+                '                                                                <div class="row with-title col col-12 p-0 mr-0 ml-0 mb-1 mt-1" >\n' +
+                '\n' +
+                '                                                                    <label for="select_winner_of_lot_fund_2633_loan_1"> تاریخ قرعه کشی </label>\n' +
+                '                                                                    <input type="text" class="form-control mr-2 text-dark text-center pwt-datepicker-input-element datepicker0" >\n' +
+                '                                                                </div>\n' +
+                '\n' +
+                '                                                            </div>\n' +
+                '                                                            <div class="col-xs-6 col-sm-6 col-lg-3 m-auto">\n' +
+                '\n' +
+                '                                                                    <label for="select_winner_of_lot_fund_2633_loan_1">برنده وام</label>\n' +
+                '                                                                    <select class="select2-rtl form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">\n' +
+                '                                                                        <optgroup label="برنده وام">\n' +
+                '                                                                            <option value="0" selected="">\n' +
+                '                                                                                برنده وام را انتخاب کنید\n' +
+                '                                                                            </option>\n' +
+                '                                                                            <option value="258">\n' +
+                '                                                                                عباس گودرزی                                                            </option>\n' +
+                '                                                                            <option value="6359">\n' +
+                '                                                                                سیروس جعفری                                                            </option>\n' +
+                '                                                                            <option value="6929">\n' +
+                '                                                                                فهیمه احمدی                                                            </option>\n' +
+                '                                                                        </optgroup>\n' +
+                '                                                                    </select>\n' +
+                '\n' +
+                '                                                            </div>\n' +
+                '\n' +
+                '                                        </div>\n' +
+                '\n' +
+                '\n' +
+                '                                                </div>\n' +
+                '                                            </div>');
+
+
+        });
+
+    });
+
+
+
+        $(document).ready(function() {
+
+            $('#smartwizard').smartWizard();
+
+        });
 
 
 
@@ -663,50 +902,7 @@
     // var $buttonIncrement = $inputGroup.find(".btn-increment")
 </script>
 
-<script>
-    $(document).ready(function () {
 
-        var navListItems = $('div.setup-panel div a'),
-            allWells = $('.setup-content'),
-            allNextBtn = $('.nextBtn');
-
-        allWells.hide();
-
-        navListItems.click(function (e) {
-            e.preventDefault();
-            var $target = $($(this).attr('href')),
-                $item = $(this);
-
-            if (!$item.hasClass('disabled')) {
-                navListItems.removeClass('btn-success').addClass('btn-default');
-                $item.addClass('btn-success');
-                allWells.hide();
-                $target.show();
-                $target.find('input:eq(0)').focus();
-            }
-        });
-
-        allNextBtn.click(function () {
-            var curStep = $(this).closest(".setup-content"),
-                curStepBtn = curStep.attr("id"),
-                nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-                curInputs = curStep.find("input[type='text'],input[type='url']"),
-                isValid = true;
-
-            $(".form-group").removeClass("has-error");
-            for (var i = 0; i < curInputs.length; i++) {
-                if (!curInputs[i].validity.valid) {
-                    isValid = false;
-                    $(curInputs[i]).closest(".form-group").addClass("has-error");
-                }
-            }
-
-            if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
-        });
-
-        $('div.setup-panel div a.btn-success').trigger('click');
-    });
-</script>
 
 </body>
 
