@@ -84,20 +84,20 @@ $(document).ready(function() {
 });
 
 $(document).ready(function () {
-    $('#datepicker0').pDatepicker({
+    $('.datepicker0').pDatepicker({
         "format": "L",
         "timePicker": {
             "enabled": false,
         }
     });
-    $('#datepicker1').pDatepicker({
+    $('.datepicker1').pDatepicker({
         "format": "L",
         "timePicker": {
             "enabled": false,
         }
 
     });
-    $('#datepicker2').pDatepicker({
+    $('.datepicker2').pDatepicker({
         "format": "L",
         "timePicker": {
             "enabled": false,

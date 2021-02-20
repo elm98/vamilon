@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/vamilon.css">
     <link rel="stylesheet" href="../node_modules/persian-datepicker/dist/css/persian-datepicker.css">
-    <link rel="stylesheet" href="../node_modules/smartwizard/dist/css/smart_wizard_arrows.css">
+    <link rel="stylesheet" href="../node_modules/smartwizard/dist/css/smart_wizard_all.css">
     <title>شروع  صندوق</title>
 </head>
 
@@ -33,7 +33,7 @@
 
             </select>
         </form>
-        <a class="navbar-brand  brand  ml-3" href="#">وامیلون</a>
+
         <img src="images/logo.png">
 
 
@@ -85,7 +85,7 @@
 <main role="main" class="container-fluid">
     <div class="row"  >
         <div class="col-12"  >
-            <div id="smartwizard">
+            <div id="smartwizard"  class="mt-5">
                 <ul class="nav">
                     <li>
                         <a class="nav-link" href="#step-1">
@@ -385,13 +385,26 @@
 
                     <div id="step-3" class="tab-pane"   role="tabpanel" >
 
-                        <div class="card-dashboard">
+                        <div class="card card-dashboard">
                             <div class="min-width text-center">
+                                <div class="header-list  d-flex   px-4  justify-content-between bg-primary  text-light">
+
+
+                                    <div>
+                                        <strong>
+                                            عنوان دوره                                       </strong>
+                                    </div><div class="header-list">
+                                    <i class="fa fa-plus  addrow"></i>
+
+                                </div>
+
+
+                                </div>
 
                                 <ul class="header-list">
                                     <li>
-                                        <strong>  <i class="fa fa-plus  addrow"     ></i>
-                                            نام دوره                                       </strong>
+                                        <strong>
+                                            قرعه کشی دوره اول                                      </strong>
                                     </li>
                                 </ul>
                                 <div  class="d-flex   justify-content-center"  >
@@ -751,23 +764,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
 
-                    <div class="col-12   text-right">
-                        <div class="row">
-                            <div class="col-12 col-form-label text-nowrap   mx-1 fontsize">آپلود عکس</div>
-                            <div class="col-12">
-
-                                <aks-file-upload></aks-file-upload>
-
-                            </div>
-
-
-
-
-                        </div>
-                    </div>
-                </div>
                 <div class="d-flex  mb-1  py-1 mt-0  d-flex ">
 
                     <div class="col-12   text-right">
@@ -821,8 +818,78 @@
 <script>
     // $("input[type='number']").inputSpinner();
 
+        $(".addrow").click(function(){
 
-    $(document).ready(function () {
+
+
+
+
+
+            $(".tab-content").css('height','auto');
+
+            $(this).closest('.card-dashboard').after("\n" +
+                "                        <div class=\"card card-dashboard\">\n" +
+                "                            <div class=\"min-width text-center\">\n" +
+                "\n" +
+                "                                <ul class=\"header-list\">\n" +
+                "                                    <li>\n" +
+                "                                        <strong> \n" +
+                "                                          قرعه کشی دوره دوم                                       </strong>\n" +
+                "                                    </li>\n" +
+                "                                </ul>\n" +
+                "                                <div  class=\"d-flex   justify-content-center\"  >\n" +
+                "\n" +
+                "\n" +
+                "                                    <div class=\"col-xs-6 col-sm-6 col-lg-5 m-auto\">\n" +
+                "                                        <div class=\"row with-title col col-12 p-0 mr-0 ml-0 mb-1 mt-1\"  data-unique-id=\"select_date_of_lot_fund_2633_loan_1\" onchange=\"dateSelector(this)\">\n" +
+                "\n" +
+                "                                            <label for=\"select_winner_of_lot_fund_2633_loan_1\"> تاریخ قرعه کشی </label>\n" +
+                "                                            <input type=\"text\" class=\"form-control    mr-2  text-dark   text-center datepicker0\"  >\n" +
+                "                                        </div>\n" +
+                "\n" +
+                "                                    </div>\n" +
+                "                                    <div class=\"col-xs-6 col-sm-6 col-lg-3 m-auto\">\n" +
+                "\n" +
+                "                                        <label for=\"select_winner_of_lot_fund_2633_loan_1\">برنده وام</label>\n" +
+                "                                        <select class=\"select2-rtl form-control select2-hidden-accessible\"  tabindex=\"-1\" aria-hidden=\"true\">\n" +
+                "                                            <optgroup label=\"برنده وام\">\n" +
+                "                                                <option value=\"0\" selected=\"\">\n" +
+                "                                                    برنده وام را انتخاب کنید\n" +
+                "                                                </option>\n" +
+                "                                                <option value=\"258\">\n" +
+                "                                                    عباس گودرزی                                                            </option>\n" +
+                "                                                <option value=\"6359\">\n" +
+                "                                                    سیروس جعفری                                                            </option>\n" +
+                "                                                <option value=\"6929\">\n" +
+                "                                                    فهیمه احمدی                                                            </option>\n" +
+                "                                            </optgroup>\n" +
+                "                                        </select>\n" +
+                "\n" +
+                "                                    </div>\n" +
+                "\n" +
+                "                                </div>\n" +
+                "\n" +
+                "\n" +
+                "                            </div>\n" +
+                "                        </div>\n" +
+                "\n");
+
+            $('.datepicker0').pDatepicker({
+                "format": "L",
+                "timePicker": {
+                    "enabled": false,
+                }
+            });
+        });
+
+
+
+    $(document).ready(function() {
+
+        $('#smartwizard').smartWizard();
+
+    });
+
         $('.datepicker0').pDatepicker({
             "format": "L",
             "timePicker": {
@@ -830,71 +897,11 @@
             }
         });
 
-    });
 
 
 
-    $(document).ready(function () {
-        $(".addrow").click(function(){
-            $(".tab-content").css('height','auto');
-
-            $(this).closest('.card-dashboard').after('<div class="card-dashboard">\n' +
-                '                                                <div class="min-width text-center">\n' +
-                '\n' +
-                '                                                    <ul class="header-list">\n' +
-                '                                                        <li>\n' +
-                '                                                            <strong>  <i class="fa fa-plus  addrow"></i>\n' +
-                '                                                                نام دوره                                         </strong>\n' +
-                '                                                        </li>\n' +
-                '                                                    </ul>\n' +
-                '                                        <div class="d-flex   justify-content-center">\n' +
-                '\n' +
-                '\n' +
-                '                                                            <div class="col-xs-6 col-sm-6 col-lg-5 m-auto">\n' +
-                '                                                                <div class="row with-title col col-12 p-0 mr-0 ml-0 mb-1 mt-1" >\n' +
-                '\n' +
-                '                                                                    <label for="select_winner_of_lot_fund_2633_loan_1"> تاریخ قرعه کشی </label>\n' +
-                '                                                                    <input type="text" class="form-control mr-2 text-dark text-center pwt-datepicker-input-element datepicker0" >\n' +
-                '                                                                </div>\n' +
-                '\n' +
-                '                                                            </div>\n' +
-                '                                                            <div class="col-xs-6 col-sm-6 col-lg-3 m-auto">\n' +
-                '\n' +
-                '                                                                    <label for="select_winner_of_lot_fund_2633_loan_1">برنده وام</label>\n' +
-                '                                                                    <select class="select2-rtl form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">\n' +
-                '                                                                        <optgroup label="برنده وام">\n' +
-                '                                                                            <option value="0" selected="">\n' +
-                '                                                                                برنده وام را انتخاب کنید\n' +
-                '                                                                            </option>\n' +
-                '                                                                            <option value="258">\n' +
-                '                                                                                عباس گودرزی                                                            </option>\n' +
-                '                                                                            <option value="6359">\n' +
-                '                                                                                سیروس جعفری                                                            </option>\n' +
-                '                                                                            <option value="6929">\n' +
-                '                                                                                فهیمه احمدی                                                            </option>\n' +
-                '                                                                        </optgroup>\n' +
-                '                                                                    </select>\n' +
-                '\n' +
-                '                                                            </div>\n' +
-                '\n' +
-                '                                        </div>\n' +
-                '\n' +
-                '\n' +
-                '                                                </div>\n' +
-                '                                            </div>');
 
 
-        });
-
-    });
-
-
-
-        $(document).ready(function() {
-
-            $('#smartwizard').smartWizard();
-
-        });
 
 
 

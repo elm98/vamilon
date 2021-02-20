@@ -230,7 +230,17 @@ table.dataTable>tbody>tr.child ul.dtr-details{
 .ltr{direction: ltr;}
 .container-fluid{min-height: 500px  !important;}
 
-
+.pwt-btn-submit {
+    position: absolute  !important;
+    bottom: 150px  !important;
+    margin: 0px 160px  !important;
+    background: #1e7e34  !important;
+    display: flex  !important;
+    color: #fff  !important;
+    border-radius: 5%  !important;
+    align-items: center  !important;
+    justify-content: center   !important;
+}
  .drawer {
      display: none;
  }

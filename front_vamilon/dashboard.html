@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/vamilon.css">
-    <link type="text/css" href="css/persian-datepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../node_modules/persian-datepicker/dist/css/persian-datepicker.css">
 
 </head>
 
@@ -44,7 +44,7 @@
 
             </select>
         </form>
-        <a class="navbar-brand  brand  ml-3" href="#">وامیلون</a>
+
         <img src="images/logo.png">
 
 
@@ -400,10 +400,10 @@
 
                     <div class="col-12   text-right">
                         <div class="row">
-                            <label for="inputPassword" class="col-1 col-form-label text-nowrap   mx-1 fontsize">مدیر
+                            <label for="inputPassword" class="col-2 col-form-label text-nowrap   mx-1 fontsize">مدیر
                                 :</label>
 
-                            <div class="col-9 text-right  ml-1   d-flex align-items-center   pr-3">
+                            <div class="col-8 text-right  ml-1   d-flex align-items-center   pr-3">
                                 <span for="" class=" text-nowrap  fontsize">مقداد ترابی - 09153205285 </span>
                             </div>
 
@@ -423,9 +423,9 @@
                     <div class="col-12   text-right">
                         <div class="row">
                             <label for="inputPassword"
-                                   class="col-1 col-form-label text-nowrap   mx-1 fontsize">سهام:</label>
+                                   class="col-2 col-form-label text-nowrap   mx-1 fontsize">سهام:</label>
 
-                            <div class="col-9 text-right  ml-1   d-flex align-items-center   pr-3 ">
+                            <div class="col-8 text-right  ml-1   d-flex align-items-center   pr-3 ">
                                 <span for="" class=" text-nowrap  fontsize">40سهم -15 سهم اختصاص یافته</span>
                             </div>
 
@@ -775,9 +775,9 @@
                             </div>
                         </div>
                     </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
-                    <div class="col-12   text-right">
+                    <div class="col-12   text-left">
                         <div class="row">
-                            <label class="col-10 col-form-label text-nowrap   mx-1  fontsize">10 روز دیگر</label>
+                            <label class="col-12 col-form-label text-nowrap   mx-1  fontsize">10 روز دیگر</label>
 
 
                         </div>
@@ -822,7 +822,7 @@
 
                                 <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
                                     <button type="button" class="btn btn-success">
-                                        <span class="text-white"     data-toggle="modal" data-target="#exampleModaltro" > ویرایش تاریخ قرعه کشی </span></button>
+                                        <span class="text-white"     data-toggle="modal" data-target="#exampleModaltroed" > ویرایش تاریخ قرعه کشی </span></button>
 
                                 </div>
 
@@ -978,9 +978,9 @@
                         </div>
                     </div>
                 </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
-                <div class="col-12   text-right">
+                <div class="col-12   text-left">
                     <div class="row">
-                        <label class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
+                        <label class="col-12 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>
 
 
                     </div>
@@ -1073,7 +1073,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                            style="left: 0px; position: absolute;">
+                           >
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -1138,7 +1138,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left: 0px; position: absolute;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
@@ -1357,13 +1357,12 @@
     </div>
 </div>
 
-
-<div class="modal fade" id="exampleModaltro" tabindex="-1" role="dialog" aria-labelledby="exampleModaltro" aria-hidden="true">
+<div class="modal fade" id="exampleModaltroed" tabindex="-1" role="dialog" aria-labelledby="exampleModaltroed" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left: 0px; position: absolute;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
@@ -1376,7 +1375,43 @@
 
                             <div class="col-12">
 
-                                <input type="text"    class="form-control    mr-2  text-dark   text-center"  id="datepicker0" >
+                                <input type="text"    class="form-control    mr-2  text-dark   text-center datepicker0"  id="" >
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">ارسال</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModaltro" tabindex="-1" role="dialog" aria-labelledby="exampleModaltro" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body  text-right  test2">
+
+                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                    <div class="col-12   text-right">
+                        <div class="row">
+
+                            <div class="col-12">
+
+                                <input type="text"    class="form-control    mr-2  text-dark   text-center  datepicker0"  id="" >
                             </div>
 
                         </div>
@@ -1399,7 +1434,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">عنوان مدال</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left: 0px; position: absolute;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
@@ -1447,9 +1482,8 @@
 <script src="js/aksFileUpload.js"></script>
 <script type="application/javascript"  src="js/block.js"  ></script>
 
-<script src="js/persian-date.js"></script>
-<script type="text/javascript" src="js/persian-datepicker.js"></script>
-
+<script src="../node_modules/persian-datepicker/dist/js/persian-datepicker.js"></script>
+<script src="../node_modules/persian-date/dist/persian-date.js"></script>
 <script  src="js/pages/tareghe.js"></script>
 <script  src="js/cusom.js"></script>
 
