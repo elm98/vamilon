@@ -903,6 +903,21 @@
 
 
 
+    $(document).ready(function(){
+
+        $(".sw-btn-next").on("click", function() {
+
+            if($('#step-3').css('display')=='block')
+            {
+                $('.sw-btn-next').removeClass("disabled");
+                $('.sw-btn-next').text("ذخیره اطلاعات");
+                $('.sw-btn-prev').addClass("disabled");
+
+            }
+
+        });
+    });
+
 
 
     // var $buttonDecrement = $inputGroup.find(".btn-decrement")
