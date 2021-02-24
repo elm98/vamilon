@@ -587,7 +587,6 @@
         </div>
 </div>
 <!-- Optional JavaScript; choose one of the two! -->
-
 <div class="modal fade" id="exampleModaltree" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -617,8 +616,6 @@
                                 2,500,000 تومان                                        </strong>
                         </td>
                     </tr>
-
-
                     <tr>
                         <td>
                                             <span class="float-right">
@@ -653,8 +650,6 @@
                         </td>
                     </tr>
 
-
-
                     </tbody>
                 </table>
 
@@ -675,23 +670,17 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
-
                     <div class="col-12   text-right">
 
                     </div>
                 </div>
-
-
                 <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
-
                     <div class="col-12   text-right">
                         <div class="row">
                             <label for="inputPassword" class="col-3 col-form-label text-nowrap    mr-1  ml-3 fontsize">مبلغ </label>
                             <div class="col-8">
-                                <input type="password" class="form-control  mr-2 text-dark  text-center" placeholder="1.0000000" id="inputPassword">
+                                <input type="text" class="form-control  mr-2 text-dark  text-center" placeholder="1.0000000" id="inputPassword">
                             </div>
 
 
@@ -700,15 +689,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm  bg-white rounded  border">
-
                     <div class="col-12   text-right">
                         <div class="row">
                             <label for="inputPassword" class="col-3 col-form-label text-nowrap   mr-1  ml-3 fontsize">حساب:</label>
                             <div class="col-8">
                                 <select class="form-control   fontsize  mx-2" aria-label="">
-
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -733,40 +719,27 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
-
                     <div class="col-12   text-right">
                         <div class="row">
                             <label for="inputPassword" class="col-3 col-form-label text-nowrap    mr-1  ml-3 fontsize">شماره  پیگیری</label>
                             <div class="col-8">
-                                <input type="password" class="form-control  mr-2 text-dark  text-center" placeholder="5454545454" id="inputPassword">
+                                <input type="text" class="form-control  mr-2 text-dark  text-center" placeholder="5454545454" id="inputPassword">
                             </div>
-
-
-
-
                         </div>
                     </div>
                 </div>
                 <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
-
                     <div class="col-12   text-right">
                         <div class="row">
                             <small for="inputPassword" class="col-4 col-form-label text-nowrap   font">  توضیحات</small>
                             <div class="col-8">
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-
-
-
-
                         </div>
                     </div>
                 </div>
-
                 <div class="d-flex  mb-1  py-1 mt-0  d-flex ">
-
                     <div class="col-12   text-right">
                         <div class="row">
 
@@ -784,9 +757,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
@@ -796,20 +766,14 @@
     </div>
 </div>
 
-
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/bootstrap-v4-rtl/dist/js/bootstrap.min.js"></script>
-
-
 <script src="../node_modules/smartwizard/dist/js/jquery.smartWizard.js"></script>
-
 <!-- js privat -->
 <script type="text/javascript" src="js/notifIt.js"></script>
 <script type="text/javascript" src="js/pages/azayesandogh.js"></script>
-
 <script src="js/bootstrap-input-spinner.js"></script>
-
 
 <script src="../node_modules/persian-date/dist/persian-date.js"></script>
 <script src="../node_modules/persian-datepicker/dist/js/persian-datepicker.js"></script>
@@ -819,10 +783,6 @@
     // $("input[type='number']").inputSpinner();
 
         $(".addrow").click(function(){
-
-
-
-
 
 
             $(".tab-content").css('height','auto');
@@ -887,6 +847,8 @@
     $(document).ready(function() {
 
         $('#smartwizard').smartWizard();
+        $('.sw-btn-next').text("بعدی");
+        $('.sw-btn-prev').text("قبلی");
 
     });
 
@@ -899,11 +861,21 @@
 
 
 
-
-
-
-
     $(document).ready(function(){
+
+
+        $(".sw-btn-prev").on("click", function() {
+
+            if($('#step-3').css('display')=='none')
+            {
+                $('.sw-btn-next').text("بعدی");
+                $('.sw-btn-prev').text("قبلی");
+
+
+            }
+
+
+        });
 
         $(".sw-btn-next").on("click", function() {
 
@@ -914,6 +886,8 @@
                 $('.sw-btn-prev').addClass("disabled");
 
             }
+
+
 
         });
     });
