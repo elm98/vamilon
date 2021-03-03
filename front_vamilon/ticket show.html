@@ -16,9 +16,10 @@
 </head>
 
 
-<body>
+<body class="bg-head">
 
-<div class="bg-head">
+
+<div>
 
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-primary p-4">
@@ -33,19 +34,25 @@
         </button>
 
 
-        <form class="form-inline my-2 my-lg-0  ltr    mx-2  flex-grow-1" >
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>صندوق ده میلیونی ترابی</option>
+        <img src="images/sandogh-logo-light.png">
 
-            </select>
-        </form>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info   py-0  my-0 fontsize"> انتخاب صندوق</button>
+            <button type="button" class="btn btn-primary   py-0  my-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu  fontsize">
+                <li class="text-center border-bottom" ><a>صندوق 1</a></li>
+                <li class="text-center" ><a >صندوق 2</a></li>
 
-        <img src="images/logo.png">
+            </ul>
+        </div>
 
     </nav>
 
 
-    <section class="drawer drawer--right" id="drawer-name-left" data-drawer-target>
+    <section class="drawer drawer--right  rtl" id="drawer-name-left" data-drawer-target>
         <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
         <div class="drawer__wrapper">
             <div class="drawer__header">
@@ -81,7 +88,9 @@
     </section>
 
 </div>
-<main role="main" class="container-fluid">
+
+
+<main role="main" class="container-fluid  pt-5  mt-5">
     <div class="row"  >
         <div class="col-lg-6  col-12"  >
             <img src="images/search-fund.svg"  class="imgbody"  >
@@ -124,7 +133,7 @@
                                     <small>1398/11/12 17:33:13</small>
                                 </div>
                             </div>
-                            <div class="text-right p-2 border rounded-bottom">
+                            <div class="text-right p-2 border rounded-bottom  bg-light" >
                                 <div class="fontsize    my-2"><p>من گوشی ام</p></div>
                                 <hr class="m-0">
                                 <div class="fontsize   p-1 m-0 pt-3">

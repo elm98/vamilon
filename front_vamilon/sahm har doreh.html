@@ -13,79 +13,87 @@
     <title>سهم هر دوره</title>
 </head>
 
-<body>
+<body class="bg-head">
 
-    <div class="bg-head">
 
-        <div class="collapse" id="navbarToggleExternalContent" style="">
-            <div class="bg-primary p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
+<div>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-primary p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
+    <nav class="navbar  d-flex" d>
+
+        <button class="navbar-toggler collapsed" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
+            <span class="navbar-toggler-icon"> <i class="fas fa-bars  bars"></i></span>
+        </button>
+
+
+        <img src="images/sandogh-logo-light.png">
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-info   py-0  my-0 fontsize"> انتخاب صندوق</button>
+            <button type="button" class="btn btn-primary   py-0  my-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu  fontsize">
+                <li class="text-center border-bottom" ><a>صندوق 1</a></li>
+                <li class="text-center" ><a >صندوق 2</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <section class="drawer drawer--right" id="drawer-name-left" data-drawer-target>
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper">
+            <div class="drawer__header">
+                <div class="drawer__title">
+                    <img src="images/logo.png">
+                </div>
+
+                <button type="button" class="btn btn-outline-dark"   data-drawer-close aria-label="Close Drawer">بستن<i  class="fa fa-close"  ></i> </button>
+
+            </div>
+            <div class="drawer__content">
+                <ul class="list-unstyled  text-left">
+                    <li class="mb-3"><a href="https://isovisit.com" class="iso-font-sm text-dark">صفحه اصلی</a></li>
+
+
+
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">درباره ما</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">تماس با ما</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">راهنمای سایت</a></li>
+
+
+
+
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">حریم خصوصی</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">شرایط و قوانین</a></li>
+
+
+
+
+                </ul>
             </div>
         </div>
-        <nav class="navbar  d-flex" d>
+    </section>
 
-            <button class="navbar-toggler collapsed" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
-                <span class="navbar-toggler-icon"> <i class="fas fa-bars  bars"></i></span>
-            </button>
+</div>
 
-
-            <form class="form-inline my-2 my-lg-0  ltr    mx-2  flex-grow-1" >
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>صندوق ده میلیونی ترابی</option>
-
-                </select>
-            </form>
-
-            <img src="images/logo.png">
-
-        </nav>
-
-
-        <section class="drawer drawer--right" id="drawer-name-left" data-drawer-target>
-            <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
-            <div class="drawer__wrapper">
-                <div class="drawer__header">
-                    <div class="drawer__title">
-                        <img src="images/logo.png">
-                    </div>
-
-                    <button type="button" class="btn btn-outline-dark"   data-drawer-close aria-label="Close Drawer">بستن<i  class="fa fa-close"  ></i> </button>
-
-                </div>
-                <div class="drawer__content">
-                    <ul class="list-unstyled  text-left">
-                        <li class="mb-3"><a href="https://isovisit.com" class="iso-font-sm text-dark">صفحه اصلی</a></li>
-
-
-
-                        <li class="mb-3"><a  class="iso-font-sm text-dark">درباره ما</a></li>
-                        <li class="mb-3"><a  class="iso-font-sm text-dark">تماس با ما</a></li>
-                        <li class="mb-3"><a  class="iso-font-sm text-dark">راهنمای سایت</a></li>
-
-
-
-
-                        <li class="mb-3"><a  class="iso-font-sm text-dark">حریم خصوصی</a></li>
-                        <li class="mb-3"><a  class="iso-font-sm text-dark">شرایط و قوانین</a></li>
-
-
-
-
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-    </div>
-    <main role="main" class="container-fluid">
+    <main role="main" class="container-fluid  pt-5  mt-5">
 
         <div class="row"  >
             <div class="col-lg-6  col-12"  >
                 <img src="images/calnedar.svg"  class="imgbody"  >
             </div>
             <div class="col-lg-6  col-12"  >
-        <div class="card  mt-5">
+        <div class="card  mt-5  py-3">
             <div class="  d-flex   mt-2">
                 <div class="col-12   text-center">
                     <span class="titr">دوره های مورد نظر و واریز ها رو فیلتر نمایید</span>
@@ -132,12 +140,12 @@
 
 
         <div id="accordion"  class="mb-3  mt-3" >
-            <div class="card">
+            <div class="card   border-0">
                 <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
                     <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                        <div class="d-flex align-items-center">  <i class="fas fa-user   pl-2"></i> مقداد ترابی </div>
+                        <div class="d-flex align-items-center">  <i class="fas fa-user   pr-2"></i> مقداد ترابی </div>
 
 
 
@@ -160,7 +168,7 @@
                     </h5>
                 </div>
 
-                <div id="collapseOne" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseOne" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
 
 
@@ -233,12 +241,12 @@
 
 
         <div id="accordion"  class="mb-3" >
-            <div class="card">
+            <div class="card   border-0">
                 <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
                     <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                        <div class="d-flex align-items-center">  <i class="fas fa-user   pl-2"></i> علی اکبر فاخر </div>
+                        <div class="d-flex align-items-center">  <i class="fas fa-user   pr-2"></i> علی اکبر فاخر </div>
 
 
 
@@ -261,7 +269,7 @@
                     </h5>
                 </div>
 
-                <div id="collapsetwo" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapsetwo" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
 
 
@@ -333,13 +341,13 @@
 
 
         <div id="accordion"  class="mb-3" >
-            <div class="card">
+            <div class="card   border-0">
                 <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
                     <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
 
-                        <div class="d-flex align-items-center">  <i class="fas fa-user   pl-2"></i> سید ابوالقاسم میر باقری </div>
+                        <div class="d-flex align-items-center">  <i class="fas fa-user   pr-2"></i> سید ابوالقاسم میر باقری </div>
 
                         <div>
 
@@ -360,7 +368,7 @@
                     </h5>
                 </div>
 
-                <div id="collapsetree" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapsetree" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
 
 
@@ -431,13 +439,13 @@
 
 
         <div id="accordion"  class="mb-3" >
-            <div class="card">
+            <div class="card   border-0">
                 <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
                     <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
 
-                        <div class="d-flex align-items-center">  <i class="fas fa-user   pl-2"></i> ملیحه حاجی جعفری </div>
+                        <div class="d-flex align-items-center">  <i class="fas fa-user   pr-2"></i> ملیحه حاجی جعفری </div>
 
                         <div>
 
@@ -458,7 +466,7 @@
                     </h5>
                 </div>
 
-                <div id="collapsefour" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapsefour" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
 
 
@@ -528,12 +536,12 @@
         </div>
 
         <div id="accordion"  class="mb-3" >
-            <div class="card">
+            <div class="card   border-0">
                 <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
                     <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                        <div class="d-flex align-items-center">  <i class="fas fa-user   pl-2"></i> علی کردان</div>
+                        <div class="d-flex align-items-center">  <i class="fas fa-user   pr-2"></i> علی کردان</div>
 
 
 
@@ -556,7 +564,7 @@
                     </h5>
                 </div>
 
-                <div id="collapsefive" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapsefive" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
 
 

@@ -28,7 +28,14 @@ $(document).ready(function() {
     });
 });
 
-
+window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+    if(scroll>135 &&  screen.width>600 )
+    {
+        $('.imgbody').css('top',scroll);
+        $('.imgbody').css('position','relative');
+    }
+});
 /*!
 * Based on articles on
 * https://gomakethings.com

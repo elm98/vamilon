@@ -20,10 +20,10 @@
 
 </head>
 
-<body>
+<body class="bg-head">
 
 
-<div class="bg-head">
+<div>
 
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-primary p-4">
@@ -38,16 +38,24 @@
         </button>
 
 
-        <form class="form-inline my-2 my-lg-0  ltr    mx-2  flex-grow-1" >
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>صندوق ده میلیونی ترابی</option>
+        <img src="images/sandogh-logo-light.png">
 
-            </select>
-        </form>
 
-        <img src="images/logo.png">
+        <div class="btn-group">
+            <button type="button" class="btn btn-info   py-0  my-0 fontsize"> انتخاب صندوق</button>
+            <button type="button" class="btn btn-primary   py-0  my-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu  fontsize">
+                <li class="text-center border-bottom" ><a>صندوق 1</a></li>
+                <li class="text-center" ><a >صندوق 2</a></li>
+
+            </ul>
+        </div>
 
     </nav>
+
 
     <section class="drawer drawer--right" id="drawer-name-left" data-drawer-target>
         <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
@@ -85,14 +93,15 @@
     </section>
 
 </div>
-<main role="main" class="container-fluid">
-    <div class="row"  >
+
+<main role="main" class="container-fluid  pt-5  mt-5">
+<div class="row" >
         <div class="col-lg-6  col-12"  >
             <img src="images/create-fund.svg"  class="imgbody"  >
         </div>
         <div class="col-lg-6  col-12"  >
     <div id="accordion" class="mb-3  mt-5">
-        <div class="card">
+        <div class="card   border-0">
             <div class="card-header  bg-primary  text-white   py-2" id="headingOne">
                 <h5 class="mb-0   d-flex  justify-content-between  titr">
 
@@ -116,7 +125,7 @@
                 </h5>
             </div>
 
-            <div id="collapseOne" class="collapse show    my-3  collapseOne test" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOne" class="collapse show    mt-0  collapseOne test" aria-labelledby="headingOne" data-parent="#accordion">
 
 <form action=""  >
 
@@ -135,7 +144,7 @@
                         <div class="">
 
                             <div class="">
-                                <div class="form-group form-group2   h   py-4">
+                                <div class="form-group form-group2   h    mt-2 mb-5">
                                     <input type="text" class="form-control form-control2" id="password" required="">
                                     <label >نام صندوق</label>
                                 </div>
@@ -150,8 +159,8 @@
                     <div class="col-12   text-left">
                         <div class="row">
 
-                            <div class="col-12 my-3 ">
-                                <div class="form-group    form-group2 py-2 h ">
+                            <div class="col-12  ">
+                                <div class="form-group    form-group2 h  mt-2 mb-5 ">
                                     <input type="text" class="form-control  form-control2" id="password" required="">
                                     <label >تعداد سهم </label>
                                 </div>
@@ -165,7 +174,7 @@
                     <div class="col-12   text-left">
                         <div class="row">
 
-                            <div class="form-group form-group2  col-12   p-3   mt-0 h ">
+                            <div class="form-group form-group2  col-12   h  mt-2 mb-5">
                                 <input type="text" class="form-control  form-control2" id="password" required="">
                                 <label >هر سهم </label>
                             </div>
@@ -191,54 +200,48 @@
                     </div>
                 </div>
 
-                <div class="d-flex bg-white  mb-1  py-1  px-2 mt-0  mx-2  d-flex   shadow-sm  rounded  border">
+    <div class="row d-flex bg-white  mb-1  py-1  px-2 mt-0  mx-2  d-flex   shadow-sm  rounded  border">
 
 
-                    <div class="row">
+        <div class="col-12 d-flex  align-items-center">
 
-                        <div class="col-3">
-                            <input type="text" class="form-control" id="inputPassword">
-                        </div>
-                        <div class="col-7 text-left     d-flex align-items-center  justify-content-center   ">
-                            <span for="" class=" text-nowrap  fontsize">دوره برگزار شده  </span>
-                        </div>
+            <input type="text" class="form-control  col-3" id="inputPassword">
 
-                        <div class="col-2 d-flex align-items-center  justify-content-center">
-                        <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
+            <span for="" class=" text-nowrap  fontsize  px-1">دوره برگزار شده  </span>
+
+            <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
                                                        <i class="fa fa-question icon-fa   icon-fa" aria-hidden="true"></i>
                                                     </span>
 
-                        </div>
-
-                    </div>
-
-                </div>
 
 
-    <div class="d-flex   mx-2  d-flex   shadow-sm  bg-white rounded  border">
-
-        <div class="col-12   text-left  py-1">
-            <div class="row">
-                <label for="inputPassword" class="col-4 col-form-label text-nowrap   mx-1  fontsize">اطلاعات حساب</label>
-                <div class="col-4">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>ملی</option>
-
-                    </select>
-                </div>
-                <div class="col-3">
-
-                    <button type="button" class="btn btn-sm btn-success">
-                        <span class="text-white" id="blockButton" onclick="not1()"> افزودن</span></button>
-                </div>
-
-
-
-
-            </div>
         </div>
+
     </div>
 
+
+    <div class="row d-flex   justify-content-between  mx-2  d-flex   align-items-center    shadow-sm  bg-white rounded  border" >
+
+        <div class="col-12    d-flex     text-left  py-1 ">
+
+
+            <label for="inputPassword" class="col-form-label text-nowrap   mx-1  fontsize">اطلاعات حساب</label>
+            <select class="form-control  mx-2   col-lg-3" id="exampleFormControlSelect1">
+                <option>ملی</option>
+
+            </select>
+
+
+            <button type="button" class="btn btn-sm btn-success">
+                <span class="text-white" id="blockButton" onclick="not1()"> افزودن</span></button>
+
+
+
+
+
+
+        </div>
+    </div>
 
     <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
 
@@ -270,466 +273,247 @@
 
     </div>
 
+                <div id="accordion" class="mb-3">
+                    <div class="card   border-0">
+                        <div class="card-header  bg-primary  text-white    mt-0  py-2" id="headingOne">
+                            <h5 class="mb-0   d-flex  justify-content-between  titr  titr">
 
-    <div id="accordion" class="mb-3">
-        <div class="card">
-            <div class="card-header  bg-primary  text-white  px-2 py-2" id="headingOne">
-                <h5 class="mb-0   d-flex  justify-content-between  titr  titr">
-
-                    <div class="d-flex align-items-center"><i class="fas fa-users pr-2"></i> صندوق در حال عضوگیری را
-                        پیدا کنید
-                    </div>
-
-
-                    <div>
-
-                        <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top"
-                                title="Tooltip on top">
-                            <i class="fa fa-question"></i>
-                        </button>
-                        <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapsetwo"
-                                aria-expanded="true" aria-controls="collapsetwo">
-                            <i class="fa fa-chevron-down"></i>
-                        </button>
+                                <div class="d-flex align-items-center"><i class="fas fa-users pr-2"></i> صندوق در حال عضوگیری را
+                                    پیدا کنید
+                                </div>
 
 
-                    </div>
-                </h5>
-            </div>
+                                <div>
 
-            <div id="collapsetwo" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
-
-<form  action=""  >
-                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
-
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label for="inputPassword" class="col-2 col-form-label text-nowrap   mx-1 fontsize">جستجو
-                                :</label>
-                            <div class="col-8">
-                                <input type="text" class="form-control" id="inputPassword">
-                            </div>
+                                    <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top"
+                                            title="Tooltip on top">
+                                        <i class="fa fa-question"></i>
+                                    </button>
+                                    <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapsetwo"
+                                            aria-expanded="true" aria-controls="collapsetwo">
+                                        <i class="fa fa-chevron-down"></i>
+                                    </button>
 
 
-                            <div class="col-1 d-flex align-items-center  justify-content-center">
+                                </div>
+                            </h5>
+                        </div>
+
+                        <div id="collapsetwo" class="collapse show     mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
+
+                            <form  action=""  >
+                                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
+
+                                    <div class="col-12   text-left">
+                                        <div class="row">
+                                            <label for="inputPassword" class="col-2 col-form-label text-nowrap   mx-1 fontsize">جستجو
+                                                :</label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="inputPassword">
+                                            </div>
+
+
+                                            <div class="col-1 d-flex align-items-center  justify-content-center">
                             <span class="bg-light  icon">
                                             <i class="fa fa-search  icon-fa" aria-hidden="true"></i>
                                         </span>
 
-                            </div>
+                                            </div>
 
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
+
+
                 </div>
-</form>
-            </div>
-        </div>
 
 
-    </div>
 
 
-    <div id="accordion" class="mb-3">
-        <div class="card">
-            <div class="card-header  bg-primary  text-white   py-2" id="headingOne">
-                <h5 class="mb-0   d-flex  justify-content-between  titr">
-
-                    <div class="d-flex align-items-center"><i class="fas fa-info  pr-2"></i> اطلاعات صندوق</div>
 
 
-                    <div>
+                <div id="accordion" class="mb-3">
+                    <div class="card   border-0">
+                        <div class="card-header  bg-primary  text-white   py-2" id="headingOne">
+                            <h5 class="mb-0   d-flex  justify-content-between  titr">
 
-                        <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top"
-                                title="Tooltip on top">
-                            <i class="fa fa-question"></i>
-                        </button>
-                        <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapsetree"
-                                aria-expanded="true" aria-controls="collapsetree">
-                            <i class="fa fa-chevron-down"></i>
-                        </button>
+                                <div class="d-flex align-items-center"><i class="fas fa-info  pr-2"></i> اطلاعات صندوق</div>
 
 
-                    </div>
-                </h5>
-            </div>
+                                <div>
 
-            <div id="collapsetree" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top"
+                                            title="Tooltip on top">
+                                        <i class="fa fa-question"></i>
+                                    </button>
+                                    <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapsetree"
+                                            aria-expanded="true" aria-controls="collapsetree">
+                                        <i class="fa fa-chevron-down"></i>
+                                    </button>
 
 
-                <div class="d-flex bg-white  mt-0  mb-1  mx-2">
+                                </div>
+                            </h5>
+                        </div>
 
-                    <button type="button" class="btn btn-danger btn-block">
+                        <div id="collapsetree" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
+
+
+                            <div class="d-flex bg-white  mt-0  mb-1  mx-2">
+
+                                <button type="button" class="btn btn-danger btn-block">
                                                                     <span class="text-wite fontsize">
                                                                     <span class="text-wite fontsize">
                                                                         <strong>فریم نمایش اخطار</strong>
                                                                     </span>
-                    </button>
-                </div>
+                                </button>
+                            </div>
 
 
-                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
+                            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
 
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label for="inputPassword" class="col-9  col-form-label text-nowrap   mx-1 fontsmall">نام
-                                صندوق: صندوق ترابی ده میلیونی </label>
-
-
-<!--                            <div class="col-2 d-flex align-items-center  justify-content-center">-->
-<!--                                <button type="button" class="btn btn-outline-primary    ml-3">-->
-<!--                                    <p class="text-secondary  my-0 small text-nowrap">ثبت اطلاعات</p></button>-->
-<!--                            </div>-->
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
-
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1 fontsize">مدیر
-                                :مقداد ترابی - 09153205285 </label>
+                                <div class="col-12   text-left">
+                                    <div class="row">
+                                        <label for="inputPassword" class="col-9  col-form-label text-nowrap   mx-1 fontsmall">نام
+                                            صندوق: صندوق ترابی ده میلیونی </label>
 
 
+                                        <!--                            <div class="col-2 d-flex align-items-center  justify-content-center">-->
+                                        <!--                                <button type="button" class="btn btn-outline-primary    ml-3">-->
+                                        <!--                                    <p class="text-secondary  my-0 small text-nowrap">ثبت اطلاعات</p></button>-->
+                                        <!--                            </div>-->
 
-                            <div class="col-1 d-flex align-items-center  justify-content-center">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
+
+                                <div class="col-12   text-left">
+                                    <div class="row">
+                                        <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1 fontsize">مدیر
+                                            :مقداد ترابی - 09153205285 </label>
+
+
+
+                                        <div class="col-1 d-flex align-items-center  justify-content-center">
                             <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
                                                     <i class="fa fa-phone icon-fa   icon-fa" aria-hidden="true"></i>
                                                 </span>
 
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
 
-                        </div>
-                    </div>
-                </div>
+                            <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
 
-                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
+                                <div class="col-12   text-left">
+                                    <div class="row">
+                                        <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1 fontsize">سهام:40سهم -15 سهم اختصاص یافته</label>
 
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label for="inputPassword" class="col-10 col-form-label text-nowrap   mx-1 fontsize">سهام:40سهم -15 سهم اختصاص یافته</label>
-
-                            <div class="col-1 d-flex align-items-center  justify-content-center">
+                                        <div class="col-1 d-flex align-items-center  justify-content-center">
                             <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
                                                     <i class="fa fa-info  icon-fa   icon-fa" aria-hidden="true"></i>
                                                 </span>
 
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">مبلغ هر
-                                سهم 250.000 تومان</label>
+                            <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                                <div class="col-12   text-left">
+                                    <div class="row">
+                                        <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1  fontsize">مبلغ هر
+                                            سهم 250.000 تومان</label>
 
 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label for="inputPassword" class="col-9 col-form-label text-nowrap   mx-1  fontsize">مبلغ
-                                وام:10.000.000  تومان</label>
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
-
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label for="inputPassword" class="col-2 col-form-label text-nowrap   mr-1 fontsize">سهم
-                                شما:0 سهم</label>
-
-
-                            <div class="col-9  d-flex align-items-center  justify-content-end  mr-3">
-                                <a type="button" class="btn btn-primary"   data-toggle="modal" data-target="#exampleModal">
-                                    <p class="text-white  my-0 small text-nowrap">ویرایش سهام شما </p></a>
+                                    </div>
+                                </div>
                             </div>
 
-                        </div>
-                    </div>
+                            <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
+                                <div class="col-12   text-left">
+                                    <div class="row">
+                                        <label for="inputPassword" class="col-9 col-form-label text-nowrap   mx-1  fontsize">مبلغ
+                                            وام:10.000.000  تومان</label>
 
 
-                </div>
-
-                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
-
-                    <div class="col-12   text-left">
-                        <div class="row">
 
 
-                            <div class="col-12 text-left  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
-                                <button type="button" class="btn btn-primary">
-                                    <span class="text-white" onclick="not1()">ویرایش اطلاعات</span></button>
-                                <!--                                    <span class="text-secondary"  onclick="not2()" >ثبت اطلاعات</span></button>-->
-                                <!--                                    <span class="text-secondary"  onclick="not3()" >ثبت اطلاعات</span></button>-->
-                                <!--                                    <span class="text-secondary"  onclick="not4()" >ثبت اطلاعات</span></button>-->
-                                <!--                                    <span class="text-secondary"  onclick="not5()" >ثبت اطلاعات</span></button>-->
-                                <!--                                    <span class="text-secondary"  onclick="not6()" >ثبت اطلاعات</span></button>-->
+                                    </div>
+                                </div>
                             </div>
 
+                            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
 
+                                <div class="col-12   text-left">
+                                    <div class="row">
+                                        <label for="inputPassword" class="col-2 col-form-label text-nowrap   mr-1 fontsize">سهم
+                                            شما:0 سهم</label>
+
+
+                                        <div class="col-9  d-flex align-items-center  justify-content-end  mr-3">
+                                            <a type="button" class="btn btn-primary"   data-toggle="modal" data-target="#exampleModal">
+                                                <p class="text-white  my-0 small text-nowrap">ویرایش سهام شما </p></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+
+                                <div class="col-12   text-left">
+                                    <div class="row">
+
+
+                                        <div class="col-12 text-left  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
+                                            <button type="button" class="btn btn-primary">
+                                                <span class="text-white" onclick="not1()">ویرایش اطلاعات</span></button>
+                                            <!--                                    <span class="text-secondary"  onclick="not2()" >ثبت اطلاعات</span></button>-->
+                                            <!--                                    <span class="text-secondary"  onclick="not3()" >ثبت اطلاعات</span></button>-->
+                                            <!--                                    <span class="text-secondary"  onclick="not4()" >ثبت اطلاعات</span></button>-->
+                                            <!--                                    <span class="text-secondary"  onclick="not5()" >ثبت اطلاعات</span></button>-->
+                                            <!--                                    <span class="text-secondary"  onclick="not6()" >ثبت اطلاعات</span></button>-->
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            </form>
                         </div>
                     </div>
+
+
                 </div>
 
-                </form>
-            </div>
         </div>
 
 
-    </div>
-<!--    <div id="accordion" class="mb-3">-->
-<!--        <div class="card">-->
-<!--            <div class="card-header  bg-primary  text-white" id="headingtree">-->
-<!--                <h5 class="mb-0   d-flex  justify-content-between  titr">-->
 
 
-<!--                    <div class="d-flex align-items-center"><i class="fas fa-user  pr-2"></i> علی اکبر فاخر</div>-->
-
-
-<!--                    <div>-->
-
-<!--                        <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top"-->
-<!--                                title="Tooltip on top">-->
-<!--                            <i class="fa fa-question"></i>-->
-<!--                        </button>-->
-<!--                        <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapsetree"-->
-<!--                                aria-expanded="true" aria-controls="collapsetree">-->
-<!--                            <i class="fa fa-chevron-down"></i>-->
-<!--                        </button>-->
-
-
-<!--                    </div>-->
-<!--                </h5>-->
-<!--            </div>-->
-
-<!--            <div id="collapsetree" class="collapse show    my-3" aria-labelledby="headingtree" data-parent="#accordion">-->
-
-
-<!--                &lt;!&ndash;                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">&ndash;&gt;-->
-
-<!--                &lt;!&ndash;                    <div class="col-12   text-left">&ndash;&gt;-->
-<!--                &lt;!&ndash;                        <div class="row">&ndash;&gt;-->
-<!--                &lt;!&ndash;                            <label  class="col-2 col-form-label text-nowrap   mx-1 fontsize">صاحب&ndash;&gt;-->
-<!--                &lt;!&ndash;                                سهام:</label>&ndash;&gt;-->
-
-<!--                &lt;!&ndash;                            <div class="col-7 text-left mr-3 d-flex align-items-center">&ndash;&gt;-->
-<!--                &lt;!&ndash;                                <span for="" class=" text-nowrap  fontsize">علی اکبر فاخر</span>&ndash;&gt;-->
-<!--                &lt;!&ndash;                            </div>&ndash;&gt;-->
-
-<!--                &lt;!&ndash;                            <div class="col-2 d-flex align-items-center  justify-content-start">&ndash;&gt;-->
-<!--                &lt;!&ndash;                            <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">&ndash;&gt;-->
-<!--                &lt;!&ndash;                                                                        <i class="fa fa-phone icon-fa   icon-fa"&ndash;&gt;-->
-<!--                &lt;!&ndash;                                                                           aria-hidden="true"></i>&ndash;&gt;-->
-<!--                &lt;!&ndash;                                                                    </span>&ndash;&gt;-->
-
-<!--                &lt;!&ndash;                            </div>&ndash;&gt;-->
-
-<!--                &lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--                &lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--                &lt;!&ndash;                </div>&ndash;&gt;-->
-
-<!--                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">-->
-
-<!--                    <div class="col-12   text-left">-->
-<!--                        <div class="row">-->
-<!--                            <label  class="col-2 col-form-label text-nowrap   mx-1 fontsize">تعداد-->
-<!--                                سهام:</label>-->
-
-<!--                            <div class="col-9 text-left mr-2 d-flex align-items-center">-->
-<!--                                <span for="" class=" text-nowrap  fontsize">1سهم</span>-->
-<!--                            </div>-->
-
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">-->
-
-<!--                    <div class="col-12   text-left">-->
-<!--                        <div class="row">-->
-<!--                            <label  class="col-4 col-form-label text-nowrap   mx-1 fontsize">سهم 1 :-->
-<!--                                علی اکبر فاخر</label>-->
-
-
-<!--                            <div class="col-2 d-flex align-items-center  justify-content-start">-->
-<!--                            <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">-->
-<!--                                                                        <i class="fa fa-check icon-fa   icon-fa"-->
-<!--                                                                           aria-hidden="true"></i>-->
-<!--                                                                    </span>-->
-
-<!--                            </div>-->
-
-
-<!--                            <label  class="col-5 col-form-label  pr-0 text-nowrap fontsize">برنده-->
-<!--                                شده:1398/11/25</label>-->
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                &lt;!&ndash; <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">-->
-
-<!--                        <div class="col-12   text-left">-->
-<!--                            <div class="row">-->
-<!--                                <label  class="col-1 col-form-label text-nowrap   mx-1 fontsize">آخرین برنده:</label>-->
-
-<!--                                <div class="col-8 text-left   d-flex align-items-center">-->
-<!--                                    <span for="" class=" text-nowrap  fontsize">دوره 3- غزل ترابی</span>-->
-<!--                                </div>-->
-
-<!--                                <div class="col-2 d-flex align-items-center  justify-content-start">-->
-<!--                                    <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">-->
-<!--                                                                            <i class="fa fa-phone icon-fa   icon-fa" aria-hidden="true"></i>-->
-<!--                                                                        </span>-->
-
-<!--                                </div>-->
-
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div> &ndash;&gt;-->
-
-<!--                <div class="d-flex  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm  bg-white rounded  border">-->
-
-<!--                    <div class="col-12   text-left">-->
-<!--                        <div class="row">-->
-<!--                            <label  class="col-7  col-form-label text-nowrap fontsize" >بدهی 250.000 تومان -دوره 4</label>-->
-
-
-<!--                            <div class="col-5 d-flex align-items-center  justify-content-center">-->
-<!--                                <button type="button" class="btn btn-success">-->
-<!--                                    <p class="text-white my-0 small text-nowrap" onclick="not1()">ثبت اطلاعات</p></button>-->
-<!--                            </div>-->
-
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-
-<!--            </div>-->
+<!--        <div class="col-lg-6  col-12  my-5">-->
+<!--            <img src="images/join-us.png" class="imgbody">-->
 <!--        </div>-->
 
 
-<!--    </div>-->
-
-
-<!--    <div id="accordion"  class="mb-3" >-->
-<!--        <div class="card">-->
-<!--            <div class="card-header  bg-primary  text-white  py-2" id="headingOne">-->
-<!--                <h5 class="mb-0   d-flex  justify-content-between  titr">-->
-
-
-
-<!--                    <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pr-2"></i> دوره 3-1398/08/30   انجام نشده </div>-->
-
-
-<!--                    <div>-->
-
-<!--                        <button type="button" class="btn   text-white" data-toggle="tooltip" data-placement="top" title="Tooltip on top">-->
-<!--                            <i class="fa fa-question"></i>-->
-<!--                        </button>-->
-<!--                        <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">-->
-<!--                            <i class="fa fa-chevron-down"></i>-->
-<!--                        </button>-->
-
-
-
-
-<!--                    </div>-->
-<!--                </h5>-->
-<!--            </div>-->
-
-<!--            <div id="collapsetwo" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">-->
-
-<!--                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">-->
-<!--                    <div class="col-12   text-left">-->
-<!--                        <div class="row">-->
-<!--                            <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">برنده</label>-->
-
-
-
-
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div><div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">-->
-<!--                <div class="col-12   text-left">-->
-<!--                    <div class="row">-->
-<!--                        <label class="col-10 col-form-label text-nowrap   mx-1  fontsize">سهام شرکت کننده</label>-->
-
-
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">-->
-<!--                    <div class="col-12   text-left">-->
-<!--                        <div class="row">-->
-<!--                            <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>-->
-<!--                            <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>-->
-<!--                            <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>-->
-
-
-
-
-
-
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-<!--                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">-->
-
-<!--                    <div class="col-12   text-left">-->
-<!--                        <div class="row">-->
-
-
-<!--                            <div class="col-12 text-left  py-2   d-flex align-items-center  justify-content-center  pr-2  ">-->
-<!--                                <button type="button" class="btn btn-primary">-->
-<!--                                                    <span style="-->
-<!--    font-size: 12px;-->
-<!--" class="text-white  fontsize text-nowrap ">اطلاعات پرداخت وام</span></button>-->
-
-<!--                                <div class="col-1 offset-1"></div>-->
-<!--                                <button type="button" class="btn btn-primary">-->
-<!--                                    <span class="text-white text-nowrap fontsize">اطلاعات واریز اقساط</span></button>-->
-<!--                            </div>-->
-
-
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-
-
-
-
-
-<!--            </div>-->
-
-
-
+<!--        <div class="col-lg-6  col-12">-->
+<!--            <img src="images/search-fund.svg" class="imgbody">-->
 <!--        </div>-->
 
-
-<!--    </div>-->
-        </div>
     </div>
+
 </main>
 <div class="navbarbotton">
     <a href="creat sandogh.html" class="active">

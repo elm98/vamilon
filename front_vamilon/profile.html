@@ -13,9 +13,10 @@
 </head>
 
 
-<body>
+<body class="bg-head">
 
-<div class="bg-head">
+
+<div>
 
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-primary p-4">
@@ -23,23 +24,30 @@
             <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
     </div>
-    <nav class="navbar  d-flex" d>
+    <nav class="navbar   py-0  py-lg-2  d-flex" >
 
         <button class="navbar-toggler collapsed" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
             <span class="navbar-toggler-icon"> <i class="fas fa-bars  bars"></i></span>
         </button>
 
 
-        <form class="form-inline my-2 my-lg-0  ltr    mx-2  flex-grow-1" >
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>صندوق ده میلیونی ترابی</option>
+        <img src="images/sandogh-logo-light.png">
 
-            </select>
-        </form>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info   py-0  my-0 fontsize"> انتخاب صندوق</button>
+            <button type="button" class="btn btn-primary   py-0  my-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu  fontsize">
+                <li class="text-center border-bottom" ><a>صندوق 1</a></li>
+                <li class="text-center" ><a >صندوق 2</a></li>
 
-        <img src="images/logo.png">
+            </ul>
+        </div>
 
     </nav>
+
 
     <section class="drawer drawer--right" id="drawer-name-left" data-drawer-target>
         <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
@@ -76,22 +84,22 @@
         </div>
     </section>
 
-
 </div>
-<main role="main" class="container-fluid">
+
+<main role="main" class="container-fluid  pt-5  mt-5">
     <div class="row"  >
-        <div class="col-lg-6  col-12"  >
+        <div class="col-lg-6  col-12  img-bg"  >
             <img src="images/join-us.png"  class="imgbody"  >
         </div>
         <div class="col-lg-6  col-12"  >
 
-    <div id="accordion" class="mb-3  mt-5">
-        <div class="card">
-            <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
+    <div id="accordion1" class="mb-3  mt-5">
+        <div class="card   border-0">
+            <div class="card-header  bg-primary  text-white  py-2" id="heading1">
                 <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                    <div class="d-flex align-items-center  fontsize"><i class="fas fa-user  pl-2"></i> سید ابوالقاسم میرباقری
+                    <div class="d-flex align-items-center  fontsize"><i class="fas fa-user  pr-2"></i> سید ابوالقاسم میرباقری
                     </div>
 
 
@@ -114,7 +122,7 @@
                 </h5>
             </div>
 
-            <div id="collapsefive" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapsefive" class="collapse show      mt-0  py-2" aria-labelledby="heading1" data-parent="#accordion1">
 
 
                 <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2   d-flex  shadow-sm   rounded  border">
@@ -135,9 +143,6 @@
                         <div class="row">
                             <label class="col-12 col-form-label text-nowrap   mx-1 fontsize">شماره همراه :0911111111</label>
 
-
-
-
                         </div>
                     </div>
                 </div>
@@ -149,25 +154,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2   d-flex  shadow-sm   rounded  border">
+                <div class="row d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
 
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label class="col-4 col-form-label text-nowrap   mx-1 fontsize">سهم 1 : میر حسینی</label>
+                    <div class="col-12   d-flex   text-left">
+
+                        <label class="col-form-label text-wrap   mx-1 fontsize">سهم 1 :
+                            میر حسینی</label>
 
 
-                            <div class="col-2 d-flex align-items-center  justify-content-start">
+                        <div class=" d-flex align-items-center   mx-2 my-1  justify-content-start">
                             <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
-                                                                        <i class="fa fa-check icon-fa   icon-fa"
-                                                                           aria-hidden="true"></i>
+                                                                        <i class="fa fa-check icon-fa   icon-fa" aria-hidden="true"></i>
                                                                     </span>
 
-                            </div>
-
-
-                            <label class="col-5 col-form-label  pr-0 text-nowrap fontsize">برنده شده:1398/11/25</label>
-
                         </div>
+
+
+                        <label class="col-form-label  pr-0 text-wrap fontsize">برنده
+                            شده:1398/11/25</label>
+
+
                     </div>
                 </div>
 
@@ -255,13 +261,13 @@
 
 
 
-    <div id="accordion" class="mb-3  mt-5">
-        <div class="card">
-            <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
+    <div id="accordion2" class="mb-3  mt-5">
+        <div class="card   border-0">
+            <div class="card-header  bg-primary  text-white  py-2" id="heading2">
                 <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                    <div class="d-flex align-items-center  fontsize"><i class="fas fa-user  pl-2"></i>اطلاعات حساب بانکی
+                    <div class="d-flex align-items-center  fontsize"><i class="fas fa-user  pr-2"></i>اطلاعات حساب بانکی
                     </div>
 
 
@@ -274,7 +280,7 @@
                                 title="Tooltip on top">
                             <i class="fa fa-question"></i>
                         </button>
-                        <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapset"
+                        <button class="btn btn-link text-white  px-0" data-toggle="collapse" data-target="#collapset2"
                                 aria-expanded="true" aria-controls="collapset">
                             <i class="fa fa-chevron-down"></i>
                         </button>
@@ -284,16 +290,16 @@
                 </h5>
             </div>
 
-            <div id="collapset" class="collapse show   px-2   my-3" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapset2" class="collapse show    px-2   mt-0  py-2" aria-labelledby="heading2" data-parent="#accordion2">
 
 
                 <div class="card  mt-2  ">
                     <div class="  d-flex  align-items-center  justify-content-center mt-2">
-                        <div class="col-7   text-left">
+                        <div class="col-9   text-left">
                             <span class="titr">اطلاعات بانکی-بانک سپه</span>
                         </div>
 
-                        <div class="col-5 text-left  py-2   d-flex align-items-center  justify-content-end pr-2  ">
+                        <div class="col-3 text-left  py-2   d-flex align-items-center  justify-content-end pr-2  ">
                             <button type="button" class="btn btn-outline-primary"    data-toggle="modal" data-target="#exampleModalpar" >
                                 <span class="text-secondary  text-nowrap">ویرایش اطلاعات</span></button>
                         </div>
@@ -304,7 +310,7 @@
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-left">
                             <div class="row">
-                                <label class="col-10 col-form-label text-nowrap   mx-1  "> نام حساب:سپه</label>
+                                <label class="col-12 col-form-label text-nowrap   mx-1  "> نام حساب:سپه</label>
 
 
                             </div>
@@ -313,7 +319,7 @@
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-left">
                             <div class="row">
-                                <label class="col-10 col-form-label text-nowrap   mx-1  "> لینک پرداخت:sepah.com</label>
+                                <label class="col-12 col-form-label text-nowrap   mx-1  "> لینک پرداخت:sepah.com</label>
 
 
                             </div>
@@ -322,7 +328,7 @@
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-left">
                             <div class="row">
-                                <label class="col-10 col-form-label text-nowrap   mx-1  ">شماره کارت:6037665225878471</label>
+                                <label class="col-12 col-form-label text-nowrap   mx-1  ">شماره کارت:6037665225878471</label>
 
 
                             </div>
@@ -331,7 +337,7 @@
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                         <div class="col-12   text-left">
                             <div class="row">
-                                <label class="col-10 col-form-label text-nowrap   mx-1  ">شماره حساب:015428741</label>
+                                <label class="col-12 col-form-label text-nowrap   mx-1  ">شماره حساب:015428741</label>
 
 
                             </div>
@@ -342,11 +348,11 @@
                 </div>
                 <div class="card  mt-2 ">
                     <div class="  d-flex  align-items-center  justify-content-center mt-2">
-                        <div class="col-7   text-left">
+                        <div class="col-9   text-left">
                             <span class="titr">اطلاعات بانکی-بانک ملی</span>
                         </div>
 
-                        <div class="col-5 text-left  py-2   d-flex align-items-center  justify-content-end pr-2  ">
+                        <div class="col-3 text-left  py-2   d-flex align-items-center  justify-content-end pr-2  ">
                             <button type="button" class="btn btn-outline-primary"   data-toggle="modal" data-target="#exampleModalpar" >
                                 <span class="text-secondary  text-nowrap">ویرایش اطلاعات</span></button>
                         </div>
@@ -403,13 +409,13 @@
 
 
 
-    <div id="accordion" class="my-3">
-        <div class="card">
-            <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
+    <div id="accordion3" class="my-3">
+        <div class="card   border-0">
+            <div class="card-header  bg-primary  text-white  py-2" id="heading3">
                 <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                    <div class="d-flex align-items-center"><i class="fas fa-edit   pl-2"></i> افزودن- ویرایش حساب بانکی
+                    <div class="d-flex align-items-center"><i class="fas fa-edit   pr-2"></i> افزودن- ویرایش حساب بانکی
                     </div>
 
 
@@ -432,14 +438,14 @@
                 </h5>
             </div>
 
-            <div id="collapsefive" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapsefive" class="collapse show      mt-0  py-2" aria-labelledby="heading3" data-parent="#accordion3">
 
 
                 <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
 
                     <div class="col-12   text-left">
                         <div class="row">
-                            <label class="col-3 col-form-label text-nowrap   mx-1 fontsize">عنوان حساب:</label>
+                            <label class="col-3  col-lg-1  col-form-label text-nowrap   mx-1 fontsize">عنوان حساب:</label>
                             <div class="col-8">
                                 <input type="text" class="form-control" id="inputPassword" placeholder="بانک ملی">
                             </div>
@@ -451,7 +457,7 @@
 
                     <div class="col-12   text-left">
                         <div class="row">
-                            <label class="col-3 col-form-label text-nowrap   mx-1 fontsize ">شماره کارت:</label>
+                            <label class="col-3  col-lg-1  col-form-label text-nowrap   mx-1 fontsize">شماره کارت:</label>
                             <div class="col-8">
                                 <input type="text" class="form-control" id="inputPassword"
                                        placeholder="6037654252411478">
@@ -464,7 +470,7 @@
 
                     <div class="col-12   text-left">
                         <div class="row">
-                            <label class="col-3 col-form-label text-nowrap   mx-1 fontsize">شماره حساب:</label>
+                            <label class="col-3  col-lg-1  col-form-label text-nowrap   mx-1 fontsize">شماره حساب:</label>
                             <div class="col-8">
                                 <input type="text" class="form-control" id="inputPassword" placeholder="015428741">
                             </div>
@@ -476,7 +482,7 @@
 
                     <div class="col-12   text-left">
                         <div class="row">
-                            <label class="col-3 col-form-label text-nowrap   mx-1 fontsize">لینک پرداخت:</label>
+                            <label class="col-3  col-lg-1  col-form-label text-nowrap   mx-1 fontsize">لینک پرداخت:</label>
                             <div class="col-8">
                                 <input type="text" class="form-control" id="inputPassword"
                                        placeholder="http://mtorabi.ipad">
@@ -672,7 +678,7 @@
                         <div class="col-12  my-2  text-left">
                             <div class="row">
                                 <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">نام حساب :
-                                    :</label>
+                                    </label>
                                 <div class="col-8">
                                     <div class="form-group  h ">
                                         <input type="text" class="form-control" id="password" required="">
@@ -690,7 +696,7 @@
                         <div class="col-12  my-2  text-left">
                             <div class="row">
                                 <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">شماره حساب :
-                                    :</label>
+                                    </label>
                                 <div class="col-8">
                                     <div class="form-group  h ">
                                         <input type="text" class="form-control" id="password" required="">
@@ -707,7 +713,7 @@
                         <div class="col-12  my-2  text-left">
                             <div class="row">
                                 <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">شماره کارت :
-                                    :</label>
+                                    </label>
                                 <div class="col-8">
                                     <div class="form-group  h ">
                                         <input type="text" class="form-control" id="password" required="">
@@ -723,7 +729,7 @@
                         <div class="col-12  my-2  text-left">
                             <div class="row">
                                 <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">لینک پرداخت :
-                                    :</label>
+                                   </label>
                                 <div class="col-8">
                                     <div class="form-group  h ">
                                         <input type="text" class="form-control" id="password" required="">

@@ -20,10 +20,10 @@
 
 </head>
 
-<body>
+<body class="bg-head">
 
 
-<div class="bg-head">
+<div>
 
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-primary p-4">
@@ -38,14 +38,20 @@
         </button>
 
 
-        <form class="form-inline my-2 my-lg-0  ltr    mx-2  flex-grow-1" >
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>صندوق ده میلیونی ترابی</option>
+        <img src="images/sandogh-logo-light.png">
 
-            </select>
-        </form>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info   py-0  my-0 fontsize"> انتخاب صندوق</button>
+            <button type="button" class="btn btn-primary   py-0  my-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu  fontsize">
+                <li class="text-center border-bottom" ><a>صندوق 1</a></li>
+                <li class="text-center" ><a >صندوق 2</a></li>
 
-        <img src="images/logo.png">
+            </ul>
+        </div>
 
     </nav>
 
@@ -86,15 +92,17 @@
     </section>
 
 </div>
-<main role="main" class="container-fluid">
+
+
+<main role="main" class="container-fluid  pt-5  mt-5">
 
 <!--    <div id="accordion" class="mb-3  mt-5">-->
-<!--        <div class="card">-->
+<!--        <div class="card   border-0">-->
 <!--            <div class="card-header  bg-primary  text-white   py-2" id="headingOne">-->
 <!--                <h5 class="mb-0   d-flex  justify-content-between  titr">-->
 
 
-<!--                    <div class="d-flex align-items-center"><i class="fas fa-folder  pl-2"></i>ساخت - ویرایش صندوق</div>-->
+<!--                    <div class="d-flex align-items-center"><i class="fas fa-folder  pr-2"></i>ساخت - ویرایش صندوق</div>-->
 
 
 <!--                    <div>-->
@@ -113,7 +121,7 @@
 <!--                </h5>-->
 <!--            </div>-->
 
-<!--            <div id="collapseOne" class="collapse show    my-3  collapseOne test" aria-labelledby="headingOne" data-parent="#accordion">-->
+<!--            <div id="collapseOne" class="collapse show      mt-0  py-2  collapseOne test" aria-labelledby="headingOne" data-parent="#accordion">-->
 
 <!--                <form action=""  >-->
 
@@ -272,11 +280,11 @@
 
 
 <!--    <div id="accordion" class="mb-3">-->
-<!--        <div class="card">-->
+<!--        <div class="card   border-0">-->
 <!--            <div class="card-header  bg-primary  text-white  px-2 py-2" id="headingOne">-->
 <!--                <h5 class="mb-0   d-flex  justify-content-between  titr  titr">-->
 
-<!--                    <div class="d-flex align-items-center"><i class="fas fa-users pl-2"></i> صندوق در حال عضوگیری را-->
+<!--                    <div class="d-flex align-items-center"><i class="fas fa-users pr-2"></i> صندوق در حال عضوگیری را-->
 <!--                        پیدا کنید-->
 <!--                    </div>-->
 
@@ -297,7 +305,7 @@
 <!--                </h5>-->
 <!--            </div>-->
 
-<!--            <div id="collapsetwo" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">-->
+<!--            <div id="collapsetwo" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">-->
 
 <!--                <form  action=""  >-->
 <!--                    <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">-->
@@ -334,11 +342,11 @@
         </div>
         <div class="col-lg-6  col-12"  >
     <div id="accordion" class="mb-3  mt-5">
-        <div class="card">
+        <div class="card   border-0">
             <div class="card-header  bg-primary  text-white   py-2" id="headingOne">
                 <h5 class="mb-0   d-flex  justify-content-between  titr">
 
-                    <div class="d-flex align-items-center"><i class="fas fa-info  pl-2"></i> اطلاعات صندوق</div>
+                    <div class="d-flex align-items-center"><i class="fas fa-info  pr-2"></i> اطلاعات صندوق</div>
 
 
 
@@ -358,7 +366,7 @@
                 </h5>
             </div>
 
-            <div id="collapsetree" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapsetree" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
 
                 <div class="d-flex bg-white  mt-0  mb-1  mx-2">
@@ -453,20 +461,20 @@
                     </div>
                 </div>
 
-                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
+                <div class="row d-flex  mb-1  py-1 mt-0  mx-2  d-flex  my-2  shadow-sm  bg-white rounded  border">
 
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label for="inputPassword" class="col-2 col-form-label text-nowrap   mr-1 fontsize">سهم
-                                شما:0 سهم</label>
+                    <div class="col-12  d-flex  text-left  justify-content-between">
+
+                        <label for="inputPassword" class="col-form-label text-wrap   mr-1 fontsize">سهم
+                            :0 سهم</label>
 
 
-                            <div class="col-9  d-flex align-items-center  justify-content-end  mr-3">
-                                <a type="button" class="btn btn-primary"   data-toggle="modal" data-target="#exampleModal">
-                                    <p class="text-white  my-0 small text-nowrap">ویرایش سهام شما </p></a>
-                            </div>
-
+                        <div class="d-flex align-items-center  justify-content-end  mr-3">
+                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                <p class="text-white  my-0 small text-nowrap">ویرایش سهام شما </p></a>
                         </div>
+
+
                     </div>
 
 
@@ -500,12 +508,12 @@
 
     </div>
     <div id="accordion" class="mb-3">
-        <div class="card">
+        <div class="card   border-0">
             <div class="card-header  bg-primary  text-white" id="headingtree">
                 <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                    <div class="d-flex align-items-center"><i class="fas fa-user  pl-2"></i> علی اکبر فاخر</div>
+                    <div class="d-flex align-items-center"><i class="fas fa-user  pr-2"></i> علی اکبر فاخر</div>
 
 
                     <div>
@@ -524,106 +532,25 @@
                 </h5>
             </div>
 
-            <div id="collapsetree" class="collapse show    my-3" aria-labelledby="headingtree" data-parent="#accordion">
+            <div id="collapsetree" class="collapse show  shadow-sm   mt-0" aria-labelledby="headingtree" data-parent="#accordion">
+                <div class="row d-flex bg-white  mb-1  py-1 mt-0  mx-2   ">
+                    <div class="col-12   d-flex">
 
-
-                <!--                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">-->
-
-                <!--                    <div class="col-12   text-right">-->
-                <!--                        <div class="row">-->
-                <!--                            <label  class="col-2 col-form-label text-nowrap   mx-1 fontsize">صاحب-->
-                <!--                                سهام:</label>-->
-
-                <!--                            <div class="col-7 text-right mr-3 d-flex align-items-center">-->
-                <!--                                <span for="" class=" text-nowrap  fontsize">علی اکبر فاخر</span>-->
-                <!--                            </div>-->
-
-                <!--                            <div class="col-2 d-flex align-items-center  justify-content-start">-->
-                <!--                            <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">-->
-                <!--                                                                        <i class="fa fa-phone icon-fa   icon-fa"-->
-                <!--                                                                           aria-hidden="true"></i>-->
-                <!--                                                                    </span>-->
-
-                <!--                            </div>-->
-
-                <!--                        </div>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-
-                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
-
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label  class="col-11 col-form-label text-nowrap   mx-1 fontsize">تعداد سهم : 1سهم</label>
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
-
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label  class="col-4 col-form-label text-nowrap   mx-1 fontsize">سهم 1 :
-                                علی اکبر فاخر</label>
-
-
-                            <div class="col-2 d-flex align-items-center  justify-content-start">
-                            <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
-                                                                        <i class="fa fa-check icon-fa   icon-fa"
-                                                                           aria-hidden="true"></i>
+                        <label class="col-form-label text-nowrap   mx-1 fontsize">سهم 1 :
+                            علی اکبر فاخر</label>
+                        <span class="bg-light   mx-2  my-1   icon" data-toggle="modal" data-target="#exampleModal">
+                                                                        <i class="fa fa-check icon-fa  icon-fa" aria-hidden="true"></i>
                                                                     </span>
 
-                            </div>
+
+                        <label class="col-form-label  pr-0 text-nowrap fontsize">برنده
+                            شده:1398/11/25</label>
 
 
-                            <label  class="col-5 col-form-label  pr-0 text-nowrap fontsize">برنده
-                                شده:1398/11/25</label>
 
-                        </div>
                     </div>
+
                 </div>
-
-                <!-- <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
-
-                        <div class="col-12   text-right">
-                            <div class="row">
-                                <label  class="col-1 col-form-label text-nowrap   mx-1 fontsize">آخرین برنده:</label>
-
-                                <div class="col-8 text-right   d-flex align-items-center">
-                                    <span for="" class=" text-nowrap  fontsize">دوره 3- غزل ترابی</span>
-                                </div>
-
-                                <div class="col-2 d-flex align-items-center  justify-content-start">
-                                    <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
-                                                                            <i class="fa fa-phone icon-fa   icon-fa" aria-hidden="true"></i>
-                                                                        </span>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div> -->
-
-                <div class="d-flex  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm  bg-white rounded  border">
-
-                    <div class="col-12   text-left">
-                        <div class="row">
-                            <label  class="col-7  col-form-label text-nowrap fontsize" >بدهی 250.000 تومان -دوره 4</label>
-
-
-                            <div class="col-5 d-flex align-items-center  justify-content-center">
-                                <button type="button" class="btn btn-success">
-                                    <p class="text-white my-0 small text-nowrap" onclick="not1()">ثبت اطلاعات</p></button>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
 
             </div>
         </div>
@@ -632,13 +559,13 @@
     </div>
 
     <div id="accordion"  class="mb-2  mt-5" >
-        <div class="card">
+        <div class="card   border-0">
             <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
                 <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
 
-                    <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i>قرعه کشی بعدی</div>
+                    <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pr-2"></i>قرعه کشی بعدی</div>
 
 
                     <div>
@@ -657,7 +584,7 @@
                 </h5>
             </div>
 
-            <div id="collapseOner" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOner" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
                 <form action="">
                     <div class="  d-flex   mt-2">
@@ -719,13 +646,13 @@
 
 
     <div id="accordion"  class="mb-2  mt-5" >
-        <div class="card">
+        <div class="card   border-0">
             <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
                 <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
 
-                    <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i>قرعه کشی بعدی</div>
+                    <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pr-2"></i>قرعه کشی بعدی</div>
 
 
                     <div>
@@ -744,7 +671,7 @@
                 </h5>
             </div>
 
-            <div id="collapseOner" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOner" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
                 <form action="">
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
@@ -768,29 +695,19 @@
                     </div>
                 </div>
 
-                    <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
-                        <div class="col-12   text-right">
-                            <div class="row">
-                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
-                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
-                                <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
+                    <div class="row d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded   fontsize  border">
+
+                        <div class="col-12 d-flex   justify-content-between">
+                            <label class="col-form-label text-wrap    ">واریز شده:25</label>
+                            <label class="col-form-label text-wrap   ">منتظر تایید:5</label>
+                            <label class="col-form-label text-wrap ">تایید شده:25</label>
 
 
 
 
 
-
-
-                            </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
 
                     <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
 
@@ -834,13 +751,13 @@
 
 
     <div id="accordion"  class="mb-2  mt-5" >
-        <div class="card">
+        <div class="card   border-0">
             <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
                 <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
 
-                    <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i>قرعه کشی قبلی</div>
+                    <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pr-2"></i>قرعه کشی قبلی</div>
 
 
                     <div>
@@ -859,7 +776,7 @@
                 </h5>
             </div>
 
-            <div id="collapseOneew" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapseOneew" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
                 <form action="">
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
@@ -923,13 +840,13 @@
 
 
     <div id="accordion"  class="mb-3" >
-        <div class="card">
+        <div class="card   border-0">
             <div class="card-header  bg-primary  text-white  py-2" id="headingOne">
                 <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
 
-                    <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pl-2"></i> دوره 3-1398/08/30   انجام نشده </div>
+                    <div class="d-flex align-items-center">  <i class="fas fa-calendar-alt   pr-2"></i> دوره 3-1398/08/30   انجام نشده </div>
 
 
                     <div>
@@ -948,7 +865,7 @@
                 </h5>
             </div>
 
-            <div id="collapsetwo" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+            <div id="collapsetwo" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
                 <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
                     <div class="col-12   text-left">
@@ -972,19 +889,15 @@
             </div>
 
                 <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex shadow-sm   rounded  border">
-                    <div class="col-12   text-right">
-                        <div class="row">
-                            <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">واریز شده:25</label>
-                            <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">منتظر تایید:5</label>
-                            <label class="col-3 col-form-label text-nowrap   mx-1  fontsize">تایید شده:25</label>
+                    <div class="col-12 d-flex   justify-content-between">
+                        <label class="col-form-label text-wrap    ">واریز شده:25</label>
+                        <label class="col-form-label text-wrap   ">منتظر تایید:5</label>
+                        <label class="col-form-label text-wrap ">تایید شده:25</label>
 
 
 
 
 
-
-
-                        </div>
                     </div>
                 </div>
 

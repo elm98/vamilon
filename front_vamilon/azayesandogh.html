@@ -15,25 +15,38 @@
 
 <body>
 
-<div class="bg-head">
+<body class="bg-head">
 
 
-    <nav class="navbar">
+<div>
 
-        <button   class="navbar-toggler collapsed"  data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-primary p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
+    <nav class="navbar  d-flex" d>
+
+        <button class="navbar-toggler collapsed" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
             <span class="navbar-toggler-icon"> <i class="fas fa-bars  bars"></i></span>
         </button>
 
 
-        <form class="form-inline my-2 my-lg-0">
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>صندوق ده میلیونی ترابی</option>
+        <img src="images/sandogh-logo-light.png">
 
-            </select>
-        </form>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info   py-0  my-0 fontsize"> انتخاب صندوق</button>
+            <button type="button" class="btn btn-primary   py-0  my-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu  fontsize">
+                <li class="text-center border-bottom" ><a>صندوق 1</a></li>
+                <li class="text-center" ><a >صندوق 2</a></li>
 
-        <img src="images/logo.png">
-
+            </ul>
+        </div>
 
     </nav>
 
@@ -75,8 +88,7 @@
 
 </div>
 
-
-<main role="main" class="container-fluid">
+<main role="main" class="container-fluid  pt-5  mt-5">
     <div class="row"  >
         <div class="col-lg-6  col-12"  >
             <img src="images/fund-member.svg"  class="imgbody"  >
@@ -109,11 +121,11 @@
 
             </div>
             <div id="accordion" class="mt-5  mb-3">
-                <div class="card">
+                <div class="card   border-0">
                     <div class="card-header  bg-primary  text-white" id="headingOne">
                         <h5 class="mb-0   d-flex  justify-content-between  titr">
 
-                            <div class="d-flex align-items-center"><i class="fas fa-info  pl-2"></i> اطلاعات صندوق</div>
+                            <div class="d-flex align-items-center"><i class="fas fa-info  pr-2"></i> اطلاعات صندوق</div>
 
                             <div>
 
@@ -129,26 +141,29 @@
                         </h5>
                     </div>
 
-                    <div id="collapseOne" class="collapse show    my-3" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapseOne" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
 
-                        <div class="d-flex bg-white  mb-1  py-1 mx-2   shadow-sm   rounded  border">
+                        <div class="row d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
 
-                            <div class="col-12">
-                                <div class="row">
+                            <div class="col-12   d-flex   text-left">
+
+                                <label class="col-form-label text-wrap   mx-1 fontsize">سهم 1 :
+                                    میر حسینی</label>
 
 
-                                    <div class="col-10 text-left  text-nowrap  fontsize  py-2">مدیر : مقداد ترابی</div>
-
-
-                                    <div class="col-2 d-flex align-items-center  justify-content-center">
+                                <div class=" d-flex align-items-center   mx-2 my-1  justify-content-start">
                             <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
-                                                                        <i class="fa fa-phone icon-fa   icon-fa" aria-hidden="true"></i>
+                                                                        <i class="fa fa-check icon-fa   icon-fa" aria-hidden="true"></i>
                                                                     </span>
 
-                                    </div>
-
                                 </div>
+
+
+                                <label class="col-form-label  pr-0 text-wrap fontsize">برنده
+                                    شده:1398/11/25</label>
+
+
                             </div>
                         </div>
 
@@ -264,12 +279,12 @@
 
             </div>
             <div id="accordion" class="mb-3">
-                <div class="card">
+                <div class="card   border-0">
                     <div class="card-header  bg-primary  text-white" id="headingtwo">
                         <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                            <div class="d-flex align-items-center"><i class="fas fa-user  pl-2"></i> مقداد ترابی</div>
+                            <div class="d-flex align-items-center"><i class="fas fa-user  pr-2"></i> مقداد ترابی</div>
 
 
                             <div>
@@ -286,7 +301,7 @@
                         </h5>
                     </div>
 
-                    <div id="collapseTwo" class="collapse show    my-3" aria-labelledby="headingtwo" data-parent="#accordion">
+                    <div id="collapseTwo" class="collapse show      mt-0  py-2" aria-labelledby="headingtwo" data-parent="#accordion">
 
 
                         <!--                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">-->
@@ -316,33 +331,33 @@
 
                             <div class="col-12   text-left">
                                 <div class="row">
-                                    <label class="col-10 col-form-label text-nowrap   mx-1 fontsize">تعداد
+                                    <label class="col-12 col-form-label text-nowrap   mx-1 fontsize">تعداد
                                         سهام:3سهم</label>
 
 
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
+                        <div class="row d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
 
-                            <div class="col-12   text-left">
-                                <div class="row">
-                                    <label class="col-4 col-form-label text-nowrap   mx-1 fontsize">سهم 1 :
-                                        مقداد ترابی</label>
+                            <div class="col-12   d-flex   text-left">
+
+                                <label class="col-form-label text-wrap   mx-1 fontsize">سهم 1 :
+                                    میر حسینی</label>
 
 
-                                    <div class="col-2 d-flex align-items-center  justify-content-start">
+                                <div class=" d-flex align-items-center   mx-2 my-1  justify-content-start">
                             <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
                                                                         <i class="fa fa-check icon-fa   icon-fa" aria-hidden="true"></i>
                                                                     </span>
 
-                                    </div>
-
-
-                                    <label class="col-5 col-form-label  pr-0 text-nowrap fontsize">برنده
-                                        شده:1398/11/25</label>
-
                                 </div>
+
+
+                                <label class="col-form-label  pr-0 text-wrap fontsize">برنده
+                                    شده:1398/11/25</label>
+
+
                             </div>
                         </div>
                         <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
@@ -400,12 +415,12 @@
 
             </div>
             <div id="accordion" class="mb-3">
-                <div class="card">
+                <div class="card   border-0">
                     <div class="card-header  bg-primary  text-white" id="headingtree">
                         <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                            <div class="d-flex align-items-center"><i class="fas fa-user  pl-2"></i> علی اکبر فاخر</div>
+                            <div class="d-flex align-items-center"><i class="fas fa-user  pr-2"></i> علی اکبر فاخر</div>
 
 
                             <div>
@@ -422,7 +437,7 @@
                         </h5>
                     </div>
 
-                    <div id="collapsetree" class="collapse show    my-3" aria-labelledby="headingtree" data-parent="#accordion">
+                    <div id="collapsetree" class="collapse show      mt-0  py-2" aria-labelledby="headingtree" data-parent="#accordion">
 
 
                         <!--                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">-->
@@ -452,33 +467,33 @@
 
                             <div class="col-12   text-left">
                                 <div class="row">
-                                    <label class="col-10 col-form-label text-nowrap   mx-1 fontsize">تعداد
+                                    <label class="col-12 col-form-label text-nowrap   mx-1 fontsize">تعداد
                                         سهام:3سهم</label>
 
 
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
+                        <div class="row d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
 
-                            <div class="col-12   text-left">
-                                <div class="row">
-                                    <label class="col-4 col-form-label text-nowrap   mx-1 fontsize">سهم 1 :
-                                        علی اکبر فاخر</label>
+                            <div class="col-12   d-flex   text-left">
+
+                                <label class="col-form-label text-wrap   mx-1 fontsize">سهم 1 :
+                                    میر حسینی</label>
 
 
-                                    <div class="col-2 d-flex align-items-center  justify-content-start">
+                                <div class=" d-flex align-items-center   mx-2 my-1  justify-content-start">
                             <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
                                                                         <i class="fa fa-check icon-fa   icon-fa" aria-hidden="true"></i>
                                                                     </span>
 
-                                    </div>
-
-
-                                    <label class="col-5 col-form-label  pr-0 text-nowrap fontsize">برنده
-                                        شده:1398/11/25</label>
-
                                 </div>
+
+
+                                <label class="col-form-label  pr-0 text-wrap fontsize">برنده
+                                    شده:1398/11/25</label>
+
+
                             </div>
                         </div>
 
@@ -527,12 +542,12 @@
 
             </div>
             <div id="accordion" class="mb-3">
-                <div class="card">
+                <div class="card   border-0">
                     <div class="card-header  bg-primary  text-white" id="headingfour">
                         <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                            <div class="d-flex align-items-center"><i class="fas fa-user  pl-2"></i> سید ابوالقاسم میرباقری
+                            <div class="d-flex align-items-center"><i class="fas fa-user  pr-2"></i> سید ابوالقاسم میرباقری
                             </div>
 
 
@@ -550,7 +565,7 @@
                         </h5>
                     </div>
 
-                    <div id="collapsefour" class="collapse show    my-3" aria-labelledby="headingfour" data-parent="#accordion">
+                    <div id="collapsefour" class="collapse show      mt-0  py-2" aria-labelledby="headingfour" data-parent="#accordion">
 
 
                         <!--                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">-->
@@ -580,33 +595,33 @@
 
                             <div class="col-12   text-left">
                                 <div class="row">
-                                    <label class="col-10 col-form-label text-nowrap   mx-1 fontsize">تعداد
+                                    <label class="col-12 col-form-label text-nowrap   mx-1 fontsize">تعداد
                                         سهام:3سهم</label>
 
 
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
+                        <div class="row d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
 
-                            <div class="col-12   text-left">
-                                <div class="row">
-                                    <label class="col-4 col-form-label text-nowrap   mx-1 fontsize">سهم 1 :
-                                        میر حسینی</label>
+                            <div class="col-12   d-flex   text-left">
+
+                                <label class="col-form-label text-wrap   mx-1 fontsize">سهم 1 :
+                                    میر حسینی</label>
 
 
-                                    <div class="col-2 d-flex align-items-center  justify-content-start">
+                                <div class=" d-flex align-items-center   mx-2 my-1  justify-content-start">
                             <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">
                                                                         <i class="fa fa-check icon-fa   icon-fa" aria-hidden="true"></i>
                                                                     </span>
 
-                                    </div>
-
-
-                                    <label class="col-5 col-form-label  pr-0 text-nowrap fontsize">برنده
-                                        شده:1398/11/25</label>
-
                                 </div>
+
+
+                                <label class="col-form-label  pr-0 text-wrap fontsize">برنده
+                                    شده:1398/11/25</label>
+
+
                             </div>
                         </div>
 
@@ -1078,8 +1093,7 @@
 
 
 
-    // var $buttonDecrement = $inputGroup.find(".btn-decrement")
-    // var $buttonIncrement = $inputGroup.find(".btn-increment")
+
 </script>
 
 

@@ -15,11 +15,17 @@
 </head>
 
 
-<body>
-
-<div class="bg-head">
+<body class="bg-head">
 
 
+<div>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-primary p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
     <nav class="navbar  d-flex" d>
 
         <button class="navbar-toggler collapsed" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
@@ -27,14 +33,20 @@
         </button>
 
 
-        <form class="form-inline my-2 my-lg-0  ltr    mx-2  flex-grow-1" >
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>صندوق ده میلیونی ترابی</option>
+        <img src="images/sandogh-logo-light.png">
 
-            </select>
-        </form>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info   py-0  my-0 fontsize"> انتخاب صندوق</button>
+            <button type="button" class="btn btn-primary   py-0  my-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu  fontsize">
+                <li class="text-center border-bottom" ><a>صندوق 1</a></li>
+                <li class="text-center" ><a >صندوق 2</a></li>
 
-        <img src="images/logo.png">
+            </ul>
+        </div>
 
     </nav>
 
@@ -75,10 +87,12 @@
     </section>
 
 </div>
-<main role="main" class="container-fluid">
+
+
+<main role="main" class="container-fluid  pt-5  mt-5">
     <div class="row"  >
         <div class="col-12"  >
-            <div id="smartwizard"  class="mt-5">
+            <div id="smartwizard"  class="mt-5   bg-light">
                 <ul class="nav">
                     <li>
                         <a class="nav-link" href="#step-1">
@@ -108,7 +122,7 @@
 
 
                                 <div class="col-12">
-                                    <div class="card">
+                                    <div class="card   border-0">
                                         <div class="card-header">
                                             <h5 class="card-title text-center">
                                                 مشخصات صندوق
@@ -212,7 +226,7 @@
 
 
                                 <div class="col-12">
-                                    <div class="card">
+                                    <div class="card   border-0">
                                         <div class="card-header">
                                             <h5 class="card-title text-center">
                                                 لیست سهام داران تایید شده
@@ -298,7 +312,7 @@
 
 
                                 <div class="col-12">
-                                    <div class="card">
+                                    <div class="card   border-0">
                                         <div class="card-header">
                                             <h5 class="card-title text-center">
                                                 لیست سهام داران تایید شده
