@@ -70,12 +70,29 @@ $(document).ready(function() {
     });
 
     $('a.test').click(function() {
-        alert('link clicked');
         return false;
     });
 
+
+    if($('.form-control').val() != 'NULL')
+
+    {
+        $('.form-control').siblings().css('bottom','50px');
+        $('.form-control').siblings().css('background','#fff');
+    }
+
     $('.form-control').blur(function() {
-        $(this).siblings().css('bottom','45px');
-        $(this).siblings().css('background','#fff');
+        if($('.form-control').val() != 'NULL'){
+            $('.form-control').siblings().css('bottom','50px');
+            $('.form-control').siblings().css('background','#fff');
+
+        }
+        else
+        {
+            $('.form-control').siblings().css('bottom','30px !important');
+            $('.form-control').siblings().css('background','red');
+        }
+
+
     });
 });
