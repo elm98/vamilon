@@ -34,6 +34,7 @@ window.addEventListener("scroll", (event) => {
     {
         $('.imgbody').css('top',scroll);
         $('.imgbody').css('position','relative');
+        $('.imgbody').css('transition','all 1s');
     }
 });
 /*!

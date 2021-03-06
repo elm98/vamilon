@@ -73,26 +73,31 @@ $(document).ready(function() {
         return false;
     });
 
+    if($('#form-control3').val().length  !=  0){
+        $('#form-control3').siblings().css('bottom','50px');
+        $('#form-control3').siblings().css('background','#fff');
 
-    if($('.form-control').val() != 'NULL')
 
-    {
-        $('.form-control').siblings().css('bottom','50px');
-        $('.form-control').siblings().css('background','#fff');
+    }
+    if($('#form-control1').val().length  !=  0){
+        $('#form-control1').siblings().css('bottom','50px');
+        $('#form-control1').siblings().css('background','#fff');
+
+
+    }
+    if($('#form-control2').val().length  !=  0){
+        $('#form-control2').siblings().css('bottom','50px');
+        $('#form-control2').siblings().css('background','#fff');
+
+
     }
 
-    $('.form-control').blur(function() {
-        if($('.form-control').val() != 'NULL'){
-            $('.form-control').siblings().css('bottom','50px');
-            $('.form-control').siblings().css('background','#fff');
+    $('.form-control2').blur(function() {
+        if($(this).val() !=  null){
+            $(this).siblings().css('bottom','50px');
+            $(this).siblings().css('background','#fff');
 
         }
-        else
-        {
-            $('.form-control').siblings().css('bottom','30px !important');
-            $('.form-control').siblings().css('background','red');
-        }
-
 
     });
 });

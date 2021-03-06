@@ -21,6 +21,13 @@
     color: #f9bf71;
     padding: 5px;
 }
+
+.aks-file-upload {
+    background: #f3edc6 !important;
+    border: 2px #fff dashed  !important;
+
+}
+
 body{
     font-family: IRANSans  !important;
 }

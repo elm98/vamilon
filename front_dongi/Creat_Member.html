@@ -6,15 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-----------css global------------------------------------>
-    <link rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet"   href="css/bootstrap.min.css">
-    <link rel="stylesheet"  href="css/mdb.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="../node_modules/mdbootstrap/css/mdb.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-----------css privat------------------------------------>
-    <link type="text/css" rel="stylesheet" href="css/aksFileUpload.min.css">
-    <link type="text/css" href="css/persian-datepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../node_modules/aksfileupload/dist/aksFileUpload.min.css">
+    <link rel="stylesheet" href="../node_modules/persian-datepicker/dist/css/persian-datepicker.css">
 
 
 </head>
@@ -41,12 +40,12 @@
         </button>
 
 
+        <form class="form-inline my-2 my-lg-0">
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>نام تور</option>
 
-        <select class="form-control" id="exampleFormControlSelect1">
-            <option>نام تور</option>
-
-        </select>
-
+            </select>
+        </form>
         <!--        <a class="navbar-brand  brand  ml-3" href="#">دونگی</a>-->
         <!--        <img src="images/logo.png">-->
 
@@ -57,12 +56,13 @@
 </div>
 
 <main role="main" class="container-fluid">
-
+    <div  class="row"  >
+        <div class="col-lg-6"  >
     <div id="accordion" class="mb-3   bg-card  mt-4 ">
         <div class="card">
             <div class="card-header  sunny-morning-gradient  text-white  py-0" id="headingOne">
                 <h6 class="mb-0   d-flex  justify-content-between">
-                    <div class="d-flex align-items-center"><i class="fas fa-edit   pl-2"></i>   ایجاد اعضا
+                    <div class="d-flex align-items-center"><i class="fas fa-edit   pr-2"></i>   ایجاد اعضا
                     </div>
                     <div>
 
@@ -90,7 +90,7 @@
                         <div class="row">
                             <label for="inputPassword" class="col-2 col-form-label text-nowrap   mr-1  ml-3 fontsize">اسم کاربر:</label>
                             <div class="col-8">
-                                <input type="password" class="form-control  text-dark  mr-2" placeholder="مقداد ترابی" id="inputPassword">
+                                <input type="text" class="form-control  text-dark  mr-2" placeholder="مقداد ترابی" id="inputPassword">
                             </div>
 
                         </div>
@@ -102,9 +102,9 @@
 
                     <div class="col-12   text-right">
                         <div class="row">
-                            <label for="inputPassword" class="col-3 col-form-label text-nowrap    mr-1  ml-3 fontsize">  شماره تلفن:</label>
-                            <div class="col-7">
-                                <input type="password" class="form-control   mr-2  text-dark" placeholder=" " id="inputPassword">
+                            <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 fontsize">  شماره تلفن:</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control   mr-2  text-dark" placeholder=" " id="inputPassword">
                             </div>
 
                         </div>
@@ -277,7 +277,7 @@
                         <div class="row">
                             <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">شماره موبایل</label>
                             <div class="col-7">
-                                <input type="password" class="form-control" id="inputPassword">
+                                <input type="text" class="form-control" id="inputPassword">
                             </div>
 
 
@@ -325,7 +325,7 @@
                         <div class="row">
                             <label for="inputPassword" class="col-3 col-form-label text-nowrap   mx-1 fontsize">تعداد سهم</label>
                             <div class="col-3">
-                                <input type="password" class="form-control" id="inputPassword">
+                                <input type="text" class="form-control" id="inputPassword">
                             </div>
 
 
@@ -366,7 +366,7 @@
             <div class="card">
                 <div class="card-header  sunny-morning-gradient  text-white  py-0" id="headingOne">
                     <h6 class="mb-0   d-flex  justify-content-between">
-                        <div class="d-flex align-items-center"><i class="fas fa-edit   pl-2"></i> ثبت پرداخت ها
+                        <div class="d-flex align-items-center"><i class="fas fa-edit   pr-2"></i> ثبت پرداخت ها
                         </div>
                         <div>
 
@@ -398,7 +398,7 @@
                             <div class="row">
                                 <label for="inputPassword" class="col-2 col-form-label text-nowrap   mr-1  ml-3 fontsize">هزینه کننده:</label>
                                 <div class="col-8">
-                                    <input type="password" class="form-control  text-dark  mr-2" placeholder="مقداد ترابی" id="inputPassword">
+                                    <input type="text" class="form-control  text-dark  mr-2" placeholder="مقداد ترابی" id="inputPassword">
                                 </div>
 
                             </div>
@@ -412,7 +412,7 @@
                             <div class="row">
                                 <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 fontsize">نام هزینه</label>
                                 <div class="col-8">
-                                    <input type="password" class="form-control   mr-2  text-dark" placeholder="خرید جوجه" id="inputPassword">
+                                    <input type="text" class="form-control   mr-2  text-dark" placeholder="خرید جوجه" id="inputPassword">
                                 </div>
 
                             </div>
@@ -426,7 +426,7 @@
                             <div class="row">
                                 <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 fontsize">مبلغ هزینه</label>
                                 <div class="col-8">
-                                    <input type="password" class="form-control  mr-2 text-dark  text-center" placeholder="1.0000000" id="inputPassword">
+                                    <input type="text" class="form-control  mr-2 text-dark  text-center" placeholder="1.0000000" id="inputPassword">
                                 </div>
 
 
@@ -454,7 +454,7 @@
 
                     <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
 
-                        <div class="col-12   text-right">
+                        <div class="col-12   text-left">
                             <div class="row">
                                 <div class="col-12 col-form-label text-nowrap   mx-1 fontsize">آپلود عکس</div>
                                 <div class="col-12">
@@ -502,7 +502,7 @@
             <div class="card">
                 <div class="card-header  sunny-morning-gradient  text-white  py-0" id="headingOne">
                     <h6 class="mb-0   d-flex  justify-content-between">
-                        <div class="d-flex align-items-center"><i class="fas fa-edit   pl-2"></i> ثبت  اعضا
+                        <div class="d-flex align-items-center"><i class="fas fa-edit   pr-2"></i> ثبت  اعضا
                         </div>
                         <div>
 
@@ -530,7 +530,7 @@
                             <div class="row">
                                 <label for="inputPassword" class="col-2 col-form-label text-nowrap   mr-1  ml-3 fontsize">اسم کاربر:</label>
                                 <div class="col-8">
-                                    <input type="password" class="form-control  text-dark  mr-2" placeholder="مقداد ترابی" id="inputPassword">
+                                    <input type="text" class="form-control  text-dark  mr-2" placeholder="مقداد ترابی" id="inputPassword">
                                 </div>
 
                             </div>
@@ -542,9 +542,9 @@
 
                         <div class="col-12   text-right">
                             <div class="row">
-                                <label for="inputPassword" class="col-3 col-form-label text-nowrap    mr-1  ml-3 fontsize">هزینه ثبت شده:</label>
-                                <div class="col-7">
-                                    <input type="password" class="form-control   mr-2  text-dark" placeholder="خرید جوجه" id="inputPassword">
+                                <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 fontsize">هزینه ثبت شده:</label>
+                                <div class="col-8">
+                                    <input type="text" class="form-control   mr-2  text-dark" placeholder="خرید جوجه" id="inputPassword">
                                 </div>
 
                             </div>
@@ -558,7 +558,7 @@
                             <div class="row">
                                 <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 fontsize">مبلغ:</label>
                                 <div class="col-8">
-                                    <input type="password" class="form-control  mr-2 text-dark  text-center" placeholder="1.0000000" id="inputPassword">
+                                    <input type="text" class="form-control  mr-2 text-dark  text-center" placeholder="1.0000000" id="inputPassword">
                                 </div>
 
 
@@ -590,7 +590,7 @@
                             <div class="row">
                                 <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 fontsize">شماره فیش</label>
                                 <div class="col-8">
-                                    <input type="password" class="form-control  mr-2  text-dark  text-center" placeholder="" id="inputPassword">
+                                    <input type="text" class="form-control  mr-2  text-dark  text-center" placeholder="" id="inputPassword">
                                 </div>
 
 
@@ -677,7 +677,8 @@
             </div>
 
         </div>
-
+        </div>
+    </div>
 
         <div class="modal fade" id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
@@ -720,31 +721,31 @@
     <span class="icon-menue"><i class="fa fa-users"></i></span>
     <span class="fontsize">اعضا</span>
     </a>
-    <a href="Making_Event.html">
+    <a  href="Show_Event.html">
 
         <span class="icon-menue"><i class="fa fa-gift"></i></span>
         <span class="fontsize">رویداد </span>
     </a>
-    <a href="Show_Event.html">
+    <a  href="Making_Event.html" >
 
         <span class="icon-menue"><i class="fa fa-calculator"></i></span>
         <span class="fontsize">هزینه</span>
     </a>
 </div>
+
+
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 
 <!-----------js global------------------------------------>
-<script type="text/javascript" src="js/jquery.min.js">
-</script>
-<script type="text/javascript" src="js/bootstrap.min.js">
-</script>
-<script type="text/javascript" src="js/mdb.min.js">
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap-v4-rtl/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.js">
 </script>
 <!-----------js privat------------------------------------>
 
-<script src="js/aksFileUpload.js"></script>
-<script src="js/persian-date.js"></script>
-<script src="js/persian-datepicker.js"></script>
+<script src="../node_modules/aksfileupload/dist/aksFileUpload.min.js"></script>
+<script src="../node_modules/persian-datepicker/dist/js/persian-datepicker.js"></script>
+<script src="../node_modules/persian-date/dist/persian-date.js"></script>
 
 
 
