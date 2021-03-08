@@ -9,7 +9,6 @@
 
     <!-----------css global------------------------------------>
     <link rel="stylesheet" href="../node_modules/bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css">
-    <link rel="stylesheet" href="../node_modules/mdbootstrap/css/mdb.css">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -32,7 +31,7 @@
 
     <div class="collapse" id="navbarToggleExternalContent" style="">
         <div class="bg-warning p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
+            <h5 class="text-dark h4">Collapsed content</h5>
             <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
     </div>
@@ -65,17 +64,17 @@
     <div id="accordion" class="mb-3  bg-card  mt-4 ">
 
         <div class="card">
-            <div class="card-header  sunny-morning-gradient  text-white  py-0" id="headingOne">
+            <div class="card-header  bg-warning  text-dark  py-2" id="headingOne">
                 <h6 class="mb-0   d-flex  justify-content-between">
                     <div class="d-flex align-items-center"><i class="fas fa-edit   pr-2"></i> ساخت رویداد جدید
                     </div>
                     <div>
 
 
-                        <button type="button" class="btn    p-0  shadow-none  text-white waves-effect waves-light" data-toggle="modal" data-target="#modalPush" title="Tooltip on top">
+                        <button type="button" class="btn    p-0  shadow-none  text-dark waves-effect waves-light" data-toggle="modal" data-target="#modalPush" title="Tooltip on top">
                             <i class="fa fa-question"></i>
                         </button>
-                        <button class="btn btn-link text-white px-0 waves-effect waves-light" data-toggle="collapse" data-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                        <button class="btn btn-link text-dark px-0 waves-effect waves-light" data-toggle="collapse" data-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
                             <i class="fa fa-chevron-down"></i>
                         </button>
 
@@ -86,42 +85,7 @@
 
             <div id="collapsefive" class="collapse show  bg-card  my-3" aria-labelledby="headingOne" data-parent="#accordion">
 <form action=""  >
-<!--                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm  bg-white rounded  border">-->
 
-<!--                    <div class="col-12  px-2 text-right">-->
-<!--                        <div class="row  px-0">-->
-<!--                            <label for="inputPassword" class="col-3 col-form-label text-nowrap pl-4   font" >نام رویداد</label>-->
-<!--                            <div class="col-2  pr-4">-->
-<!--                                <input type="password" class="form-control  text-dark   px-4 mr-2" placeholder="" id="inputPassword">-->
-<!--                            </div>-->
-<!--&lt;!&ndash;                            <div class="col-7  d-flex align-items-center  pr-4  ml-0">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <label class="px-2 font"  >عمومی</label>&ndash;&gt;-->
-
-<!--&lt;!&ndash;                            <label class="switch">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <input type="checkbox" checked="">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <span class="slider round"></span>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </label>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <label class="px-2 font"  >اختصاصی</label>&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;                            <div class="col-1 d-flex align-items-center  justify-content-center  pr-0">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <i class="fa fa-question icon-fa   icon-fa" aria-hidden="true"></i>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </span>&ndash;&gt;-->
-
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-
-
-
-<!--                        </div>-->
-
-
-
-<!--                    </div>-->
-<!--                </div>-->
 
 
 
@@ -129,8 +93,8 @@
 
         <div class="col-12   text-right">
             <div class="row">
-                <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 font" >نام رویداد </label>
-                <div class="col-9">
+                <label for="inputPassword" class="col-3  col-form-label text-nowrap  text-left   mr-1  ml-3 fontsize" >نام رویداد </label>
+                <div class="col-8">
 
                     <input type="text"    class="form-control    mr-2  text-dark"  >
                 </div>
@@ -142,8 +106,8 @@
 
                 <div class="col-12   text-right">
                     <div class="row">
-                        <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 font" >تاریخ شروع</label>
-                        <div class="col-9">
+                        <label for="inputPassword" class="col-3  col-form-label text-nowrap  text-left   mr-1  ml-3 fontsize" >تاریخ شروع</label>
+                        <div class="col-8">
 
                             <input type="text"    class="form-control text-center    mr-2  text-dark"  id="datepicker0" >
                         </div>
@@ -157,8 +121,8 @@
 
                 <div class="col-12   text-right">
                     <div class="row">
-                        <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 font" >تاریخ پایان</label>
-                        <div class="col-9">
+                        <label for="inputPassword" class="col-3  col-form-label text-nowrap  text-left   mr-1  ml-3 fontsize" >تاریخ پایان</label>
+                        <div class="col-8">
                             <input type="text" class="form-control  mr-2 text-dark  text-center  "  id="datepicker1">
                         </div>
 
@@ -173,8 +137,8 @@
 
                 <div class="col-12   text-right">
                     <div class="row">
-                        <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 font" >هزینه ثبت نام</label>
-                        <div class="col-9">
+                        <label for="inputPassword" class="col-3  col-form-label text-nowrap  text-left   mr-1  ml-3 fontsize" >هزینه ثبت نام</label>
+                        <div class="col-8">
                             <input type="password" class="form-control  mr-2 text-dark  text-center" placeholder="1.0000000" id="inputPassword">
                         </div>
 
@@ -189,9 +153,10 @@
 
                 <div class="col-12   text-right">
                     <div class="row">
-                        <small for="inputPassword" class="col-2 col-form-label text-nowrap   font" >قوانیین و توضیحات</small>
-                        <div class="col-9">
-                            <textarea class="form-control  ml-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                        <label for="inputPassword" class="col-3 col-form-label text-wrap font  text-left mr-1  ml-3">قوانیین و توضیحات</label>
+                        <div class="col-8">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
 
 
@@ -202,96 +167,15 @@
             </div>
 
 
-<!--            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">-->
 
-<!--                <div class="col-12   text-right">-->
-<!--                    <div class="row">-->
-
-
-<!--                        <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center   ">-->
-<!--                            <button type="button" class="col-12 btn px-4 btn-floating peach-gradient  waves-effect waves-light">اطلاعات تکمیلی</button>-->
-
-
-
-
-
-<!--                        </div>-->
-
-
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
-
-                <div class="col-12">
-                    <div class="row  d-flex  justify-content-center">
-
-
-
-                        <div class="col-lg-4  col-6">
-                            <form class="form-inline my-2 my-lg-0">
-                                <select class="form-control" >
-                                    <option>استان</option>
-
-                                </select>
-                            </form>
-                        </div>
-                        <div class="col-lg-4  col-6">
-
-                                <select class="form-control" >
-                                    <option>شهر</option>
-
-                                </select>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-<!--            <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">-->
-
-<!--                <div class="col-12   text-right">-->
-<!--                    <div class="row">-->
-<!--                        <label for="inputPassword" class="col-2 col-form-label text-nowrap   mx-1 fontsize">مدیر</label>-->
-<!--                        <div class="col-8">-->
-<!--                            <input type="password" class="form-control" id="inputPassword">-->
-<!--                        </div>-->
-
-
-
-
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">-->
-
-<!--                <div class="col-12   text-right">-->
-<!--                    <div class="row">-->
-<!--                        <label for="inputPassword" class="col-5 col-form-label text-nowrap   mx-1 fontsize">حداکثر ظرفیت</label>-->
-<!--                        <div class="col-5">-->
-<!--                            <input type="password" class="form-control" id="inputPassword">-->
-<!--                        </div>-->
-
-
-<!--                        <div class="col-1 d-flex align-items-center  justify-content-center  pl-4">-->
-<!--                            <span class="bg-light  icon" data-toggle="modal" data-target="#exampleModal">-->
-<!--                                    <i class="fa fa-question icon-fa   icon-fa" aria-hidden="true"></i>-->
-<!--                                </span>-->
-
-<!--                        </div>-->
-
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
 
 
                 <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
 
                     <div class="col-12   text-right">
                         <div class="row">
-                            <label for="inputPassword" class="col-2 col-form-label text-nowrap  text-center   mr-1  ml-3 font" >تاریخ پایان عضوگیری</label>
-                            <div class="col-9">
+                            <label for="inputPassword" class="col-3  col-form-label text-nowrap  text-left   mr-1  ml-3 fontsize" >تاریخ پایان عضوگیری</label>
+                            <div class="col-lg-8 col-sm-7">
 
                                 <input type="text"    class="form-control    text-center  mr-2  text-dark"  id="datepicker2" >
                             </div>
@@ -301,9 +185,9 @@
                 </div>
             <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
 
-                <div class="col-12   text-right">
+                <div class="col-12   text-left">
                     <div class="row">
-                        <div class="col-12 col-form-label text-nowrap   mx-1 fontsize">آپلود عکس</div>
+                        <div class="col-12 col-form-label text-nowrap   mx-4 fontsize">آپلود عکس</div>
                         <div class="col-12">
 
                             <aks-file-upload></aks-file-upload>
@@ -321,8 +205,8 @@
 
         <div class="col-12   text-right">
             <div class="row">
-                <label for="inputPassword" class="col-2 col-form-label text-nowrap    mr-1  ml-3 font">اطلاعات حساب</label>
-                <div class="col-9">
+                <label for="inputPassword" class="col-3  col-form-label text-nowrap  text-left   mr-1  ml-3 fontsize">اطلاعات حساب</label>
+                <div class="col-8">
                     <select class="form-control" id="exampleFormControlSelect1">
                         <option>ملی</option>
 
@@ -339,20 +223,20 @@
 
                     <div class="col-12   text-right">
                         <div class="row">
-                            <label for="inputPassword" class="col-3 col-form-label text-nowrap font" >
+                            <label for="inputPassword" class="col-3  col-form-label text-nowrap  text-left   mr-1  ml-3 fontsize" >
 
 
 
 
 
                                 اطلاعات حساب :ملی
+
+                            </label>
+
+                            <div class="col-7  d-flex  align-self-center">
                                 <button type="button" class="btn btn-danger btn-floating">
                                     افزودن
                                 </button>
-                            </label>
-
-                            <div class="col-9  d-flex  align-self-center">
-
                             </div>
 
 
@@ -362,72 +246,45 @@
                     </div>
                 </div>
 
-<!--            <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">-->
 
-<!--                <div class="col-12   text-right">-->
-<!--                    <div class="row">-->
-<!--                        <label for="inputPassword" class="col-3 col-form-label text-nowrap fontsize">مدارک لازم</label>-->
-<!--                        <div class="col-9  d-flex  align-self-center">-->
-<!--&lt;!&ndash;                            <span class="badge badge-secondary m-1  py-2">کارت ملی</span> <span class="badge badge-secondary m-1  py-2">شناسنامه</span><span class="badge badge-secondary m-1  py-2">رضایت نامه</span>&ndash;&gt;-->
-<!--                            <multi-input>-->
-<!--                                <input list="speakers1">-->
-<!--                                <datalist id="speakers1">-->
-<!--                                    <option  value="کارت ملی"></option>-->
-<!--                                    <option value=" شناسنامه"></option>-->
+    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex   shadow-sm  bg-white rounded  border">
 
-
-<!--                                </datalist>-->
-<!--                            </multi-input>-->
-<!--                        </div>-->
+        <div class="col-12">
+            <div class="row  d-flex  justify-content-center">
 
 
 
+                <div class="col-lg-3  ml-4  col-4">
+                    <form class="form-inline my-2 my-lg-0">
+                        <select class="form-control" >
+                            <option>استان</option>
 
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+                        </select>
+                    </form>
+                </div>
+                <div class="col-lg-3  col-4">
 
-<!--                <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">-->
-<!--            <div class="col-12   text-right">-->
-<!--                <div class="row">-->
-<!--                    <label for="inputPassword" class="col-3 col-form-label text-nowrap  font" >پیش بینی هزینه</label>-->
-<!--                    <div class="col-9  d-flex   flex-wrap  align-self-center">-->
+                    <select class="form-control" >
+                        <option>شهر</option>
 
+                    </select>
 
-<!--                            <multi-input>-->
-<!--                                <input list="speakers">-->
-<!--                                <datalist id="speakers">-->
-<!--                                    <option  value="هزینه اتاق"></option>-->
+                </div>
 
-<!--                                    <option value="هزینه منزل" ></option>-->
-<!--                                    <option value="هزینه صبحانه"></option>-->
-
-<!--                                </datalist>-->
-<!--                            </multi-input>-->
+            </div>
+        </div>
+    </div>
 
 
 
-
-
-<!--                    </div>-->
-
-
-
-
-<!--                </div>-->
-<!--            </div>-->
-
-<!--                </div>-->
-
-
-            <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
+    <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex ">
 
                 <div class="col-12   text-right">
                     <div class="row">
 
 
                         <div class="col-12 text-right  py-2   d-flex align-items-center  justify-content-center  pr-2  ">
-                            <button type="button" class="btn px-4 purple-gradient waves-effect waves-light">ثبت اطلاعات </button>
+                            <button type="button" class="btn px-4 bg-warning">ثبت اطلاعات </button>
                                            </div>
 
 
@@ -523,7 +380,7 @@
 
             <!--Footer-->
             <div class="modal-footer justify-content-center">
-                <a type="button" class="btn btn-success">Get it now <i class="far fa-gem ml-1 text-white"></i></a>
+                <a type="button" class="btn btn-success">Get it now <i class="far fa-gem ml-1 text-dark"></i></a>
                 <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">No, thanks</a>
             </div>
         </div>
@@ -535,8 +392,6 @@
 
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/bootstrap-v4-rtl/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.js">
-</script>
 
 <!-----------js private------------------------------------>
 <script src="js/multi-input.js"></script>

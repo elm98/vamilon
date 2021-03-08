@@ -8,7 +8,6 @@
     <!-----------css global------------------------------------>
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css">
-    <link rel="stylesheet" href="../node_modules/mdbootstrap/css/mdb.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -25,7 +24,7 @@
 
     <div class="collapse" id="navbarToggleExternalContent" style="">
         <div class="bg-warning p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
+            <h5 class="text-darkh4">Collapsed content</h5>
             <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
     </div>
@@ -57,18 +56,18 @@
         <div class="col-lg-6"  >
     <div id="accordion" class="mb-3  bg-card  mt-4 ">
         <div class="card">
-            <div class="card-header  sunny-morning-gradient  text-white  py-0" id="headingOne">
+            <div class="card-header  bg-warning  text-dark  py-2" id="headingOne">
                 <h6 class="mb-0   d-flex  justify-content-between">
                     <div class="d-flex align-items-center"><i class="fas fa-edit   pr-2"></i>نمایش رویداد</div>
                     <div>
 
-                        <button class="btn btn-link text-white  px-0 waves-effect waves-light" data-toggle="tooltip" data-placement="top">
+                        <button class="btn btn-link text-dark px-0 waves-effect waves-light" data-toggle="tooltip" data-placement="top">
                             <i class="fa fa-phone"></i>
                         </button>
-                        <button type="button" class="btn    p-0  shadow-none  text-white waves-effect waves-light" data-toggle="modal" data-target="#modalPush" title="Tooltip on top">
+                        <button type="button" class="btn    p-0  shadow-none  text-darkwaves-effect waves-light" data-toggle="modal" data-target="#modalPush" title="Tooltip on top">
                             <i class="fa fa-question"></i>
                         </button>
-                        <button class="btn btn-link text-white  px-0 waves-effect waves-light" data-toggle="collapse" data-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                        <button class="btn btn-link text-dark px-0 waves-effect waves-light" data-toggle="collapse" data-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
                             <i class="fa fa-chevron-down"></i>
                         </button>
 
@@ -121,13 +120,38 @@
                             افراد ثبت نام کرده
 
                             <div class="btn-group my-2  ltr" role="group">
-                                <a class="btn btn-sm  mx-0    px-3  btn-danger">5</a>
+                                <a class="btn btn-sm  mx-0    px-3    btn-outline-danger">5</a>
                                 <a class="btn btn-sm   mx-0  px-3  btn-info">4 </a>
-                                <a class="btn btn-sm  mx-0  px-3   btn-success">6</a>
+                                <a class="btn btn-sm  mx-0  px-3  btn-outline-success">6</a>
                             </div>
 
                         </div>
                     </div>
+                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm  bg-white rounded  border">
+
+                    <div class="col-12  d-flex justify-content-between   align-items-center  text-left font" >
+                        تایید شده
+
+                        <div class="btn-group my-2  ltr" role="group">
+                            <a class="btn btn-sm  mx-0    px-3    btn-outline-danger">5</a>
+                            <a class="btn btn-sm   mx-0  px-3  btn-outline-info">4 </a>
+                            <a class="btn btn-sm  mx-0  px-3  btn-success">6</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm  bg-white rounded  border">
+
+                    <div class="col-12  d-flex justify-content-between   align-items-center  text-left font" >
+تایید نشده
+                        <div class="btn-group my-2  ltr" role="group">
+                            <a class="btn btn-sm  mx-0    px-3    btn-danger">5</a>
+                            <a class="btn btn-sm   mx-0  px-3  btn-outline-info">4 </a>
+                            <a class="btn btn-sm  mx-0  px-3  btn-outline-success">6</a>
+                        </div>
+
+                    </div>
+                </div>
 
                 <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2 d-flex  shadow-sm   rounded  border">
 
@@ -313,11 +337,11 @@
 
 
                             <div class="col-12 text-left  py-2   d-flex align-items-center  justify-content-center   ">
-                                <button type="button" class="btn px-2 purple-gradient waves-effect waves-light"> افزودن عضو</button>
+                                <button type="button" class="btn px-2  btn-success"> افزودن عضو</button>
                                 <div class="col-1 offset-1"></div>
 
 
-                                <button type="button" class="btn peach-gradient  px-2 waves-effect waves-light">ویرایش تور </button>
+                                <button type="button" class="btn peach-gradient  px-2 btn-info">ویرایش تور </button>
 
                             </div>
 
@@ -437,7 +461,6 @@
 <!-----------js global------------------------------------>
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/bootstrap-v4-rtl/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.js">
 </script>
 
 
