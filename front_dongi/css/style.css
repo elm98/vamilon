@@ -65,7 +65,34 @@ body{
     font-size: 15px;
     padding: 20px;
 }
+::-webkit-scrollbar{
+    width: 10px;
 
+
+
+}
+
+
+::-ms-expand{
+    width: 240px   !important;
+    height: 34px   !important;
+
+    background-color:  red  !important;
+    border: 1px solid #ccc   !important;
+}
+
+
+::placeholder{color:#f9bf71 !important;
+text-align: center;}
+
+::-webkit-scrollbar-thumb{
+    background-color:coral;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0px -1px 13px #824201;
+    border-radius: 10px;
+}
 .form-group>label-login {
      bottom: 0px !important;
     position: relative;
