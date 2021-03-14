@@ -13,7 +13,7 @@
       var settings = $.extend(
         {
           fileUpload: "",
-          input: "#aksfileupload",
+          input: ".aksfileupload",
           fileType: [
             "pdf",
             "docx",
@@ -122,7 +122,7 @@
         },
         options
       );
-      var customInput = settings.input.replace("#", "");
+      var customInput = settings.input.replace(".", "");
       return this.each(function (i) {
         var aksMultiplte = "";
         if (settings.multiple === true) {
@@ -130,9 +130,9 @@
         }
         const html =
           '<div class="aks-file-upload"><input type="file" name="' +
-          customInput +
-          '[]" id="' +
-          customInput +
+          customInput +i+
+          '[]" class="' +
+          customInput +i+
           '" hidden ' +
           aksMultiplte +
           " /></div>";

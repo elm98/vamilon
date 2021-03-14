@@ -19,56 +19,97 @@
 </head>
 
 
-<body >
+<body  class="bg-head" >
 
 
-<div class="bg-head">
 
-    <div class="collapse" id="navbarToggleExternalContent" style="">
-        <div class="bg-warning p-4">
-            <h5 class="text-dark h4">Collapsed content</h5>
+<div>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-primary p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
             <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
     </div>
-    <nav class="navbar  shadow-none">
+    <nav class="navbar  d-flex" d>
 
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
             <span class="navbar-toggler-icon"> <i class="fas fa-bars  bars"></i></span>
         </button>
 
 
-        <form class="form-inline my-2 my-lg-0">
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>نام تور</option>
+        <!--        <img src="images/sandogh-logo-light.png">-->
 
-            </select>
-        </form>
-        <!--        <a class="navbar-brand  brand  ml-3" href="#">دونگی</a>-->
-        <!--        <img src="images/logo.png">-->
+        <div class="btn-group  mr-5">
+            <button type="button" class="btn btn-warning   py-0  my-0 fontsize"> انتخاب تور</button>
+            <button type="button" class="btn btn-warning   py-0  my-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu  fontsize">
+                <li class="text-center border-bottom" ><a>تور 1</a></li>
+                <li class="text-center" ><a >تور 2</a></li>
 
+            </ul>
+        </div>
 
     </nav>
 
 
+    <section class="drawer drawer--right" id="drawer-name-left" data-drawer-target>
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper">
+            <div class="drawer__header">
+                <div class="drawer__title">
+                    <!--                    <img src="images/logo.png">-->
+                </div>
+
+                <button type="button" class="btn btn-outline-dark"   data-drawer-close aria-label="Close Drawer">بستن<i  class="fa fa-close"  ></i> </button>
+
+            </div>
+            <div class="drawer__content">
+                <ul class="list-unstyled  text-left">
+                    <li class="mb-3"><a href="https://isovisit.com" class="iso-font-sm text-dark">صفحه اصلی</a></li>
+
+
+
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">درباره ما</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">تماس با ما</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">راهنمای سایت</a></li>
+
+
+
+
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">حریم خصوصی</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">شرایط و قوانین</a></li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
 </div>
 
 <main role="main" class="container-fluid  pt-2  mt-2">
-    <div class="row">
+    <div class="row  mt-5">
         <div class="col-lg-6  col-12">
-
+            <img src="images/fund-svg.svg" class="imgbody">
         </div>
         <div class="col-lg-6  col-12">
 
 
-            <div id="accordion" class="mb-3">
+            <div id="accordiontwo" class="mb-3">
                 <div class="card   border-0">
                     <div class="card-header  bg-warning  text-dark  py-2" id="headingOne">
                         <h5 class="mb-0   d-flex  justify-content-between  titr">
 
 
-                            <div class="d-flex align-items-center"><i class="fas  fa-dollar-sign pr-2  pr-2"></i> <span class="titr"> نام هزینه کننده
-</span></div>
+                            <div class="d-flex align-items-center"><i class="fas  fa-dollar-sign pr-2  pr-2"></i>
+                                <span class="titr"> نام هزینه کننده</span>
+                            </div>
 
 
                             <div>
@@ -79,7 +120,7 @@
                                 <button type="button" class="btn   text-dark" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
                                     <i class="fa fa-question"></i>
                                 </button>
-                                <button class="btn btn-link text-dark  px-0" data-toggle="collapse" data-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                                <button class="btn btn-link text-dark  px-0" data-toggle="collapse" data-target="#collapsetree" aria-expanded="true" aria-controls="collapsetree">
                                     <i class="fa fa-chevron-down"></i>
                                 </button>
 
@@ -88,7 +129,7 @@
                         </h5>
                     </div>
 
-                    <div id="collapsefive" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapsetree" class="collapse show   border  border-warning        mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordiontwo">
 
 
                         <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
@@ -194,18 +235,6 @@
 
 
 
-
-        </div>
-
-    </div>
-
-    <div class="row">
-        <div class="col-lg-6  col-12">
-
-        </div>
-        <div class="col-lg-6  col-12">
-
-
             <div id="accordion" class="mb-3">
                 <div class="card   border-0">
                     <div class="card-header  bg-warning  text-dark  py-2" id="headingOne">
@@ -233,7 +262,7 @@
                         </h5>
                     </div>
 
-                    <div id="collapsefive" class="collapse show      mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapsefive" class="collapse show   border  border-warning        mt-0  py-2" aria-labelledby="headingOne" data-parent="#accordion">
 
 
                         <div class="d-flex bg-white  mb-1  py-1 mt-0  mx-2  d-flex  shadow-sm   rounded  border">
@@ -339,30 +368,31 @@
 
 
 
-
         </div>
 
-    </div></main>
+    </div>
+
+  </main>
 
 <div class="navbarbotton">
-    <a href="creat sandogh.html">
+    <a href="Creat_Event.html">
         <span class="icon-menue"><i class="fa fa-home"></i></span>
 
         <span class="fontsize">خانه</span>
     </a>
-    <a href="azayesandogh.html">
-        <span class="icon-menue"><i class="fa fa-users"></i></span>
-        <span class="fontsize">اعضا</span>
+    <a class="active" href="Creat_Member.html"">
+    <span class="icon-menue"><i class="fa fa-users"></i></span>
+    <span class="fontsize">اعضا</span>
     </a>
-    <a href="show_cost.html">
+    <a  href="Show_Event.html">
 
         <span class="icon-menue"><i class="fa fa-gift"></i></span>
-        <span class="fontsize">قرعه کشی</span>
+        <span class="fontsize">رویداد </span>
     </a>
-    <a href="sahm har doreh.html">
+    <a  href="show_cost.html" >
 
         <span class="icon-menue"><i class="fa fa-calculator"></i></span>
-        <span class="fontsize">حسابداری</span>
+        <span class="fontsize">هزینه</span>
     </a>
 </div>
 
@@ -675,6 +705,7 @@
 
 </script>
 
+<script src="js/cusom.js"></script>
 
 </body>
 

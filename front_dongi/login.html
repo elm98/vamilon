@@ -19,35 +19,77 @@
 
 </head>
 
-<body>
-<div class="bg-head">
+<body  class="bg-head" >
 
-    <div class="collapse" id="navbarToggleExternalContent" style="">
-        <div class="bg-warning p-4">
-            <h5 class="text-darkh4">Collapsed content</h5>
+
+
+<div>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-primary p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
             <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
     </div>
-    <nav class="navbar  shadow-none">
+    <nav class="navbar  d-flex" d>
 
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
             <span class="navbar-toggler-icon"> <i class="fas fa-bars  bars"></i></span>
         </button>
 
 
-        <form class="form-inline my-2 my-lg-0">
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option  selected  >نام تور</option>
-                <option>نام تور</option>
-            </select>
-        </form>
-        <!--        <a class="navbar-brand  brand  ml-3" href="#">دونگی</a>-->
-        <!--        <img src="images/logo.png">-->
+        <!--        <img src="images/sandogh-logo-light.png">-->
 
+        <div class="btn-group  mr-5">
+            <button type="button" class="btn btn-warning   py-0  my-0 fontsize"> انتخاب تور</button>
+            <button type="button" class="btn btn-warning   py-0  my-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu  fontsize">
+                <li class="text-center border-bottom" ><a>تور 1</a></li>
+                <li class="text-center" ><a >تور 2</a></li>
+
+            </ul>
+        </div>
 
     </nav>
 
+
+    <section class="drawer drawer--right" id="drawer-name-left" data-drawer-target>
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper">
+            <div class="drawer__header">
+                <div class="drawer__title">
+                    <!--                    <img src="images/logo.png">-->
+                </div>
+
+                <button type="button" class="btn btn-outline-dark"   data-drawer-close aria-label="Close Drawer">بستن<i  class="fa fa-close"  ></i> </button>
+
+            </div>
+            <div class="drawer__content">
+                <ul class="list-unstyled  text-left">
+                    <li class="mb-3"><a href="https://isovisit.com" class="iso-font-sm text-dark">صفحه اصلی</a></li>
+
+
+
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">درباره ما</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">تماس با ما</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">راهنمای سایت</a></li>
+
+
+
+
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">حریم خصوصی</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">شرایط و قوانین</a></li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </section>
 
 </div>
 
@@ -62,8 +104,8 @@
                 <div class="content-body">
                     <section class="new-container">
                         <div class="col-12 d-flex align-items-center justify-content-center xs-wide">
-                            <div class="col-md-12 col-lg-3 p-0">
-                                <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
+                            <div class="col-md-12 col-lg-3 my-3">
+                                <div class="card border-grey border-lighten-3 px-1 py-1 mt-5">
                                     <div class="card-header border-0 pb-0">
                                         <div class="card-title logo-img text-center">
                                             <a class="navbar-brand" href="">
@@ -76,7 +118,7 @@
                                         <div class="card-body">
                                             <div class="tab-content px-1 pt-1" id="entrance_box">
                                                 <!-- <div class="tab-pane active" id="entrance_box_input_mobile" aria-labelledby="base-entrance-tab-signin"> -->
-                                                <img class="img-responsive center-block visible-lg-block" src="https://vamilon.com/app/app-assets/images/svg/log-in.svg" alt="Tribe cropped">
+                                                <img class="img-responsive center-block visible-lg-block" src="images/log-in.svg" alt="Tribe cropped">
                                                 <pre></pre>
                                                 <h3 class="text-center" style="font-size: large;"><strong>به دونگی خوش آمدید</strong></h3>
 
@@ -190,6 +232,7 @@
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/bootstrap-v4-rtl/dist/js/bootstrap.min.js"></script>
 
+<script src="js/cusom.js"></script>
 
 
 

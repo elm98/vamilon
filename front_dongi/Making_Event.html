@@ -20,43 +20,88 @@
 
 </head>
 
-<body>
-<div class="bg-head">
+<body  class="bg-head" >
 
-    <div class="collapse" id="navbarToggleExternalContent" style="">
-        <div class="bg-warning p-4">
-            <h5 class="text-dark h4">Collapsed content</h5>
+
+
+<div>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-primary p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
             <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
     </div>
-    <nav class="navbar  shadow-none">
+    <nav class="navbar  d-flex" d>
 
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" data-drawer-trigger aria-controls="drawer-name-left" aria-expanded="false" >
             <span class="navbar-toggler-icon"> <i class="fas fa-bars  bars"></i></span>
         </button>
 
 
-        <form class="form-inline my-2 my-lg-0">
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>نام تور</option>
+        <!--        <img src="images/sandogh-logo-light.png">-->
 
-            </select>
-        </form>
-        <!--        <a class="navbar-brand  brand  ml-3" href="#">دونگی</a>-->
-        <!--        <img src="images/logo.png">-->
+        <div class="btn-group  mr-5">
+            <button type="button" class="btn btn-warning   py-0  my-0 fontsize"> انتخاب تور</button>
+            <button type="button" class="btn btn-warning   py-0  my-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu  fontsize">
+                <li class="text-center border-bottom" ><a>تور 1</a></li>
+                <li class="text-center" ><a >تور 2</a></li>
 
+            </ul>
+        </div>
 
     </nav>
 
 
+    <section class="drawer drawer--right" id="drawer-name-left" data-drawer-target>
+        <div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+        <div class="drawer__wrapper">
+            <div class="drawer__header">
+                <div class="drawer__title">
+                    <!--                    <img src="images/logo.png">-->
+                </div>
+
+                <button type="button" class="btn btn-outline-dark"   data-drawer-close aria-label="Close Drawer">بستن<i  class="fa fa-close"  ></i> </button>
+
+            </div>
+            <div class="drawer__content">
+                <ul class="list-unstyled  text-left">
+                    <li class="mb-3"><a href="https://isovisit.com" class="iso-font-sm text-dark">صفحه اصلی</a></li>
+
+
+
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">درباره ما</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">تماس با ما</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">راهنمای سایت</a></li>
+
+
+
+
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">حریم خصوصی</a></li>
+                    <li class="mb-3"><a  class="iso-font-sm text-dark">شرایط و قوانین</a></li>
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
 </div>
 
 <main role="main" class="container-fluid">
-<div  class="row"  >
-    <div class="col-lg-6"  >
-        <div id="accordion" class="mb-3  bg-card  mt-4 ">
-            <div class="card">
+<div  class="row  my-lg-5"  >
+    <div class="col-lg-6  col-12   my-lg-5  img-bg">
+        <img src="images/fund-svg.svg" class="imgbody" >
+    </div>
+    <div class="col-lg-6   my-lg-5"  >
+        <div id="accordion" class="mb-3  bg-card    mt-5 ">
+            <div class="card  border  border-warning    mt-5">
                 <div class="card-header  bg-warning  text-dark  py-2" id="headingOne">
                     <h6 class="mb-0   d-flex  justify-content-between">
                         <div class="d-flex align-items-center"><i class="fas fa-edit   pr-2"></i> ثبت هزینه
@@ -80,7 +125,7 @@
                     </h6>
                 </div>
 
-                <div id="collapsefive" class="collapse show  bg-card  my-3" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapsefive" class="collapse show       bg-card  py-3" aria-labelledby="headingOne" data-parent="#accordion">
 
 
                     <form  >
@@ -237,7 +282,7 @@
         <span class="icon-menue"><i class="fa fa-gift"></i></span>
         <span class="fontsize">رویداد </span>
     </a>
-    <a  href="Making_Event.html" >
+    <a  href="show_cost.html" >
 
         <span class="icon-menue"><i class="fa fa-calculator"></i></span>
         <span class="fontsize">هزینه</span>
